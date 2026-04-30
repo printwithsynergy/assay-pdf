@@ -1,0 +1,31 @@
+{
+  "$schema": "https://github.com/thinkneverland/assay-pdf/blob/main/spec/vendor-checksums.schema.json",
+  "version": "1.0",
+  "generated_at": null,
+  "files": [
+    {
+      "filename": "gos-5.0-testpages.zip",
+      "url": "https://gwg.org/?wpdmdl=9080",
+      "sha256": null,
+      "size_bytes": null,
+      "description": "Ghent PDF Output Suite v5.0 — Testpages",
+      "license": "Ghent Workgroup, all rights reserved; do not redistribute"
+    },
+    {
+      "filename": "gos-5.0-patches.zip",
+      "url": "https://gwg.org/?wpdmdl=9076",
+      "sha256": null,
+      "size_bytes": null,
+      "description": "Ghent PDF Output Suite v5.0 — Patches",
+      "license": "Ghent Workgroup, all rights reserved; do not redistribute"
+    },
+    {
+      "filename": "processing-steps-test-suite-v1.zip",
+      "url": "https://gwg.org/?wpdmdl=19518",
+      "sha256": null,
+      "size_bytes": null,
+      "description": "GWG Processing Steps Test Suite v1.0 (ISO 19593-1)",
+      "license": "Ghent Workgroup, all rights reserved; do not redistribute"
+    }
+  ]
+}

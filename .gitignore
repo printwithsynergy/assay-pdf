@@ -1,0 +1,67 @@
+# ─── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+ENV/
+*.egg-info/
+*.egg
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+*.cover
+.hypothesis/
+
+# ─── uv ─────────────────────────────────────────────────────────────────────────
+.uv/
+uv.lock
+
+# ─── Build / dist ──────────────────────────────────────────────────────────────
+build/
+dist/
+*.tar.gz
+*.whl
+
+# ─── AssayPDF generated outputs ────────────────────────────────────────────────
+# Corpus PDFs are deterministic: regenerated from manifest + seed, NOT committed.
+# manifest.json is committed; the .pdf files are not.
+corpus/positive/**/*.pdf
+corpus/negative/**/*.pdf
+
+# Benchmark results
+results/
+!results/.gitkeep
+
+# Vendor assets — large GWG-copyright zips fetched via `assay fetch`.
+# checksums.json and README.md ARE committed; the actual files are not.
+vendor/*.zip
+vendor/extracted/
+!vendor/checksums.json
+!vendor/README.md
+
+# ─── IDE / editor ──────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.cursorrules
+
+# ─── OS ────────────────────────────────────────────────────────────────────────
+Thumbs.db
+desktop.ini
+
+# ─── Logs / scratch ────────────────────────────────────────────────────────────
+*.log
+logs/
+scratch/
+tmp/

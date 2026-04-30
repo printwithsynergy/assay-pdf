@@ -1,0 +1,49 @@
+name: URL liveness check
+
+on:
+  schedule:
+    - cron: "0 13 * * 1" # Mondays 13:00 UTC
+  workflow_dispatch:
+
+jobs:
+  check-urls:
+    name: Verify all GWG asset URLs respond 200
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check vendor URLs
+        run: |
+          set -euo pipefail
+          urls=(
+            "https://docs.google.com/spreadsheets/d/1fz7I7pVl0uOTqEqmXeFIEo2LQm97AluHnlTMikzHenI/export?format=xlsx"
+            "https://gwg.org/?wpdmdl=9112"
+            "https://gwg.org/?wpdmdl=9108"
+            "https://gwg.org/?wpdmdl=9080"
+            "https://gwg.org/?wpdmdl=9076"
+            "https://gwg.org/?wpdmdl=19518"
+          )
+          fail=0
+          for url in "${urls[@]}"; do
+            code=$(curl -L -s -o /dev/null -w "%{http_code}" "$url" || echo "000")
+            if [[ "$code" != "200" ]]; then
+              echo "::error::URL returned $code: $url"
+              fail=1
+            else
+              echo "✓ $url"
+            fi
+          done
+          exit $fail
+
+      - name: Open issue on failure
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: "Vendor URL liveness check failed",
+              body: "One or more GWG asset URLs returned non-200. See workflow run: " + context.payload.repository.html_url + "/actions/runs/" + context.runId,
+              labels: ["bug", "vendor-assets"]
+            })

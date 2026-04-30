@@ -1,0 +1,34 @@
+{
+  "$schema": "https://github.com/thinkneverland/assay-pdf/blob/main/spec/spec-checksums.schema.json",
+  "version": "1.0",
+  "generated_at": null,
+  "files": [
+    {
+      "filename": "gwg-2022-spec.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/1fz7I7pVl0uOTqEqmXeFIEo2LQm97AluHnlTMikzHenI/export?format=xlsx",
+      "sha256": null,
+      "size_bytes": null,
+      "description": "GWG 2022 Specification — multi-tab workbook",
+      "redistributed": true,
+      "notes": "The XLSX is committed for self-contained spec parsing; small (~520 KB), changes rarely."
+    },
+    {
+      "filename": "gwg-2022-explanation.pdf",
+      "url": "https://gwg.org/?wpdmdl=9112",
+      "sha256": null,
+      "size_bytes": null,
+      "description": "GWG 2022 Specification explanation",
+      "redistributed": true,
+      "notes": "Reference material for spec interpretation."
+    },
+    {
+      "filename": "gwg-2015-vs-2022.pdf",
+      "url": "https://gwg.org/?wpdmdl=9108",
+      "sha256": null,
+      "size_bytes": null,
+      "description": "Differences between GWG 2015 and 2022 specifications",
+      "redistributed": true,
+      "notes": "Reference material; useful when migrating from 2015-era profiles."
+    }
+  ]
+}
