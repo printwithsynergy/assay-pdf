@@ -48,7 +48,9 @@ def score_engine_run(
     """Compute a per-(rule, variant) ScoreReport for one engine run."""
     # Index results by file path
     results_by_path: dict[str, EngineResult] = {
-        Path(r.file).relative_to(Path(r.file).anchor).as_posix() if Path(r.file).is_absolute() else r.file: r
+        Path(r.file).relative_to(Path(r.file).anchor).as_posix()
+        if Path(r.file).is_absolute()
+        else r.file: r
         for r in results
     }
     # Try a more forgiving match: just basename → result

@@ -60,12 +60,12 @@ def _icc_search_paths(repo_root: Path) -> list[Path]:
 # Order = preference: closest colorimetric substitute first, generic last.
 _FAMILY_FALLBACKS: dict[str, list[str]] = {
     "FOGRA51L_coated.icc": [
-        "CoatedFOGRA51.icc",            # Newer Adobe install (rare yet)
-        "PSOcoated_v3.icc",             # ECI's FOGRA51 release name
-        "CoatedFOGRA39.icc",            # Adobe — closest sheet-fed CMYK
-        "ISOcoated_v2_300_eci.icc",     # ECI alt
-        "USSheetfedCoated.icc",         # Adobe US sheet-fed alt
-        "USWebCoatedSWOP.icc",          # Adobe US web alt
+        "CoatedFOGRA51.icc",  # Newer Adobe install (rare yet)
+        "PSOcoated_v3.icc",  # ECI's FOGRA51 release name
+        "CoatedFOGRA39.icc",  # Adobe — closest sheet-fed CMYK
+        "ISOcoated_v2_300_eci.icc",  # ECI alt
+        "USSheetfedCoated.icc",  # Adobe US sheet-fed alt
+        "USWebCoatedSWOP.icc",  # Adobe US web alt
     ],
     "FOGRA39L_coated.icc": [
         "CoatedFOGRA39.icc",
@@ -74,9 +74,9 @@ _FAMILY_FALLBACKS: dict[str, list[str]] = {
     ],
     "GRACoL2013_CRPC6.icc": [
         "GRACoL2013_CRPC6.icc",
-        "CoatedGRACoL2006.icc",         # Adobe naming
-        "GRACoL2006_Coated1v2.icc",     # Older Adobe naming
-        "USWebCoatedSWOP.icc",          # GRACoL ≈ SWOP for fallback purposes
+        "CoatedGRACoL2006.icc",  # Adobe naming
+        "GRACoL2006_Coated1v2.icc",  # Older Adobe naming
+        "USWebCoatedSWOP.icc",  # GRACoL ≈ SWOP for fallback purposes
     ],
     "sRGB_IEC61966-2-1.icc": [
         "sRGB Profile.icc",

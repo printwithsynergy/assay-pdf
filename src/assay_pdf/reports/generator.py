@@ -64,7 +64,9 @@ def _rule_breakdown(reports: list[ScoreReport]) -> list[dict[str, object]]:
     Returns a list of dicts, one per (rule_id), each with per-engine TP/FP/FN/TN.
     """
     # rule_id -> engine -> aggregated counts (summed across variants)
-    by_rule: dict[str, dict[str, dict[str, int]]] = defaultdict(lambda: defaultdict(lambda: {"tp": 0, "fp": 0, "fn": 0, "tn": 0}))
+    by_rule: dict[str, dict[str, dict[str, int]]] = defaultdict(
+        lambda: defaultdict(lambda: {"tp": 0, "fp": 0, "fn": 0, "tn": 0})
+    )
     for report in reports:
         for s in report.per_rule_per_variant:
             cell = by_rule[s.rule_id][report.engine]

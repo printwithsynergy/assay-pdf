@@ -24,6 +24,7 @@ class LintPDFRunner(Runner):
 
     def run(self, pdf_path: Path, variant_kebab: str) -> EngineResult:
         raise RunnerNotInstalledError(
-            "lintPDF API client not implemented in v0.1.0 — track at "
-            "https://github.com/thinkneverland/lint-pdf"
+            "lintPDF API client not implemented in v0.1.0. lintPDF is Think "
+            "Neverland's PDF preflight SaaS, currently in private development; "
+            "this runner will be wired in when the API is published."
         )

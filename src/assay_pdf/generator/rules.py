@@ -58,7 +58,8 @@ def _build_entry(
         category=category,
         primary_rule_id=primary_rule_id,
         applicable_variants=[variant.name],
-        expected_severity=expected_severity or ({variant.name: Severity.error} if primary_rule_id else {}),
+        expected_severity=expected_severity
+        or ({variant.name: Severity.error} if primary_rule_id else {}),
         description=description,
         generator_function=generator_function,
         deterministic_inputs={"seed": seed, "variant": variant.kebab},
@@ -89,7 +90,9 @@ def _stub_negative(
         title=title,
         page_text=f"{rule_id} STUB | {variant.name}",
     )
-    stamp_deterministic(output_path, rule_id=rule_id, variant_kebab=variant.kebab, seed=seed, title=title)
+    stamp_deterministic(
+        output_path, rule_id=rule_id, variant_kebab=variant.kebab, seed=seed, title=title
+    )
     return _build_entry(
         output_path=output_path,
         repo_root=repo_root,
@@ -122,7 +125,9 @@ def gen_positive_baseline(
         title=title,
         page_text=f"AssayPDF positive baseline | {variant.name}",
     )
-    stamp_deterministic(output_path, rule_id="BASELINE", variant_kebab=variant.kebab, seed=seed, title=title)
+    stamp_deterministic(
+        output_path, rule_id="BASELINE", variant_kebab=variant.kebab, seed=seed, title=title
+    )
     return _build_entry(
         output_path=output_path,
         repo_root=repo_root,
@@ -154,11 +159,18 @@ def gen_r0001_not_pdfx4(
                 if "PDFXVersion" in k:
                     del meta[k]
         pdf.save(output_path, object_stream_mode=pikepdf.ObjectStreamMode.preserve)
-    stamp_deterministic(output_path, rule_id="R0001", variant_kebab=variant.kebab, seed=seed, title=title)
+    stamp_deterministic(
+        output_path, rule_id="R0001", variant_kebab=variant.kebab, seed=seed, title=title
+    )
     return _build_entry(
-        output_path=output_path, repo_root=repo_root, category="negative", primary_rule_id="R0001",
-        variant=variant, description="PDF lacks /OutputIntents and PDF/X-4 XMP — not conformant to ISO 15930-7.",
-        generator_function="assay_pdf.generator.rules.gen_r0001_not_pdfx4", seed=seed,
+        output_path=output_path,
+        repo_root=repo_root,
+        category="negative",
+        primary_rule_id="R0001",
+        variant=variant,
+        description="PDF lacks /OutputIntents and PDF/X-4 XMP — not conformant to ISO 15930-7.",
+        generator_function="assay_pdf.generator.rules.gen_r0001_not_pdfx4",
+        seed=seed,
     )
 
 
@@ -175,11 +187,18 @@ def gen_r0002_user_unit(
     with pikepdf.open(output_path, allow_overwriting_input=True) as pdf:
         pdf.pages[0]["/UserUnit"] = 2.0
         pdf.save(output_path, object_stream_mode=pikepdf.ObjectStreamMode.preserve)
-    stamp_deterministic(output_path, rule_id="R0002", variant_kebab=variant.kebab, seed=seed, title=title)
+    stamp_deterministic(
+        output_path, rule_id="R0002", variant_kebab=variant.kebab, seed=seed, title=title
+    )
     return _build_entry(
-        output_path=output_path, repo_root=repo_root, category="negative", primary_rule_id="R0002",
-        variant=variant, description="Page dictionary has /UserUnit 2.0 — forbidden by R0002.",
-        generator_function="assay_pdf.generator.rules.gen_r0002_user_unit", seed=seed,
+        output_path=output_path,
+        repo_root=repo_root,
+        category="negative",
+        primary_rule_id="R0002",
+        variant=variant,
+        description="Page dictionary has /UserUnit 2.0 — forbidden by R0002.",
+        generator_function="assay_pdf.generator.rules.gen_r0002_user_unit",
+        seed=seed,
     )
 
 
@@ -197,16 +216,27 @@ def gen_r0003_cropbox_mismatch(
         page = pdf.pages[0]
         mb = page.MediaBox
         # Inset CropBox by 18pt all sides — clearly different
-        page.CropBox = pikepdf.Array([
-            float(mb[0]) + 18, float(mb[1]) + 18,
-            float(mb[2]) - 18, float(mb[3]) - 18,
-        ])
+        page.CropBox = pikepdf.Array(
+            [
+                float(mb[0]) + 18,
+                float(mb[1]) + 18,
+                float(mb[2]) - 18,
+                float(mb[3]) - 18,
+            ]
+        )
         pdf.save(output_path, object_stream_mode=pikepdf.ObjectStreamMode.preserve)
-    stamp_deterministic(output_path, rule_id="R0003", variant_kebab=variant.kebab, seed=seed, title=title)
+    stamp_deterministic(
+        output_path, rule_id="R0003", variant_kebab=variant.kebab, seed=seed, title=title
+    )
     return _build_entry(
-        output_path=output_path, repo_root=repo_root, category="negative", primary_rule_id="R0003",
-        variant=variant, description="CropBox inset 18pt from MediaBox — violates R0003.",
-        generator_function="assay_pdf.generator.rules.gen_r0003_cropbox_mismatch", seed=seed,
+        output_path=output_path,
+        repo_root=repo_root,
+        category="negative",
+        primary_rule_id="R0003",
+        variant=variant,
+        description="CropBox inset 18pt from MediaBox — violates R0003.",
+        generator_function="assay_pdf.generator.rules.gen_r0003_cropbox_mismatch",
+        seed=seed,
     )
 
 
@@ -226,11 +256,18 @@ def gen_r0004_no_trimbox(
             del page.TrimBox
         page.Rotate = 90
         pdf.save(output_path, object_stream_mode=pikepdf.ObjectStreamMode.preserve)
-    stamp_deterministic(output_path, rule_id="R0004", variant_kebab=variant.kebab, seed=seed, title=title)
+    stamp_deterministic(
+        output_path, rule_id="R0004", variant_kebab=variant.kebab, seed=seed, title=title
+    )
     return _build_entry(
-        output_path=output_path, repo_root=repo_root, category="negative", primary_rule_id="R0004",
-        variant=variant, description="TrimBox absent and /Rotate 90 — violates R0004 on two counts.",
-        generator_function="assay_pdf.generator.rules.gen_r0004_no_trimbox", seed=seed,
+        output_path=output_path,
+        repo_root=repo_root,
+        category="negative",
+        primary_rule_id="R0004",
+        variant=variant,
+        description="TrimBox absent and /Rotate 90 — violates R0004 on two counts.",
+        generator_function="assay_pdf.generator.rules.gen_r0004_no_trimbox",
+        seed=seed,
     )
 
 
@@ -245,11 +282,18 @@ def gen_r0005_empty_page(
     title = "AssayPDF R0005 negative — empty page (TAC = 0)"
     # Build base WITHOUT page_text so reportlab produces no marks
     build_base_pdfx4(output_path, variant=variant, repo_root=repo_root, title=title, page_text=None)
-    stamp_deterministic(output_path, rule_id="R0005", variant_kebab=variant.kebab, seed=seed, title=title)
+    stamp_deterministic(
+        output_path, rule_id="R0005", variant_kebab=variant.kebab, seed=seed, title=title
+    )
     return _build_entry(
-        output_path=output_path, repo_root=repo_root, category="negative", primary_rule_id="R0005",
-        variant=variant, description="Page contains no marking operators — Total Ink Coverage = 0.",
-        generator_function="assay_pdf.generator.rules.gen_r0005_empty_page", seed=seed,
+        output_path=output_path,
+        repo_root=repo_root,
+        category="negative",
+        primary_rule_id="R0005",
+        variant=variant,
+        description="Page contains no marking operators — Total Ink Coverage = 0.",
+        generator_function="assay_pdf.generator.rules.gen_r0005_empty_page",
+        seed=seed,
     )
 
 
@@ -267,11 +311,18 @@ def gen_r0006_two_pages(
         # Duplicate page 1 within the same PDF
         pdf.pages.append(pdf.pages[0])
         pdf.save(output_path, object_stream_mode=pikepdf.ObjectStreamMode.preserve)
-    stamp_deterministic(output_path, rule_id="R0006", variant_kebab=variant.kebab, seed=seed, title=title)
+    stamp_deterministic(
+        output_path, rule_id="R0006", variant_kebab=variant.kebab, seed=seed, title=title
+    )
     return _build_entry(
-        output_path=output_path, repo_root=repo_root, category="negative", primary_rule_id="R0006",
-        variant=variant, description="PDF contains 2 pages — R0006 requires exactly 1.",
-        generator_function="assay_pdf.generator.rules.gen_r0006_two_pages", seed=seed,
+        output_path=output_path,
+        repo_root=repo_root,
+        category="negative",
+        primary_rule_id="R0006",
+        variant=variant,
+        description="PDF contains 2 pages — R0006 requires exactly 1.",
+        generator_function="assay_pdf.generator.rules.gen_r0006_two_pages",
+        seed=seed,
     )
 
 
@@ -301,11 +352,18 @@ def gen_r0007_white_text_op(
         )
         append_content_stream(pdf, page, content)
         pdf.save(output_path, object_stream_mode=pikepdf.ObjectStreamMode.preserve)
-    stamp_deterministic(output_path, rule_id="R0007", variant_kebab=variant.kebab, seed=seed, title=title)
+    stamp_deterministic(
+        output_path, rule_id="R0007", variant_kebab=variant.kebab, seed=seed, title=title
+    )
     return _build_entry(
-        output_path=output_path, repo_root=repo_root, category="negative", primary_rule_id="R0007",
-        variant=variant, description="White-filled text element with ExtGState /op true — disappears on press.",
-        generator_function="assay_pdf.generator.rules.gen_r0007_white_text_op", seed=seed,
+        output_path=output_path,
+        repo_root=repo_root,
+        category="negative",
+        primary_rule_id="R0007",
+        variant=variant,
+        description="White-filled text element with ExtGState /op true — disappears on press.",
+        generator_function="assay_pdf.generator.rules.gen_r0007_white_text_op",
+        seed=seed,
     )
 
 
@@ -322,19 +380,21 @@ def gen_r0008_white_path_op(
     with pikepdf.open(output_path, allow_overwriting_input=True) as pdf:
         page = pdf.pages[0]
         add_extgstate(page, name="GSwop", op_fill=True, opm=1)
-        content = (
-            b"q\n"
-            b"/GSwop gs\n"
-            + cmyk_fill_op(0, 0, 0, 0)
-            + b"100 200 200 100 re f\nQ\n"
-        )
+        content = b"q\n/GSwop gs\n" + cmyk_fill_op(0, 0, 0, 0) + b"100 200 200 100 re f\nQ\n"
         append_content_stream(pdf, page, content)
         pdf.save(output_path, object_stream_mode=pikepdf.ObjectStreamMode.preserve)
-    stamp_deterministic(output_path, rule_id="R0008", variant_kebab=variant.kebab, seed=seed, title=title)
+    stamp_deterministic(
+        output_path, rule_id="R0008", variant_kebab=variant.kebab, seed=seed, title=title
+    )
     return _build_entry(
-        output_path=output_path, repo_root=repo_root, category="negative", primary_rule_id="R0008",
-        variant=variant, description="White-filled rectangle path with ExtGState /op true.",
-        generator_function="assay_pdf.generator.rules.gen_r0008_white_path_op", seed=seed,
+        output_path=output_path,
+        repo_root=repo_root,
+        category="negative",
+        primary_rule_id="R0008",
+        variant=variant,
+        description="White-filled rectangle path with ExtGState /op true.",
+        generator_function="assay_pdf.generator.rules.gen_r0008_white_path_op",
+        seed=seed,
     )
 
 
@@ -360,11 +420,18 @@ def gen_r0014_courier_text(
         )
         append_content_stream(pdf, page, content)
         pdf.save(output_path, object_stream_mode=pikepdf.ObjectStreamMode.preserve)
-    stamp_deterministic(output_path, rule_id="R0014", variant_kebab=variant.kebab, seed=seed, title=title)
+    stamp_deterministic(
+        output_path, rule_id="R0014", variant_kebab=variant.kebab, seed=seed, title=title
+    )
     return _build_entry(
-        output_path=output_path, repo_root=repo_root, category="negative", primary_rule_id="R0014",
-        variant=variant, description="Page contains a text element using the Courier font.",
-        generator_function="assay_pdf.generator.rules.gen_r0014_courier_text", seed=seed,
+        output_path=output_path,
+        repo_root=repo_root,
+        category="negative",
+        primary_rule_id="R0014",
+        variant=variant,
+        description="Page contains a text element using the Courier font.",
+        generator_function="assay_pdf.generator.rules.gen_r0014_courier_text",
+        seed=seed,
     )
 
 
@@ -392,11 +459,18 @@ def gen_r0015_rich_black_text(
         )
         append_content_stream(pdf, page, content)
         pdf.save(output_path, object_stream_mode=pikepdf.ObjectStreamMode.preserve)
-    stamp_deterministic(output_path, rule_id="R0015", variant_kebab=variant.kebab, seed=seed, title=title)
+    stamp_deterministic(
+        output_path, rule_id="R0015", variant_kebab=variant.kebab, seed=seed, title=title
+    )
     return _build_entry(
-        output_path=output_path, repo_root=repo_root, category="negative", primary_rule_id="R0015",
-        variant=variant, description="7pt text filled with CMYK 100/100/100/100 — should use single black ink.",
-        generator_function="assay_pdf.generator.rules.gen_r0015_rich_black_text", seed=seed,
+        output_path=output_path,
+        repo_root=repo_root,
+        category="negative",
+        primary_rule_id="R0015",
+        variant=variant,
+        description="7pt text filled with CMYK 100/100/100/100 — should use single black ink.",
+        generator_function="assay_pdf.generator.rules.gen_r0015_rich_black_text",
+        seed=seed,
     )
 
 
@@ -419,24 +493,35 @@ def gen_r0020_too_many_spots(
             page.Resources["/ColorSpace"] = pikepdf.Dictionary({})
         for i in range(12):
             spot_name = f"PANTONE_{100 + i}_C"
-            page.Resources["/ColorSpace"][f"/CS{i}"] = pikepdf.Array([
-                pikepdf.Name("/Separation"),
-                pikepdf.Name(f"/{spot_name}"),
-                pikepdf.Name("/DeviceCMYK"),
-                pikepdf.Dictionary({
-                    "/FunctionType": 2,
-                    "/Domain": pikepdf.Array([0.0, 1.0]),
-                    "/C0": pikepdf.Array([0.0, 0.0, 0.0, 0.0]),
-                    "/C1": pikepdf.Array([0.5, 0.5, 0.0, 0.0]),
-                    "/N": 1.0,
-                }),
-            ])
+            page.Resources["/ColorSpace"][f"/CS{i}"] = pikepdf.Array(
+                [
+                    pikepdf.Name("/Separation"),
+                    pikepdf.Name(f"/{spot_name}"),
+                    pikepdf.Name("/DeviceCMYK"),
+                    pikepdf.Dictionary(
+                        {
+                            "/FunctionType": 2,
+                            "/Domain": pikepdf.Array([0.0, 1.0]),
+                            "/C0": pikepdf.Array([0.0, 0.0, 0.0, 0.0]),
+                            "/C1": pikepdf.Array([0.5, 0.5, 0.0, 0.0]),
+                            "/N": 1.0,
+                        }
+                    ),
+                ]
+            )
         pdf.save(output_path, object_stream_mode=pikepdf.ObjectStreamMode.preserve)
-    stamp_deterministic(output_path, rule_id="R0020", variant_kebab=variant.kebab, seed=seed, title=title)
+    stamp_deterministic(
+        output_path, rule_id="R0020", variant_kebab=variant.kebab, seed=seed, title=title
+    )
     return _build_entry(
-        output_path=output_path, repo_root=repo_root, category="negative", primary_rule_id="R0020",
-        variant=variant, description="12 distinct PANTONE spot color separations declared as resources.",
-        generator_function="assay_pdf.generator.rules.gen_r0020_too_many_spots", seed=seed,
+        output_path=output_path,
+        repo_root=repo_root,
+        category="negative",
+        primary_rule_id="R0020",
+        variant=variant,
+        description="12 distinct PANTONE spot color separations declared as resources.",
+        generator_function="assay_pdf.generator.rules.gen_r0020_too_many_spots",
+        seed=seed,
     )
 
 
@@ -456,25 +541,38 @@ def gen_r0024_all_spot(
             page.Resources = pikepdf.Dictionary({})
         if "/ColorSpace" not in page.Resources:
             page.Resources["/ColorSpace"] = pikepdf.Dictionary({})
-        page.Resources["/ColorSpace"]["/AllSep"] = pikepdf.Array([
-            pikepdf.Name("/Separation"),
-            pikepdf.Name("/All"),
-            pikepdf.Name("/DeviceCMYK"),
-            pikepdf.Dictionary({
-                "/FunctionType": 2, "/Domain": pikepdf.Array([0.0, 1.0]),
-                "/C0": pikepdf.Array([0.0, 0.0, 0.0, 0.0]),
-                "/C1": pikepdf.Array([1.0, 1.0, 1.0, 1.0]), "/N": 1.0,
-            }),
-        ])
+        page.Resources["/ColorSpace"]["/AllSep"] = pikepdf.Array(
+            [
+                pikepdf.Name("/Separation"),
+                pikepdf.Name("/All"),
+                pikepdf.Name("/DeviceCMYK"),
+                pikepdf.Dictionary(
+                    {
+                        "/FunctionType": 2,
+                        "/Domain": pikepdf.Array([0.0, 1.0]),
+                        "/C0": pikepdf.Array([0.0, 0.0, 0.0, 0.0]),
+                        "/C1": pikepdf.Array([1.0, 1.0, 1.0, 1.0]),
+                        "/N": 1.0,
+                    }
+                ),
+            ]
+        )
         # Use it
         content = b"q\n/AllSep cs 1 sc\n100 100 100 100 re f\nQ\n"
         append_content_stream(pdf, page, content)
         pdf.save(output_path, object_stream_mode=pikepdf.ObjectStreamMode.preserve)
-    stamp_deterministic(output_path, rule_id="R0024", variant_kebab=variant.kebab, seed=seed, title=title)
+    stamp_deterministic(
+        output_path, rule_id="R0024", variant_kebab=variant.kebab, seed=seed, title=title
+    )
     return _build_entry(
-        output_path=output_path, repo_root=repo_root, category="negative", primary_rule_id="R0024",
-        variant=variant, description='Page uses /Separation /All — registration colour, forbidden in production.',
-        generator_function="assay_pdf.generator.rules.gen_r0024_all_spot", seed=seed,
+        output_path=output_path,
+        repo_root=repo_root,
+        category="negative",
+        primary_rule_id="R0024",
+        variant=variant,
+        description="Page uses /Separation /All — registration colour, forbidden in production.",
+        generator_function="assay_pdf.generator.rules.gen_r0024_all_spot",
+        seed=seed,
     )
 
 
@@ -494,12 +592,18 @@ def gen_r0025_tac_overflow(
         content = b"q\n" + cmyk_fill_op(0.9, 0.9, 0.9, 0.9) + b"100 200 400 400 re f\nQ\n"
         append_content_stream(pdf, page, content)
         pdf.save(output_path, object_stream_mode=pikepdf.ObjectStreamMode.preserve)
-    stamp_deterministic(output_path, rule_id="R0025", variant_kebab=variant.kebab, seed=seed, title=title)
+    stamp_deterministic(
+        output_path, rule_id="R0025", variant_kebab=variant.kebab, seed=seed, title=title
+    )
     return _build_entry(
-        output_path=output_path, repo_root=repo_root, category="negative", primary_rule_id="R0025",
+        output_path=output_path,
+        repo_root=repo_root,
+        category="negative",
+        primary_rule_id="R0025",
         variant=variant,
         description=f"Half-page rectangle at CMYK 90/90/90/90 = 360% TAC; variant ceiling = {variant.max_tac_all}%.",
-        generator_function="assay_pdf.generator.rules.gen_r0025_tac_overflow", seed=seed,
+        generator_function="assay_pdf.generator.rules.gen_r0025_tac_overflow",
+        seed=seed,
     )
 
 
@@ -515,12 +619,18 @@ def gen_r0026_cmyk_tac_overflow(
         content = b"q\n" + cmyk_fill_op(0.95, 0.85, 0.85, 0.85) + b"50 50 500 500 re f\nQ\n"
         append_content_stream(pdf, page, content)
         pdf.save(output_path, object_stream_mode=pikepdf.ObjectStreamMode.preserve)
-    stamp_deterministic(output_path, rule_id="R0026", variant_kebab=variant.kebab, seed=seed, title=title)
+    stamp_deterministic(
+        output_path, rule_id="R0026", variant_kebab=variant.kebab, seed=seed, title=title
+    )
     return _build_entry(
-        output_path=output_path, repo_root=repo_root, category="negative", primary_rule_id="R0026",
+        output_path=output_path,
+        repo_root=repo_root,
+        category="negative",
+        primary_rule_id="R0026",
         variant=variant,
         description=f"Large area at CMYK 95/85/85/85 = 350% > {variant.max_tac_cmyk}% (variant CMYK ceiling).",
-        generator_function="assay_pdf.generator.rules.gen_r0026_cmyk_tac_overflow", seed=seed,
+        generator_function="assay_pdf.generator.rules.gen_r0026_cmyk_tac_overflow",
+        seed=seed,
     )
 
 
@@ -540,11 +650,18 @@ def gen_r0027_devicergb(
         content = b"q\n/DeviceRGB cs 0.8 0.2 0.2 sc\n200 300 200 100 re f\nQ\n"
         append_content_stream(pdf, page, content)
         pdf.save(output_path, object_stream_mode=pikepdf.ObjectStreamMode.preserve)
-    stamp_deterministic(output_path, rule_id="R0027", variant_kebab=variant.kebab, seed=seed, title=title)
+    stamp_deterministic(
+        output_path, rule_id="R0027", variant_kebab=variant.kebab, seed=seed, title=title
+    )
     return _build_entry(
-        output_path=output_path, repo_root=repo_root, category="negative", primary_rule_id="R0027",
-        variant=variant, description="Path filled with DeviceRGB color — forbidden by R0027 in early-binding mode.",
-        generator_function="assay_pdf.generator.rules.gen_r0027_devicergb", seed=seed,
+        output_path=output_path,
+        repo_root=repo_root,
+        category="negative",
+        primary_rule_id="R0027",
+        variant=variant,
+        description="Path filled with DeviceRGB color — forbidden by R0027 in early-binding mode.",
+        generator_function="assay_pdf.generator.rules.gen_r0027_devicergb",
+        seed=seed,
     )
 
 
@@ -583,12 +700,18 @@ def gen_r0031_low_res_color_image(
         content = b"q\n400 0 0 400 50 50 cm\n/Im0 Do\nQ\n"
         append_content_stream(pdf, page, content)
         pdf.save(output_path, object_stream_mode=pikepdf.ObjectStreamMode.preserve)
-    stamp_deterministic(output_path, rule_id="R0031", variant_kebab=variant.kebab, seed=seed, title=title)
+    stamp_deterministic(
+        output_path, rule_id="R0031", variant_kebab=variant.kebab, seed=seed, title=title
+    )
     return _build_entry(
-        output_path=output_path, repo_root=repo_root, category="negative", primary_rule_id="R0031",
+        output_path=output_path,
+        repo_root=repo_root,
+        category="negative",
+        primary_rule_id="R0031",
         variant=variant,
         description=f"50x50 DeviceCMYK image scaled to 400pt = ~9 ppi effective; threshold A = {variant.min_image_res_color} ppi.",
-        generator_function="assay_pdf.generator.rules.gen_r0031_low_res_color_image", seed=seed,
+        generator_function="assay_pdf.generator.rules.gen_r0031_low_res_color_image",
+        seed=seed,
     )
 
 
@@ -626,12 +749,18 @@ def gen_r0032_low_res_1bit(
         content = b"q\n400 0 0 400 50 350 cm\n/Im1bit Do\nQ\n"
         append_content_stream(pdf, page, content)
         pdf.save(output_path, object_stream_mode=pikepdf.ObjectStreamMode.preserve)
-    stamp_deterministic(output_path, rule_id="R0032", variant_kebab=variant.kebab, seed=seed, title=title)
+    stamp_deterministic(
+        output_path, rule_id="R0032", variant_kebab=variant.kebab, seed=seed, title=title
+    )
     return _build_entry(
-        output_path=output_path, repo_root=repo_root, category="negative", primary_rule_id="R0032",
+        output_path=output_path,
+        repo_root=repo_root,
+        category="negative",
+        primary_rule_id="R0032",
         variant=variant,
         description=f"100x100 1-bit image scaled to 400pt = 18 ppi; threshold A = {variant.min_image_res_1bit} ppi.",
-        generator_function="assay_pdf.generator.rules.gen_r0032_low_res_1bit", seed=seed,
+        generator_function="assay_pdf.generator.rules.gen_r0032_low_res_1bit",
+        seed=seed,
     )
 
 
@@ -646,25 +775,40 @@ def gen_r0034_ocg_no_configs(
     title = "AssayPDF R0034 negative — OCProperties without Configs"
     build_base_pdfx4(output_path, variant=variant, repo_root=repo_root, title=title)
     with pikepdf.open(output_path, allow_overwriting_input=True) as pdf:
-        ocg = pdf.make_indirect(pikepdf.Dictionary({
-            "/Type": pikepdf.Name("/OCG"),
-            "/Name": pikepdf.String("LayerA"),
-        }))
-        pdf.Root["/OCProperties"] = pikepdf.Dictionary({
-            "/OCGs": pikepdf.Array([ocg]),
-            "/D": pikepdf.Dictionary({
-                "/Order": pikepdf.Array([ocg]),
-                "/ON": pikepdf.Array([ocg]),
-                "/OFF": pikepdf.Array([]),
-            }),
-            # Intentionally NO /Configs key
-        })
+        ocg = pdf.make_indirect(
+            pikepdf.Dictionary(
+                {
+                    "/Type": pikepdf.Name("/OCG"),
+                    "/Name": pikepdf.String("LayerA"),
+                }
+            )
+        )
+        pdf.Root["/OCProperties"] = pikepdf.Dictionary(
+            {
+                "/OCGs": pikepdf.Array([ocg]),
+                "/D": pikepdf.Dictionary(
+                    {
+                        "/Order": pikepdf.Array([ocg]),
+                        "/ON": pikepdf.Array([ocg]),
+                        "/OFF": pikepdf.Array([]),
+                    }
+                ),
+                # Intentionally NO /Configs key
+            }
+        )
         pdf.save(output_path, object_stream_mode=pikepdf.ObjectStreamMode.preserve)
-    stamp_deterministic(output_path, rule_id="R0034", variant_kebab=variant.kebab, seed=seed, title=title)
+    stamp_deterministic(
+        output_path, rule_id="R0034", variant_kebab=variant.kebab, seed=seed, title=title
+    )
     return _build_entry(
-        output_path=output_path, repo_root=repo_root, category="negative", primary_rule_id="R0034",
-        variant=variant, description="OCProperties present, /Configs array missing — violates R0034 structural requirement.",
-        generator_function="assay_pdf.generator.rules.gen_r0034_ocg_no_configs", seed=seed,
+        output_path=output_path,
+        repo_root=repo_root,
+        category="negative",
+        primary_rule_id="R0034",
+        variant=variant,
+        description="OCProperties present, /Configs array missing — violates R0034 structural requirement.",
+        generator_function="assay_pdf.generator.rules.gen_r0034_ocg_no_configs",
+        seed=seed,
     )
 
 
@@ -682,21 +826,30 @@ def gen_r0035_rgb_output_intent(
         # Synthesize a tiny "ICC" stream marked as 3-component (RGB) — verapdf will see /N 3
         fake_rgb_icc = pdf.make_stream(b"\x00" * 256)
         fake_rgb_icc["/N"] = 3
-        oi = pikepdf.Dictionary({
-            "/Type": pikepdf.Name("/OutputIntent"),
-            "/S": pikepdf.Name("/GTS_PDFX"),
-            "/OutputCondition": pikepdf.String("sRGB IEC61966-2.1"),
-            "/OutputConditionIdentifier": pikepdf.String("sRGB IEC61966-2.1"),
-            "/RegistryName": pikepdf.String("http://www.color.org"),
-            "/DestOutputProfile": fake_rgb_icc,
-        })
+        oi = pikepdf.Dictionary(
+            {
+                "/Type": pikepdf.Name("/OutputIntent"),
+                "/S": pikepdf.Name("/GTS_PDFX"),
+                "/OutputCondition": pikepdf.String("sRGB IEC61966-2.1"),
+                "/OutputConditionIdentifier": pikepdf.String("sRGB IEC61966-2.1"),
+                "/RegistryName": pikepdf.String("http://www.color.org"),
+                "/DestOutputProfile": fake_rgb_icc,
+            }
+        )
         pdf.Root["/OutputIntents"] = pikepdf.Array([oi])
         pdf.save(output_path, object_stream_mode=pikepdf.ObjectStreamMode.preserve)
-    stamp_deterministic(output_path, rule_id="R0035", variant_kebab=variant.kebab, seed=seed, title=title)
+    stamp_deterministic(
+        output_path, rule_id="R0035", variant_kebab=variant.kebab, seed=seed, title=title
+    )
     return _build_entry(
-        output_path=output_path, repo_root=repo_root, category="negative", primary_rule_id="R0035",
-        variant=variant, description="OutputIntent /DestOutputProfile has /N 3 (RGB) — R0035 requires CMYK (/N 4).",
-        generator_function="assay_pdf.generator.rules.gen_r0035_rgb_output_intent", seed=seed,
+        output_path=output_path,
+        repo_root=repo_root,
+        category="negative",
+        primary_rule_id="R0035",
+        variant=variant,
+        description="OutputIntent /DestOutputProfile has /N 3 (RGB) — R0035 requires CMYK (/N 4).",
+        generator_function="assay_pdf.generator.rules.gen_r0035_rgb_output_intent",
+        seed=seed,
     )
 
 
@@ -711,12 +864,18 @@ def gen_r0037_no_scaling(
     title = "AssayPDF R0037 negative — Scaling Factor and Viewing Distance absent"
     # Just the baseline; the absence of the required XMP keys IS the violation
     build_base_pdfx4(output_path, variant=variant, repo_root=repo_root, title=title)
-    stamp_deterministic(output_path, rule_id="R0037", variant_kebab=variant.kebab, seed=seed, title=title)
+    stamp_deterministic(
+        output_path, rule_id="R0037", variant_kebab=variant.kebab, seed=seed, title=title
+    )
     return _build_entry(
-        output_path=output_path, repo_root=repo_root, category="negative", primary_rule_id="R0037",
+        output_path=output_path,
+        repo_root=repo_root,
+        category="negative",
+        primary_rule_id="R0037",
         variant=variant,
         description="No Scaling Factor (D0025) or Viewing Distance (D0026) metadata — required for sign/display.",
-        generator_function="assay_pdf.generator.rules.gen_r0037_no_scaling", seed=seed,
+        generator_function="assay_pdf.generator.rules.gen_r0037_no_scaling",
+        seed=seed,
     )
 
 
@@ -730,12 +889,18 @@ def gen_r1001_no_processing_steps(
     """R1001: packaging variant PDF without ISO 19593-1 Processing Steps OCG layers."""
     title = "AssayPDF R1001 negative — packaging without processing steps"
     build_base_pdfx4(output_path, variant=variant, repo_root=repo_root, title=title)
-    stamp_deterministic(output_path, rule_id="R1001", variant_kebab=variant.kebab, seed=seed, title=title)
+    stamp_deterministic(
+        output_path, rule_id="R1001", variant_kebab=variant.kebab, seed=seed, title=title
+    )
     return _build_entry(
-        output_path=output_path, repo_root=repo_root, category="negative", primary_rule_id="R1001",
+        output_path=output_path,
+        repo_root=repo_root,
+        category="negative",
+        primary_rule_id="R1001",
         variant=variant,
         description="Packaging-variant PDF lacks ISO 19593-1 Processing Steps layer (Cutting/Creasing/etc.).",
-        generator_function="assay_pdf.generator.rules.gen_r1001_no_processing_steps", seed=seed,
+        generator_function="assay_pdf.generator.rules.gen_r1001_no_processing_steps",
+        seed=seed,
     )
 
 
@@ -751,9 +916,14 @@ def _make_stub(rule_id: str, description: str):  # type: ignore[no-untyped-def]
         *, variant: VariantConfig, output_path: Path, repo_root: Path, seed: int = 0
     ) -> ManifestEntry:
         return _stub_negative(
-            rule_id=rule_id, description=description, variant=variant,
-            output_path=output_path, repo_root=repo_root, seed=seed,
+            rule_id=rule_id,
+            description=description,
+            variant=variant,
+            output_path=output_path,
+            repo_root=repo_root,
+            seed=seed,
         )
+
     return _stub
 
 

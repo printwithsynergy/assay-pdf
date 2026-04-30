@@ -72,7 +72,14 @@ class PdfToolboxRunner(Runner):
         profile_dir = Path(
             os.environ.get(
                 "ASSAY_PDFTOOLBOX_PROFILE_DIR",
-                str(Path.home() / "Library" / "Application Support" / "callas software" / "pdfToolbox" / "Profiles"),
+                str(
+                    Path.home()
+                    / "Library"
+                    / "Application Support"
+                    / "callas software"
+                    / "pdfToolbox"
+                    / "Profiles"
+                ),
             )
         )
         path = profile_dir / filename
@@ -92,7 +99,8 @@ class PdfToolboxRunner(Runner):
             binary,
             "--analyze",
             f"--report=JSON,Path={report_path}",
-            "--profile", str(profile),
+            "--profile",
+            str(profile),
             str(pdf_path),
         ]
 

@@ -40,7 +40,9 @@ GeneratorKind = Literal["positive", "negative"]
 RULE_GENERATORS: Final[dict[tuple[str, GeneratorKind], Callable[..., ManifestEntry]]] = {}
 
 
-def register(rule_id: str, kind: GeneratorKind = "negative") -> Callable[[Callable[..., ManifestEntry]], Callable[..., ManifestEntry]]:
+def register(
+    rule_id: str, kind: GeneratorKind = "negative"
+) -> Callable[[Callable[..., ManifestEntry]], Callable[..., ManifestEntry]]:
     """Decorator: register a function as the generator for (rule_id, kind)."""
 
     def _decorator(fn: Callable[..., ManifestEntry]) -> Callable[..., ManifestEntry]:

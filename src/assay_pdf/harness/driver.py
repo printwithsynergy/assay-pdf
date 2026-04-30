@@ -46,7 +46,8 @@ def benchmark(
     target_entries = [
         e
         for e in manifest.files
-        if profile is None or any(v == profile for v in e.applicable_variants)
+        if profile is None
+        or any(v == profile for v in e.applicable_variants)
         or any(_kebab_matches(v, profile) for v in e.applicable_variants)
     ]
     log.info("Running %s against %d corpus PDFs (profile=%s)", engine, len(target_entries), profile)

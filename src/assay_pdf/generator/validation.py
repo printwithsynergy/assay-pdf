@@ -41,7 +41,15 @@ def verapdf_check(pdf_path: Path) -> tuple[bool, str]:
 
 
 def validate_corpus(*, schema_only: bool = False) -> list[tuple[str, str]]:
-    """Walk corpus/manifest.json. Verify each file's schema and (optionally) verapdf-compliance.
+    """Validate corpus/manifest.json.
+
+    With ``schema_only=True`` (used by CI): only checks that the manifest parses
+    cleanly against the pydantic CorpusManifest schema. Does NOT check whether
+    referenced PDF files exist on disk — they're gitignored and regenerated on
+    demand via `assay generate`.
+
+    With ``schema_only=False`` (used locally after `assay generate`): also
+    verifies each PDF exists and passes verapdf PDF/X-4 validation.
 
     Returns a list of (path, error_message). Empty list = all good.
     """
@@ -51,15 +59,17 @@ def validate_corpus(*, schema_only: bool = False) -> list[tuple[str, str]]:
         return [(str(manifest_path), "manifest missing — run `assay generate` first")]
 
     raw = json.loads(manifest_path.read_text(encoding="utf-8"))
+    # If pydantic validation fails, model_validate raises — caught at CLI boundary.
     manifest = CorpusManifest.model_validate(raw)
+
+    if schema_only:
+        return []
 
     failures: list[tuple[str, str]] = []
     for entry in manifest.files:
         pdf_path = repo / entry.path
         if not pdf_path.exists():
-            failures.append((entry.path, "file missing"))
-            continue
-        if schema_only:
+            failures.append((entry.path, "file missing — run `assay generate` first"))
             continue
         passed, msg = verapdf_check(pdf_path)
         if not passed:

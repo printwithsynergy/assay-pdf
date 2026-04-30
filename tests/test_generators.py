@@ -60,7 +60,9 @@ class TestGeneration:
     def test_baseline_produces_valid_pdf(self, temp_repo: Path) -> None:
         from assay_pdf.generator.orchestrator import generate_corpus
 
-        manifest = generate_corpus(only_rule="BASELINE", only_variant="sheetcmyk-cmyk", seed=0, write_manifest=False)
+        manifest = generate_corpus(
+            only_rule="BASELINE", only_variant="sheetcmyk-cmyk", seed=0, write_manifest=False
+        )
         assert len(manifest.files) == 1
         pdf_path = temp_repo / manifest.files[0].path
         assert pdf_path.exists()
@@ -75,7 +77,9 @@ class TestGeneration:
     def test_r0014_includes_courier(self, temp_repo: Path) -> None:
         from assay_pdf.generator.orchestrator import generate_corpus
 
-        manifest = generate_corpus(only_rule="R0014", only_variant="sheetcmyk-cmyk", seed=0, write_manifest=False)
+        manifest = generate_corpus(
+            only_rule="R0014", only_variant="sheetcmyk-cmyk", seed=0, write_manifest=False
+        )
         # BASELINE always runs (it's the positive). Filter to R0014.
         r0014 = [e for e in manifest.files if e.primary_rule_id == "R0014"]
         assert len(r0014) == 1
@@ -85,4 +89,6 @@ class TestGeneration:
             page = pdf.pages[0]
             font_dict = page.Resources["/Font"]
             font_names = [str(font_dict[k]["/BaseFont"]) for k in font_dict]
-            assert any("Courier" in name for name in font_names), f"Courier not found in {font_names}"
+            assert any("Courier" in name for name in font_names), (
+                f"Courier not found in {font_names}"
+            )

@@ -14,7 +14,14 @@ from assay_pdf.models import (
 )
 
 
-def _entry(path: str, *, category: str, rule_id: str | None, variant: str = "SheetCMYK CMYK", description: str = "") -> ManifestEntry:
+def _entry(
+    path: str,
+    *,
+    category: str,
+    rule_id: str | None,
+    variant: str = "SheetCMYK CMYK",
+    description: str = "",
+) -> ManifestEntry:
     return ManifestEntry(
         path=path,
         category=category,
@@ -57,7 +64,9 @@ def _manifest(files: list[ManifestEntry]) -> CorpusManifest:
 class TestScorer:
     def test_true_positive(self) -> None:
         """Negative for R0014 + engine reports R0014 → TP=1."""
-        manifest = _manifest([_entry("negative/r0014/r0014.pdf", category="negative", rule_id="R0014")])
+        manifest = _manifest(
+            [_entry("negative/r0014/r0014.pdf", category="negative", rule_id="R0014")]
+        )
         results = [_result("negative/r0014/r0014.pdf", [_hit("R0014")])]
         report = score_engine_run(
             engine="pdftoolbox", engine_version="x", corpus_manifest=manifest, results=results
@@ -68,7 +77,9 @@ class TestScorer:
 
     def test_false_negative(self) -> None:
         """Negative for R0014 + engine reports nothing → FN=1."""
-        manifest = _manifest([_entry("negative/r0014/r0014.pdf", category="negative", rule_id="R0014")])
+        manifest = _manifest(
+            [_entry("negative/r0014/r0014.pdf", category="negative", rule_id="R0014")]
+        )
         results = [_result("negative/r0014/r0014.pdf", [])]
         report = score_engine_run(
             engine="pdftoolbox", engine_version="x", corpus_manifest=manifest, results=results
@@ -79,7 +90,13 @@ class TestScorer:
 
     def test_false_positive_on_positive(self) -> None:
         """Positive baseline + engine reports R0014 anyway → FP=1."""
-        manifest = _manifest([_entry("positive/sheetcmyk-cmyk/sheetcmyk-cmyk.pdf", category="positive", rule_id=None)])
+        manifest = _manifest(
+            [
+                _entry(
+                    "positive/sheetcmyk-cmyk/sheetcmyk-cmyk.pdf", category="positive", rule_id=None
+                )
+            ]
+        )
         results = [_result("positive/sheetcmyk-cmyk/sheetcmyk-cmyk.pdf", [_hit("R0014")])]
         report = score_engine_run(
             engine="pdftoolbox", engine_version="x", corpus_manifest=manifest, results=results
@@ -89,14 +106,16 @@ class TestScorer:
 
     def test_stub_excluded(self) -> None:
         """Stub negatives don't contribute to scoring."""
-        manifest = _manifest([
-            _entry(
-                "negative/r0009/r0009.pdf",
-                category="negative",
-                rule_id="R0009",
-                description="[v0.1.1 STUB] not yet implemented",
-            )
-        ])
+        manifest = _manifest(
+            [
+                _entry(
+                    "negative/r0009/r0009.pdf",
+                    category="negative",
+                    rule_id="R0009",
+                    description="[v0.1.1 STUB] not yet implemented",
+                )
+            ]
+        )
         results = [_result("negative/r0009/r0009.pdf", [])]
         report = score_engine_run(
             engine="pdftoolbox", engine_version="x", corpus_manifest=manifest, results=results
@@ -110,7 +129,9 @@ class TestScorer:
 
     def test_misattribution(self) -> None:
         """Negative for R0014, engine reports R0007 → FN for R0014 + FP for R0007."""
-        manifest = _manifest([_entry("negative/r0014/r0014.pdf", category="negative", rule_id="R0014")])
+        manifest = _manifest(
+            [_entry("negative/r0014/r0014.pdf", category="negative", rule_id="R0014")]
+        )
         results = [_result("negative/r0014/r0014.pdf", [_hit("R0007")])]
         report = score_engine_run(
             engine="pdftoolbox", engine_version="x", corpus_manifest=manifest, results=results

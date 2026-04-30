@@ -71,7 +71,14 @@ class PitStopRunner(Runner):
         profile_dir = Path(
             os.environ.get(
                 "ASSAY_PITSTOP_PROFILE_DIR",
-                str(Path.home() / "Library" / "Application Support" / "Enfocus" / "PitStop Server" / "Preflight Profiles"),
+                str(
+                    Path.home()
+                    / "Library"
+                    / "Application Support"
+                    / "Enfocus"
+                    / "PitStop Server"
+                    / "Preflight Profiles"
+                ),
             )
         )
         path = profile_dir / filename
@@ -89,8 +96,10 @@ class PitStopRunner(Runner):
 
         args = [
             binary,
-            "--preflight", str(profile),
-            "--xml-report", str(report_path),
+            "--preflight",
+            str(profile),
+            "--xml-report",
+            str(report_path),
             str(pdf_path),
         ]
 

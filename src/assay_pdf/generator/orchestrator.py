@@ -87,9 +87,7 @@ def generate_corpus(
 
         # Pick variants
         if kind == "positive":
-            target_variants = (
-                [get_variant(only_variant)] if only_variant else list(VARIANTS)
-            )
+            target_variants = [get_variant(only_variant)] if only_variant else list(VARIANTS)
         else:
             # One negative per rule, on its representative variant
             picked = only_variant or _pick_variant_for_rule(rule_id, applicability)

@@ -70,7 +70,6 @@ assay = "assay_pdf.cli:app"
 Homepage = "https://github.com/thinkneverland/assay-pdf"
 Repository = "https://github.com/thinkneverland/assay-pdf"
 Issues = "https://github.com/thinkneverland/assay-pdf/issues"
-"Sister project: lintPDF" = "https://github.com/thinkneverland/lint-pdf"
 "GWG 2022 spec" = "https://gwg.org/technical-specifications/gwg-2022-specifications/"
 
 [build-system]

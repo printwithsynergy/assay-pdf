@@ -26,5 +26,10 @@ def ingest(
         manifest.model_dump_json(indent=2, exclude_none=False) + "\n",
         encoding="utf-8",
     )
-    log.info("Wrote %s (%d requirements, %d variants)", out, len(manifest.requirements), len(manifest.variants))
+    log.info(
+        "Wrote %s (%d requirements, %d variants)",
+        out,
+        len(manifest.requirements),
+        len(manifest.variants),
+    )
     return out

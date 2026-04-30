@@ -32,24 +32,34 @@ def test_baseline_is_deterministic(temp_corpus_dir: Path) -> None:
     """Two runs of the positive baseline for one variant produce identical sha256."""
     variant = get_variant("sheetcmyk-cmyk")
 
-    m1 = generate_corpus(only_rule="BASELINE", only_variant=variant.kebab, seed=0, write_manifest=False)
+    m1 = generate_corpus(
+        only_rule="BASELINE", only_variant=variant.kebab, seed=0, write_manifest=False
+    )
     sha_first = m1.files[0].sha256
 
-    m2 = generate_corpus(only_rule="BASELINE", only_variant=variant.kebab, seed=0, write_manifest=False)
+    m2 = generate_corpus(
+        only_rule="BASELINE", only_variant=variant.kebab, seed=0, write_manifest=False
+    )
     sha_second = m2.files[0].sha256
 
     # Recompute fresh to make sure the manifest entry matches the file on disk
     pdf_path = temp_corpus_dir / m2.files[0].path
     assert sha256_file(pdf_path) == sha_second
-    assert sha_first == sha_second, "Two generate runs produced different sha256 — generator not deterministic"
+    assert sha_first == sha_second, (
+        "Two generate runs produced different sha256 — generator not deterministic"
+    )
 
 
 def test_r0014_courier_is_deterministic(temp_corpus_dir: Path) -> None:
     """The R0014 negative is also deterministic across runs."""
     variant = get_variant("sheetcmyk-cmyk")
 
-    m1 = generate_corpus(only_rule="R0014", only_variant=variant.kebab, seed=0, write_manifest=False)
-    m2 = generate_corpus(only_rule="R0014", only_variant=variant.kebab, seed=0, write_manifest=False)
+    m1 = generate_corpus(
+        only_rule="R0014", only_variant=variant.kebab, seed=0, write_manifest=False
+    )
+    m2 = generate_corpus(
+        only_rule="R0014", only_variant=variant.kebab, seed=0, write_manifest=False
+    )
 
     by_rule_1 = {(e.primary_rule_id or "BASELINE", e.path): e.sha256 for e in m1.files}
     by_rule_2 = {(e.primary_rule_id or "BASELINE", e.path): e.sha256 for e in m2.files}

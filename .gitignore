@@ -22,7 +22,8 @@ coverage.xml
 
 # ─── uv ─────────────────────────────────────────────────────────────────────────
 .uv/
-uv.lock
+# uv.lock IS committed — pins exact dep versions for reproducible CI builds (same
+# role as Cargo.lock / package-lock.json).
 
 # ─── Build / dist ──────────────────────────────────────────────────────────────
 build/

@@ -19,7 +19,7 @@ AssayPDF is a benchmark kit that:
 
 The [GWG 2015 Compliancy Test Suite](https://gwg.org/) is gated to GWG vendor members. The GWG 2022 spec ships with no public test corpus at all. AssayPDF closes that gap so anyone can self-benchmark a preflight engine without paying for vendor membership.
 
-It also doubles as the credibility layer for [lintPDF](https://github.com/thinkneverland/lint-pdf) — published accuracy comparisons against incumbents that none of those incumbents publish themselves.
+It also doubles as the credibility layer for **lintPDF** (Think Neverland's PDF preflight SaaS, currently in private development) — published accuracy comparisons against incumbents that none of those incumbents publish themselves.
 
 ## Quick start
 
@@ -114,4 +114,8 @@ ICC profiles bundled under `src/assay_pdf/generator/icc/` are redistributed unde
 
 ## Sister projects
 
-- [lintPDF](https://github.com/thinkneverland/lint-pdf) — API-first PDF preflight SaaS this benchmark validates against
+Think Neverland's PDF tooling family:
+
+- **lintPDF** — API-first PDF preflight SaaS this benchmark validates against. Private during development; integration runner ships when the API is published.
+- **[sift-pdf](https://github.com/thinkneverland/sift-pdf)** — open-source PDF preflight engine. AssayPDF will benchmark sift-pdf alongside the commercial incumbents once a runner lands.
+- **loupe-pdf** — open-source interactive PDF viewer. Public release coming soon.

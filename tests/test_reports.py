@@ -37,15 +37,36 @@ def temp_repo_with_results(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> P
         tmp_path / "results",
         engine="pdftoolbox",
         scores=[
-            RuleScore(rule_id="R0014", variant="SheetCMYK CMYK", true_positives=1, false_positives=0, true_negatives=0, false_negatives=0),
-            RuleScore(rule_id="R0007", variant="SheetCMYK CMYK", true_positives=0, false_positives=2, true_negatives=0, false_negatives=1),
+            RuleScore(
+                rule_id="R0014",
+                variant="SheetCMYK CMYK",
+                true_positives=1,
+                false_positives=0,
+                true_negatives=0,
+                false_negatives=0,
+            ),
+            RuleScore(
+                rule_id="R0007",
+                variant="SheetCMYK CMYK",
+                true_positives=0,
+                false_positives=2,
+                true_negatives=0,
+                false_negatives=1,
+            ),
         ],
     )
     _write_score(
         tmp_path / "results",
         engine="pitstop",
         scores=[
-            RuleScore(rule_id="R0014", variant="SheetCMYK CMYK", true_positives=1, false_positives=0, true_negatives=0, false_negatives=0),
+            RuleScore(
+                rule_id="R0014",
+                variant="SheetCMYK CMYK",
+                true_positives=1,
+                false_positives=0,
+                true_negatives=0,
+                false_negatives=0,
+            ),
         ],
     )
     return tmp_path

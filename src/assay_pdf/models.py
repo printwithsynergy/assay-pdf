@@ -102,7 +102,9 @@ class ManifestEntry(BaseModel):
         pattern=r"^R\d{4}$",
         description="The single rule this file is designed to fail (negatives only).",
     )
-    applicable_variants: list[str] = Field(description="Variant names this PDF can be benchmarked under.")
+    applicable_variants: list[str] = Field(
+        description="Variant names this PDF can be benchmarked under."
+    )
     expected_severity: dict[str, Severity] = Field(
         default_factory=dict,
         description="Per-variant expected severity (negatives only).",
@@ -163,7 +165,9 @@ class RuleScore(BaseModel):
 
     @property
     def accuracy(self) -> float:
-        total = self.true_positives + self.false_positives + self.true_negatives + self.false_negatives
+        total = (
+            self.true_positives + self.false_positives + self.true_negatives + self.false_negatives
+        )
         return (self.true_positives + self.true_negatives) / total if total else 0.0
 
     @property
