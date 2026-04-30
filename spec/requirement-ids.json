@@ -1,0 +1,3803 @@
+{
+  "spec_version": "GWG 2022",
+  "spec_source_url": "https://docs.google.com/spreadsheets/d/1fz7I7pVl0uOTqEqmXeFIEo2LQm97AluHnlTMikzHenI/edit",
+  "parsed_at": "2026-04-30T14:53:32.509572Z",
+  "parser_version": "0.1.0",
+  "spec_xlsx_sha256": "303824eeb28134275b60d5330d7dba7b1b3e1822b137611a956768209a25509e",
+  "variants": [
+    {
+      "name": "Magazine Ads CMYK",
+      "kebab": "magazine-ads-cmyk"
+    },
+    {
+      "name": "Magazine Ads CMYK + RGB",
+      "kebab": "magazine-ads-cmyk-plus-rgb"
+    },
+    {
+      "name": "Newspaper Ads CMYK",
+      "kebab": "newspaper-ads-cmyk"
+    },
+    {
+      "name": "Newspaper Ads CMYK + RGB",
+      "kebab": "newspaper-ads-cmyk-plus-rgb"
+    },
+    {
+      "name": "SheetCMYK CMYK",
+      "kebab": "sheetcmyk-cmyk"
+    },
+    {
+      "name": "SheetCMYK CMYK + RGB",
+      "kebab": "sheetcmyk-cmyk-plus-rgb"
+    },
+    {
+      "name": "SheetSpot CMYK",
+      "kebab": "sheetspot-cmyk"
+    },
+    {
+      "name": "SheetSpot CMYK + RGB",
+      "kebab": "sheetspot-cmyk-plus-rgb"
+    },
+    {
+      "name": "WebCMYK CMYK",
+      "kebab": "webcmyk-cmyk"
+    },
+    {
+      "name": "WebCMYK CMYK + RGB",
+      "kebab": "webcmyk-cmyk-plus-rgb"
+    },
+    {
+      "name": "WebSpot CMYK",
+      "kebab": "webspot-cmyk"
+    },
+    {
+      "name": "WebSpot CMYK + RGB",
+      "kebab": "webspot-cmyk-plus-rgb"
+    },
+    {
+      "name": "WebCMYKNews CMYK",
+      "kebab": "webcmyknews-cmyk"
+    },
+    {
+      "name": "WebCMYKNews CMYK + RGB",
+      "kebab": "webcmyknews-cmyk-plus-rgb"
+    },
+    {
+      "name": "Packaging Offset",
+      "kebab": "packaging-offset"
+    },
+    {
+      "name": "Packaging Gravure",
+      "kebab": "packaging-gravure"
+    },
+    {
+      "name": "Packaging Flexo",
+      "kebab": "packaging-flexo"
+    },
+    {
+      "name": "Label & Leaflet",
+      "kebab": "label-leaflet"
+    },
+    {
+      "name": "Folding Carton & Corrugated Box",
+      "kebab": "folding-carton-corrugated-box"
+    },
+    {
+      "name": "Flexible",
+      "kebab": "flexible"
+    },
+    {
+      "name": "Corrugated Display",
+      "kebab": "corrugated-display"
+    },
+    {
+      "name": "Digital Print",
+      "kebab": "digital-print"
+    },
+    {
+      "name": "Large Format Print",
+      "kebab": "large-format-print"
+    }
+  ],
+  "requirements": [
+    {
+      "id": "R0001",
+      "text_id": "r-base-standards",
+      "version": 1.0,
+      "title": "Base ISO standards",
+      "text": "A PDF file shall be compliant to the ISO standard(s): <A>. In case of (perceived) conflict, the requirements of the base ISO standards shall always take precedence over any requirements defined here.",
+      "notes": null,
+      "discussion": null,
+      "applicability": {
+        "Magazine Ads CMYK": {
+          "severity": "error",
+          "additional_values": {
+            "A": "ISO 15930-7"
+          }
+        },
+        "Magazine Ads CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {
+            "A": "ISO 15930-7"
+          }
+        },
+        "Newspaper Ads CMYK": {
+          "severity": "error",
+          "additional_values": {
+            "A": "ISO 15930-7"
+          }
+        },
+        "Newspaper Ads CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {
+            "A": "ISO 15930-7"
+          }
+        },
+        "SheetCMYK CMYK": {
+          "severity": "error",
+          "additional_values": {
+            "A": "ISO 15930-7"
+          }
+        },
+        "SheetCMYK CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {
+            "A": "ISO 15930-7"
+          }
+        },
+        "SheetSpot CMYK": {
+          "severity": "error",
+          "additional_values": {
+            "A": "ISO 15930-7"
+          }
+        },
+        "SheetSpot CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {
+            "A": "ISO 15930-7"
+          }
+        },
+        "WebCMYK CMYK": {
+          "severity": "error",
+          "additional_values": {
+            "A": "ISO 15930-7"
+          }
+        },
+        "WebCMYK CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {
+            "A": "ISO 15930-7"
+          }
+        },
+        "WebSpot CMYK": {
+          "severity": "error",
+          "additional_values": {
+            "A": "ISO 15930-7"
+          }
+        },
+        "WebSpot CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {
+            "A": "ISO 15930-7"
+          }
+        },
+        "WebCMYKNews CMYK": {
+          "severity": "error",
+          "additional_values": {
+            "A": "ISO 15930-7"
+          }
+        },
+        "WebCMYKNews CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {
+            "A": "ISO 15930-7"
+          }
+        },
+        "Packaging Offset": {
+          "severity": "error",
+          "additional_values": {
+            "A": "ISO 15930-7"
+          }
+        },
+        "Packaging Gravure": {
+          "severity": "error",
+          "additional_values": {
+            "A": "ISO 15930-7"
+          }
+        },
+        "Packaging Flexo": {
+          "severity": "error",
+          "additional_values": {
+            "A": "ISO 15930-7"
+          }
+        },
+        "Label & Leaflet": {
+          "severity": "error",
+          "additional_values": {
+            "A": "ISO 15930-7"
+          }
+        },
+        "Folding Carton & Corrugated Box": {
+          "severity": "error",
+          "additional_values": {
+            "A": "ISO 15930-7"
+          }
+        },
+        "Flexible": {
+          "severity": "error",
+          "additional_values": {
+            "A": "ISO 15930-7"
+          }
+        },
+        "Corrugated Display": {
+          "severity": "error",
+          "additional_values": {
+            "A": "ISO 15930-7"
+          }
+        },
+        "Digital Print": {
+          "severity": "error",
+          "additional_values": {
+            "A": "ISO 15930-7"
+          }
+        },
+        "Large Format Print": {
+          "severity": "error",
+          "additional_values": {
+            "A": "ISO 15930-7"
+          }
+        }
+      }
+    },
+    {
+      "id": "R0002",
+      "text_id": "r-page-scaling",
+      "version": 1.0,
+      "title": "Page scaling",
+      "text": "No page dictionary in the PDF file shall contain the UserUnit key.",
+      "notes": null,
+      "discussion": null,
+      "applicability": {
+        "Magazine Ads CMYK": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Magazine Ads CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Newspaper Ads CMYK": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Newspaper Ads CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "SheetCMYK CMYK": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "SheetCMYK CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "SheetSpot CMYK": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "SheetSpot CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "WebCMYK CMYK": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "WebCMYK CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "WebSpot CMYK": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "WebSpot CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "WebCMYKNews CMYK": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "WebCMYKNews CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Packaging Offset": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Packaging Gravure": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Packaging Flexo": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Label & Leaflet": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Folding Carton & Corrugated Box": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Flexible": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Corrugated Display": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Digital Print": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Large Format Print": {
+          "severity": "warning",
+          "additional_values": {}
+        }
+      }
+    },
+    {
+      "id": "R0003",
+      "text_id": "r-visible-page-area",
+      "version": 1.0,
+      "title": "Visible page area",
+      "text": "For all pages in the PDF file, the CropBox shall coincide with the MediaBox.",
+      "notes": "This can be accomplished by explicitly defining the CropBox with the same values as the MediaBox, or by omitting the CropBox (in which case it falls back to the values defined in the MediaBox).",
+      "discussion": null,
+      "applicability": {
+        "Magazine Ads CMYK": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Magazine Ads CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Newspaper Ads CMYK": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Newspaper Ads CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "SheetCMYK CMYK": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "SheetCMYK CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "SheetSpot CMYK": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "SheetSpot CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "WebCMYK CMYK": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "WebCMYK CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "WebSpot CMYK": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "WebSpot CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "WebCMYKNews CMYK": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "WebCMYKNews CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Packaging Offset": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Packaging Gravure": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Packaging Flexo": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Label & Leaflet": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Folding Carton & Corrugated Box": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Flexible": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Corrugated Display": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Digital Print": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Large Format Print": {
+          "severity": "error",
+          "additional_values": {}
+        }
+      }
+    },
+    {
+      "id": "R0004",
+      "text_id": "r-same-size-orientation",
+      "version": 1.0,
+      "title": "Same page size and orientation",
+      "text": "The size of the TrimBox shall be the same for all pages in the PDF file. No pages in the PDF file shall be rotated through the use of the Rotate key.",
+      "notes": null,
+      "discussion": null,
+      "applicability": {
+        "SheetCMYK CMYK": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "SheetCMYK CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "SheetSpot CMYK": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "SheetSpot CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "WebCMYK CMYK": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "WebCMYK CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "WebSpot CMYK": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "WebSpot CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "WebCMYKNews CMYK": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "WebCMYKNews CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Packaging Offset": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Packaging Gravure": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Packaging Flexo": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Label & Leaflet": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Folding Carton & Corrugated Box": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Flexible": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Corrugated Display": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Digital Print": {
+          "severity": "warning",
+          "additional_values": {}
+        }
+      }
+    },
+    {
+      "id": "R0005",
+      "text_id": "r-empty-page",
+      "version": 1.0,
+      "title": "Empty page",
+      "text": "No page in the PDF file shall be completely empty. A page is considered empty if the Total Ink Coverage (D0027) is equal to zero.",
+      "notes": null,
+      "discussion": null,
+      "applicability": {
+        "Magazine Ads CMYK": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Magazine Ads CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Newspaper Ads CMYK": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Newspaper Ads CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "SheetCMYK CMYK": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "SheetCMYK CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "SheetSpot CMYK": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "SheetSpot CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "WebCMYK CMYK": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "WebCMYK CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "WebSpot CMYK": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "WebSpot CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "WebCMYKNews CMYK": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "WebCMYKNews CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Packaging Offset": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Packaging Gravure": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Packaging Flexo": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Label & Leaflet": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Folding Carton & Corrugated Box": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Flexible": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Corrugated Display": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Large Format Print": {
+          "severity": "warning",
+          "additional_values": {}
+        }
+      }
+    },
+    {
+      "id": "R0006",
+      "text_id": "r-one-page",
+      "version": 1.0,
+      "title": "One page",
+      "text": "The number of pages in the PDF file shall be exactly one (1).",
+      "notes": null,
+      "discussion": null,
+      "applicability": {
+        "Magazine Ads CMYK": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Magazine Ads CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Newspaper Ads CMYK": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Newspaper Ads CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Packaging Offset": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Packaging Gravure": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Packaging Flexo": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Label & Leaflet": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Folding Carton & Corrugated Box": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Flexible": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Corrugated Display": {
+          "severity": "warning",
+          "additional_values": {}
+        }
+      }
+    },
+    {
+      "id": "R0007",
+      "text_id": "r-overprint-white-text",
+      "version": 1.0,
+      "title": "Overprinting white text",
+      "text": "An Overlapping (D0031) Text Element (D0005) that is set to fill, or stroke and fill, and uses a White Fill Colour (D0011), shall not use Fill Overprint (D0020). \nAn Overlapping (D0031) Text Element (D0005) that is set to stroke, or stroke and fill, and uses a White Stroke Colour (D0012), shall not use Stroke Overprint (D0021).",
+      "notes": null,
+      "discussion": null,
+      "applicability": {
+        "Magazine Ads CMYK": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Magazine Ads CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Newspaper Ads CMYK": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Newspaper Ads CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "SheetCMYK CMYK": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "SheetCMYK CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "SheetSpot CMYK": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "SheetSpot CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "WebCMYK CMYK": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "WebCMYK CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "WebSpot CMYK": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "WebSpot CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "WebCMYKNews CMYK": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "WebCMYKNews CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Packaging Offset": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Packaging Gravure": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Packaging Flexo": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Label & Leaflet": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Folding Carton & Corrugated Box": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Flexible": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Corrugated Display": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Digital Print": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Large Format Print": {
+          "severity": "error",
+          "additional_values": {}
+        }
+      }
+    },
+    {
+      "id": "R0008",
+      "text_id": "r-overprint-white-path",
+      "version": 1.0,
+      "title": "Overprinting white paths",
+      "text": "An Overlapping (D0031) Path Element (D0004) that is set to fill, or stroke and fill, and uses a White Fill Colour (D0011), shall not use Fill Overprint (D0020). \nAn Overlapping (D0031) Path Element (D0004) that is set to stroke, or stroke and fill, and uses a White Stroke Colour (D0012), shall not use Stroke Overprint (D0021).",
+      "notes": null,
+      "discussion": null,
+      "applicability": {
+        "Magazine Ads CMYK": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Magazine Ads CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Newspaper Ads CMYK": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Newspaper Ads CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "SheetCMYK CMYK": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "SheetCMYK CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "SheetSpot CMYK": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "SheetSpot CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "WebCMYK CMYK": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "WebCMYK CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "WebSpot CMYK": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "WebSpot CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "WebCMYKNews CMYK": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "WebCMYKNews CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Packaging Offset": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Packaging Gravure": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Packaging Flexo": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Label & Leaflet": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Folding Carton & Corrugated Box": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Flexible": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Corrugated Display": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Digital Print": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Large Format Print": {
+          "severity": "warning",
+          "additional_values": {}
+        }
+      }
+    },
+    {
+      "id": "R0009",
+      "text_id": "r-overprint-pure-black-text",
+      "version": 1.0,
+      "title": "Overprinting pure black text",
+      "text": "An Overlapping (D0031) Text Element (D0005) that is set to fill, or stroke and fill, and uses a Black Fill Colour (D0014) and has an Effective Font Size (D0019) smaller than <A> point shall use Fill Overprint (D0020).\nAn Overlapping (D0031) Text Element that is set to stroke, or stroke and fill, and uses a Black Stroke Colour (D0015) and has an Effective Font Size (D0019) smaller than <A> point shall use Stroke Overprint (D0021).\n\n- If the colour space in use for either of the above rules is defined as DeviceCMYK, the value of the OPM key additionally shall be set to 1.\n- If the colour space in use for the fill or stroke part of the above rules is defined as DeviceGray, that rule shall not apply at all.",
+      "notes": null,
+      "discussion": null,
+      "applicability": {
+        "Magazine Ads CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "12"
+          }
+        },
+        "Magazine Ads CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "12"
+          }
+        },
+        "Newspaper Ads CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "12"
+          }
+        },
+        "Newspaper Ads CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "12"
+          }
+        },
+        "SheetCMYK CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "12"
+          }
+        },
+        "SheetCMYK CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "12"
+          }
+        },
+        "SheetSpot CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "12"
+          }
+        },
+        "SheetSpot CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "12"
+          }
+        },
+        "WebCMYK CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "12"
+          }
+        },
+        "WebCMYK CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "12"
+          }
+        },
+        "WebSpot CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "12"
+          }
+        },
+        "WebSpot CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "12"
+          }
+        },
+        "WebCMYKNews CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "12"
+          }
+        },
+        "WebCMYKNews CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "12"
+          }
+        },
+        "Packaging Offset": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "12"
+          }
+        },
+        "Packaging Gravure": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "12"
+          }
+        },
+        "Packaging Flexo": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "12"
+          }
+        },
+        "Label & Leaflet": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "12"
+          }
+        },
+        "Folding Carton & Corrugated Box": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "12"
+          }
+        },
+        "Flexible": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "12"
+          }
+        },
+        "Corrugated Display": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "12"
+          }
+        },
+        "Large Format Print": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "12"
+          }
+        }
+      }
+    },
+    {
+      "id": "R0010",
+      "text_id": "r-overprint-pure-thin-line",
+      "version": 1.0,
+      "title": "Overprinting pure black thin lines",
+      "text": "An Overlapping (D0031) Path Element (D0004) that is filled, and uses Black Fill Colour (D0014), and has an Effective Line Width (D0017) less than <A>, shall use Fill Overprint (D0020).\nAn Overlapping (D0031) Path Element (D0004) that is stroked, and uses Black Stroke Colour (D0015), and has an Effective Line Width (D0017) less than <A>, shall use Stroke Overprint (D0021).\n\n- If the colour space in use for either of the above rules is defined as DeviceCMYK, the value of the OPM key additionally shall be set to 1.\n- If the colour space in use for the fill or stroke part of the above rules is defined as DeviceGray, that rule shall not apply at all.",
+      "notes": null,
+      "discussion": null,
+      "applicability": {
+        "Magazine Ads CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "2"
+          }
+        },
+        "Magazine Ads CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "2"
+          }
+        },
+        "Newspaper Ads CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "2"
+          }
+        },
+        "Newspaper Ads CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "2"
+          }
+        },
+        "SheetCMYK CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "2"
+          }
+        },
+        "SheetCMYK CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "2"
+          }
+        },
+        "SheetSpot CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "2"
+          }
+        },
+        "SheetSpot CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "2"
+          }
+        },
+        "WebCMYK CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "2"
+          }
+        },
+        "WebCMYK CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "2"
+          }
+        },
+        "WebSpot CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "2"
+          }
+        },
+        "WebSpot CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "2"
+          }
+        },
+        "WebCMYKNews CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "2"
+          }
+        },
+        "WebCMYKNews CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "2"
+          }
+        },
+        "Packaging Offset": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "2"
+          }
+        },
+        "Packaging Gravure": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "2"
+          }
+        },
+        "Packaging Flexo": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "2"
+          }
+        },
+        "Label & Leaflet": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "2"
+          }
+        },
+        "Folding Carton & Corrugated Box": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "2"
+          }
+        },
+        "Flexible": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "2"
+          }
+        },
+        "Corrugated Display": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "2"
+          }
+        }
+      }
+    },
+    {
+      "id": "R0011",
+      "text_id": "r-overprint-pure-small-gray-text",
+      "version": 1.0,
+      "title": "Overprinting pure black small text in DeviceGray",
+      "text": "An Overlapping (D0031) Text Element (D0005) with an Effective Font Size (D0019) less than <A> shall not have a stroke colour space of DeviceGray if it is stroked, and it shall not have a fill colour space of DeviceGray if it is filled.",
+      "notes": "Even though this requirement does not mention overprint at all, the requirement is still correct. In the case of small text using DeviceGray, *both* overprint and knockout are in fact wrong. Overprint is wrong because it will not always be honoured for DeviceGray; knockout is always wrong for small black text (for registration reasons).",
+      "discussion": null,
+      "applicability": {
+        "Magazine Ads CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "12"
+          }
+        },
+        "Magazine Ads CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "12"
+          }
+        },
+        "Newspaper Ads CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "12"
+          }
+        },
+        "Newspaper Ads CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "12"
+          }
+        },
+        "SheetCMYK CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "12"
+          }
+        },
+        "SheetCMYK CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "12"
+          }
+        },
+        "SheetSpot CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "12"
+          }
+        },
+        "SheetSpot CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "12"
+          }
+        },
+        "WebCMYK CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "12"
+          }
+        },
+        "WebCMYK CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "12"
+          }
+        },
+        "WebSpot CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "12"
+          }
+        },
+        "WebSpot CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "12"
+          }
+        },
+        "WebCMYKNews CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "12"
+          }
+        },
+        "WebCMYKNews CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "12"
+          }
+        },
+        "Packaging Offset": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "12"
+          }
+        },
+        "Packaging Gravure": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "12"
+          }
+        },
+        "Packaging Flexo": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "12"
+          }
+        },
+        "Label & Leaflet": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "12"
+          }
+        },
+        "Folding Carton & Corrugated Box": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "12"
+          }
+        },
+        "Flexible": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "12"
+          }
+        },
+        "Corrugated Display": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "12"
+          }
+        },
+        "Large Format Print": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "12"
+          }
+        }
+      }
+    },
+    {
+      "id": "R0012",
+      "text_id": "r-overprint-pure-thin-gray-line",
+      "version": 1.0,
+      "title": "Overprinting pure black thin lines in DeviceGray",
+      "text": "An Overlapping (D0031) Path Element (D0004) with an Effective Line Width (D0017) less than <A>, shall not have a stroke colour space of DeviceGray if it is stroked, and it shall not have a fill colour space of DeviceGray if it is filled.",
+      "notes": "Even though this requirement does not mention overprint at all, the requirement is still correct. In the case of thin lines using DeviceGray, *both* overprint and knockout are in fact wrong. Overprint is wrong because it will not always be honoured for DeviceGray; knockout is always wrong for thin black lines (for registration reasons).",
+      "discussion": null,
+      "applicability": {
+        "Magazine Ads CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "2"
+          }
+        },
+        "Magazine Ads CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "2"
+          }
+        },
+        "Newspaper Ads CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "2"
+          }
+        },
+        "Newspaper Ads CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "2"
+          }
+        },
+        "SheetCMYK CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "2"
+          }
+        },
+        "SheetCMYK CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "2"
+          }
+        },
+        "SheetSpot CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "2"
+          }
+        },
+        "SheetSpot CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "2"
+          }
+        },
+        "WebCMYK CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "2"
+          }
+        },
+        "WebCMYK CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "2"
+          }
+        },
+        "WebSpot CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "2"
+          }
+        },
+        "WebSpot CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "2"
+          }
+        },
+        "WebCMYKNews CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "2"
+          }
+        },
+        "WebCMYKNews CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "2"
+          }
+        },
+        "Packaging Offset": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "2"
+          }
+        },
+        "Packaging Gravure": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "2"
+          }
+        },
+        "Packaging Flexo": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "2"
+          }
+        },
+        "Label & Leaflet": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "2"
+          }
+        },
+        "Folding Carton & Corrugated Box": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "2"
+          }
+        },
+        "Flexible": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "2"
+          }
+        },
+        "Corrugated Display": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "2"
+          }
+        }
+      }
+    },
+    {
+      "id": "R0013",
+      "text_id": "r-overprint-gray",
+      "version": 1.0,
+      "title": "Overprinting device gray",
+      "text": "An Overlapping (D0031) Page Element (D0003) that is filled and has DeviceGray as fill colour space shall not use Fill Overprint (D0020).\nAn Overlapping (D0031) Page Element (D0003) that is stroked and has DeviceGray as stroke colour space shall not use Stroke Overprint (D0021).",
+      "notes": null,
+      "discussion": null,
+      "applicability": {
+        "Magazine Ads CMYK": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Magazine Ads CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Newspaper Ads CMYK": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Newspaper Ads CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "SheetCMYK CMYK": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "SheetCMYK CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "SheetSpot CMYK": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "SheetSpot CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "WebCMYK CMYK": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "WebCMYK CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "WebSpot CMYK": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "WebSpot CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "WebCMYKNews CMYK": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "WebCMYKNews CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Packaging Offset": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Packaging Gravure": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Packaging Flexo": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Label & Leaflet": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Folding Carton & Corrugated Box": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Flexible": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Corrugated Display": {
+          "severity": "warning",
+          "additional_values": {}
+        }
+      }
+    },
+    {
+      "id": "R0014",
+      "text_id": "r-use-courier",
+      "version": 1.0,
+      "title": "Use of the Courier font",
+      "text": "Any Text Element (D0005) shall not use a font with the name \"Courier\". This requirement does not restrict the use of fonts with slightly different names such as for example \"Courier New\".",
+      "notes": "This requirement exists because the font \"Courier\" was the default replacement font of PostScript to PDF tools, and as such can indicate an unwanted font substitution took place.",
+      "discussion": null,
+      "applicability": {
+        "Magazine Ads CMYK": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Magazine Ads CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Newspaper Ads CMYK": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Newspaper Ads CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "SheetCMYK CMYK": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "SheetCMYK CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "SheetSpot CMYK": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "SheetSpot CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "WebCMYK CMYK": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "WebCMYK CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "WebSpot CMYK": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "WebSpot CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "WebCMYKNews CMYK": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "WebCMYKNews CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Packaging Offset": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Packaging Gravure": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Packaging Flexo": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Label & Leaflet": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Folding Carton & Corrugated Box": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Flexible": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Corrugated Display": {
+          "severity": "warning",
+          "additional_values": {}
+        }
+      }
+    },
+    {
+      "id": "R0015",
+      "text_id": "r-rich-black-text",
+      "version": 1.0,
+      "title": "Rich black text",
+      "text": "A Visible (D0030) Text Element (D0005) that is using a fill colour space that is DeviceCMYK or DeviceN (where the DeviceN colour space has at least two process colour components, one of which being Black), shall not have a Black colour component larger than or equal to <A>, if the sum of all process colour components for that Text Element (D0005) is larger than <B>.",
+      "notes": null,
+      "discussion": null,
+      "applicability": {
+        "Magazine Ads CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.85",
+            "B": "2.8"
+          }
+        },
+        "Magazine Ads CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.85",
+            "B": "2.8"
+          }
+        },
+        "Newspaper Ads CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.85",
+            "B": "2.2"
+          }
+        },
+        "Newspaper Ads CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.85",
+            "B": "2.2"
+          }
+        },
+        "SheetCMYK CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.85",
+            "B": "2.8"
+          }
+        },
+        "SheetCMYK CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.85",
+            "B": "2.8"
+          }
+        },
+        "SheetSpot CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.85",
+            "B": "2.8"
+          }
+        },
+        "SheetSpot CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.85",
+            "B": "2.8"
+          }
+        },
+        "WebCMYK CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.85",
+            "B": "2.8"
+          }
+        },
+        "WebCMYK CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.85",
+            "B": "2.8"
+          }
+        },
+        "WebSpot CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.85",
+            "B": "2.8"
+          }
+        },
+        "WebSpot CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.85",
+            "B": "2.8"
+          }
+        },
+        "WebCMYKNews CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.85",
+            "B": "2.2"
+          }
+        },
+        "WebCMYKNews CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.85",
+            "B": "2.2"
+          }
+        },
+        "Packaging Offset": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.85",
+            "B": "2.8"
+          }
+        },
+        "Packaging Gravure": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.85",
+            "B": "2.8"
+          }
+        },
+        "Packaging Flexo": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.85",
+            "B": "2.8"
+          }
+        },
+        "Label & Leaflet": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.85",
+            "B": "2.8"
+          }
+        },
+        "Folding Carton & Corrugated Box": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.85",
+            "B": "2.8"
+          }
+        },
+        "Flexible": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.85",
+            "B": "2.8"
+          }
+        },
+        "Corrugated Display": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.85",
+            "B": "2.8"
+          }
+        },
+        "Digital Print": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.85",
+            "B": "2.8"
+          }
+        }
+      }
+    },
+    {
+      "id": "R0016",
+      "text_id": "r-registration-white-text",
+      "version": 1.0,
+      "title": "Registration problems with small white text",
+      "text": "An Overlapping (D0031) Text Element (D0005) shall not have an Effective Font Size (D0019) smaller than <A> if it uses a White Fill Colour (D0011).",
+      "notes": null,
+      "discussion": null,
+      "applicability": {
+        "Magazine Ads CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "9.0"
+          }
+        },
+        "Magazine Ads CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "9.0"
+          }
+        },
+        "Newspaper Ads CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "10.0"
+          }
+        },
+        "Newspaper Ads CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "10.0"
+          }
+        },
+        "SheetCMYK CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "8.0"
+          }
+        },
+        "SheetCMYK CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "8.0"
+          }
+        },
+        "SheetSpot CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "8.0"
+          }
+        },
+        "SheetSpot CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "8.0"
+          }
+        },
+        "WebCMYK CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "9.0"
+          }
+        },
+        "WebCMYK CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "9.0"
+          }
+        },
+        "WebSpot CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "9.0"
+          }
+        },
+        "WebSpot CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "9.0"
+          }
+        },
+        "WebCMYKNews CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "10.0"
+          }
+        },
+        "WebCMYKNews CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "10.0"
+          }
+        },
+        "Packaging Offset": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "5.0"
+          }
+        },
+        "Packaging Gravure": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "5.0"
+          }
+        },
+        "Packaging Flexo": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "5.0"
+          }
+        },
+        "Label & Leaflet": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "5.0"
+          }
+        },
+        "Folding Carton & Corrugated Box": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "5.0"
+          }
+        },
+        "Flexible": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "5.0"
+          }
+        },
+        "Corrugated Display": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "5.0"
+          }
+        },
+        "Digital Print": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "5.0"
+          }
+        },
+        "Large Format Print": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "5.0"
+          }
+        }
+      }
+    },
+    {
+      "id": "R0017",
+      "text_id": "r-registration-multi-text",
+      "version": 1.0,
+      "title": "Registration problems with small multi-channel text",
+      "text": "A Text Element (D0005) shall not have an Effective Font Size (D0019) smaller than <A> if more than one of its colour components have a value greater than 0.",
+      "notes": null,
+      "discussion": null,
+      "applicability": {
+        "Magazine Ads CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "9.0"
+          }
+        },
+        "Magazine Ads CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "9.0"
+          }
+        },
+        "Newspaper Ads CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "10.0"
+          }
+        },
+        "Newspaper Ads CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "10.0"
+          }
+        },
+        "SheetCMYK CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "8.0"
+          }
+        },
+        "SheetCMYK CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "8.0"
+          }
+        },
+        "SheetSpot CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "8.0"
+          }
+        },
+        "SheetSpot CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "8.0"
+          }
+        },
+        "WebCMYK CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "9.0"
+          }
+        },
+        "WebCMYK CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "9.0"
+          }
+        },
+        "WebSpot CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "9.0"
+          }
+        },
+        "WebSpot CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "9.0"
+          }
+        },
+        "WebCMYKNews CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "10.0"
+          }
+        },
+        "WebCMYKNews CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "10.0"
+          }
+        },
+        "Packaging Offset": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "8.0"
+          }
+        },
+        "Packaging Gravure": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "6.0"
+          }
+        },
+        "Packaging Flexo": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "14.0"
+          }
+        },
+        "Label & Leaflet": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "14.0"
+          }
+        },
+        "Folding Carton & Corrugated Box": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "14.0"
+          }
+        },
+        "Flexible": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "14.0"
+          }
+        },
+        "Corrugated Display": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "14.0"
+          }
+        },
+        "Digital Print": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "5.0"
+          }
+        },
+        "Large Format Print": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "5.0"
+          }
+        }
+      }
+    },
+    {
+      "id": "R0018",
+      "text_id": "r-registration-white-line",
+      "version": 1.0,
+      "title": "Registration problems with thin white lines",
+      "text": "An Overlapping (D0031) Path Element (D0004) shall not have an Effective Line Width (D0017) smaller than <A> if the colour used to calculate the Effective Line Width (D0017) is a White Colour (D0010).",
+      "notes": null,
+      "discussion": null,
+      "applicability": {
+        "Magazine Ads CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.25"
+          }
+        },
+        "Magazine Ads CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.25"
+          }
+        },
+        "Newspaper Ads CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.25"
+          }
+        },
+        "Newspaper Ads CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.25"
+          }
+        },
+        "SheetCMYK CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.25"
+          }
+        },
+        "SheetCMYK CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.25"
+          }
+        },
+        "SheetSpot CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.25"
+          }
+        },
+        "SheetSpot CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.25"
+          }
+        },
+        "WebCMYK CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.25"
+          }
+        },
+        "WebCMYK CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.25"
+          }
+        },
+        "WebSpot CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.25"
+          }
+        },
+        "WebSpot CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.25"
+          }
+        },
+        "WebCMYKNews CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.25"
+          }
+        },
+        "WebCMYKNews CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.25"
+          }
+        },
+        "Packaging Offset": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.15"
+          }
+        },
+        "Packaging Gravure": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.2"
+          }
+        },
+        "Packaging Flexo": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.3"
+          }
+        },
+        "Label & Leaflet": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.3"
+          }
+        },
+        "Folding Carton & Corrugated Box": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.3"
+          }
+        },
+        "Flexible": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.3"
+          }
+        },
+        "Corrugated Display": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.3"
+          }
+        },
+        "Digital Print": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.25"
+          }
+        },
+        "Large Format Print": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.15"
+          }
+        }
+      }
+    },
+    {
+      "id": "R0019",
+      "text_id": "r-registration-multi-line",
+      "version": 1.0,
+      "title": "Registration problems with thin multi-channel lines",
+      "text": "A Path Element (D0004) shall not have an Effective Line Width (D0017) smaller than <A> if more than 1 of the colour components of the colour space used to calculate the Effective Line Width (D0017) have a value greater than 0.",
+      "notes": null,
+      "discussion": null,
+      "applicability": {
+        "Magazine Ads CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.25"
+          }
+        },
+        "Magazine Ads CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.25"
+          }
+        },
+        "Newspaper Ads CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.25"
+          }
+        },
+        "Newspaper Ads CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.25"
+          }
+        },
+        "SheetCMYK CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.25"
+          }
+        },
+        "SheetCMYK CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.25"
+          }
+        },
+        "SheetSpot CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.25"
+          }
+        },
+        "SheetSpot CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.25"
+          }
+        },
+        "WebCMYK CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.25"
+          }
+        },
+        "WebCMYK CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.25"
+          }
+        },
+        "WebSpot CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.25"
+          }
+        },
+        "WebSpot CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.25"
+          }
+        },
+        "WebCMYKNews CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.25"
+          }
+        },
+        "WebCMYKNews CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.25"
+          }
+        },
+        "Packaging Offset": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.3"
+          }
+        },
+        "Packaging Gravure": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.3"
+          }
+        },
+        "Packaging Flexo": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "1.5"
+          }
+        },
+        "Label & Leaflet": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "1.5"
+          }
+        },
+        "Folding Carton & Corrugated Box": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "1.5"
+          }
+        },
+        "Flexible": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "1.5"
+          }
+        },
+        "Corrugated Display": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "1.5"
+          }
+        },
+        "Digital Print": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.25"
+          }
+        },
+        "Large Format Print": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0.15"
+          }
+        }
+      }
+    },
+    {
+      "id": "R0020",
+      "text_id": "r-use-spot-colour",
+      "version": 1.0,
+      "title": "Use of spot colours",
+      "text": "A PDF file shall have no more than <A> different names in the Active Spot Colour Names (D0024).",
+      "notes": null,
+      "discussion": null,
+      "applicability": {
+        "Magazine Ads CMYK": {
+          "severity": "error",
+          "additional_values": {
+            "A": "0"
+          }
+        },
+        "Magazine Ads CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {
+            "A": "0"
+          }
+        },
+        "Newspaper Ads CMYK": {
+          "severity": "error",
+          "additional_values": {
+            "A": "0"
+          }
+        },
+        "Newspaper Ads CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {
+            "A": "0"
+          }
+        },
+        "SheetCMYK CMYK": {
+          "severity": "error",
+          "additional_values": {
+            "A": "0"
+          }
+        },
+        "SheetCMYK CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {
+            "A": "0"
+          }
+        },
+        "SheetSpot CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0"
+          }
+        },
+        "SheetSpot CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0"
+          }
+        },
+        "WebCMYK CMYK": {
+          "severity": "error",
+          "additional_values": {
+            "A": "0"
+          }
+        },
+        "WebCMYK CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {
+            "A": "0"
+          }
+        },
+        "WebSpot CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0"
+          }
+        },
+        "WebSpot CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0"
+          }
+        },
+        "WebCMYKNews CMYK": {
+          "severity": "error",
+          "additional_values": {
+            "A": "0"
+          }
+        },
+        "WebCMYKNews CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {
+            "A": "0"
+          }
+        },
+        "Digital Print": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "0"
+          }
+        }
+      }
+    },
+    {
+      "id": "R0021",
+      "text_id": "r-spot-colour-suffix",
+      "version": 1.0,
+      "title": "Spot colours with different suffixes",
+      "text": "The Active Spot Colour Names (D0024) collection in a PDF shall not contain names that are different but equivalent. Equivalence is considered for those spot colours where the name of the spot colour ends in a SPACE character (20h) followed by a single one of these character combinations: C, CP, E, K, M, N, U, UP, Z, CV, CVU, CVC, HC, PC, TC, TCX, TP, TPX, XGC, EC.\n\nFor all spot colour names that comply with the above requirement, a case-insensitive string comparison is done on the string consisting of all characters before the last SPACE character identified by the above requirement. String equality is then identical to spot colour name equivalence.",
+      "notes": null,
+      "discussion": null,
+      "applicability": {
+        "SheetSpot CMYK": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "SheetSpot CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "WebSpot CMYK": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "WebSpot CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Packaging Offset": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Packaging Gravure": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Packaging Flexo": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Label & Leaflet": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Folding Carton & Corrugated Box": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Flexible": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Corrugated Display": {
+          "severity": "warning",
+          "additional_values": {}
+        }
+      }
+    },
+    {
+      "id": "R0022",
+      "text_id": "r-case-sensitive-spot-colour",
+      "version": 1.0,
+      "title": "Case-sensitive spot colour names",
+      "text": "The Active Spot Colour Names (D0024) collection in a PDF shall not contain names that are only different in their capitalization or that are canonically equivalent in Unicode. Canonically equivalent means that the unicode string would be identical after decomposition and/or precomposition.",
+      "notes": null,
+      "discussion": null,
+      "applicability": {
+        "SheetSpot CMYK": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "SheetSpot CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "WebSpot CMYK": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "WebSpot CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Packaging Offset": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Packaging Gravure": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Packaging Flexo": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Label & Leaflet": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Folding Carton & Corrugated Box": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Flexible": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Corrugated Display": {
+          "severity": "error",
+          "additional_values": {}
+        }
+      }
+    },
+    {
+      "id": "R0023",
+      "text_id": "r-visually-identical-spot-colour",
+      "version": 1.0,
+      "title": "Different spot colours that are visually identical",
+      "text": "The Active Spot Colours (D0023) in a PDF file shall not contain spot colours that have the same tintTransform and alternateSpace but different names. In evaluating equivalence, PDF objects shall be compared rather than the computational result of the use of those objects, but the difference between direct or indirect objects shall be ignored.",
+      "notes": null,
+      "discussion": null,
+      "applicability": {
+        "SheetSpot CMYK": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "SheetSpot CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "WebSpot CMYK": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "WebSpot CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Packaging Offset": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Packaging Gravure": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Packaging Flexo": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Label & Leaflet": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Folding Carton & Corrugated Box": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Flexible": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Corrugated Display": {
+          "severity": "error",
+          "additional_values": {}
+        }
+      }
+    },
+    {
+      "id": "R0024",
+      "text_id": "r-registration-colour",
+      "version": 1.0,
+      "title": "Registration colour",
+      "text": "No Page Element (D0003) shall use a Spot Colour Name (D0022) equal to \"All\".",
+      "notes": null,
+      "discussion": null,
+      "applicability": {
+        "Magazine Ads CMYK": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Magazine Ads CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Newspaper Ads CMYK": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Newspaper Ads CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "SheetCMYK CMYK": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "SheetCMYK CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "SheetSpot CMYK": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "SheetSpot CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "WebCMYK CMYK": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "WebCMYK CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "WebSpot CMYK": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "WebSpot CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "WebCMYKNews CMYK": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "WebCMYKNews CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Packaging Offset": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Packaging Gravure": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Packaging Flexo": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Label & Leaflet": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Folding Carton & Corrugated Box": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Flexible": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Corrugated Display": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Digital Print": {
+          "severity": "warning",
+          "additional_values": {}
+        }
+      }
+    },
+    {
+      "id": "R0025",
+      "text_id": "r-average-ink-coverage-all",
+      "version": 1.0,
+      "title": "Average ink coverage of all separations",
+      "text": "Ink coverage of all separations (D00027) shall not exceed the average value <A>, within any square area with side <B>.",
+      "notes": null,
+      "discussion": null,
+      "applicability": {
+        "Packaging Offset": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "320%",
+            "B": "15mm"
+          }
+        },
+        "Packaging Gravure": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "310%",
+            "B": "15mm"
+          }
+        },
+        "Packaging Flexo": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "320%",
+            "B": "15mm"
+          }
+        },
+        "Label & Leaflet": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "320%",
+            "B": "15mm"
+          }
+        },
+        "Folding Carton & Corrugated Box": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "320%",
+            "B": "15mm"
+          }
+        },
+        "Flexible": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "320%",
+            "B": "15mm"
+          }
+        },
+        "Corrugated Display": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "320%",
+            "B": "15mm"
+          }
+        }
+      }
+    },
+    {
+      "id": "R0026",
+      "text_id": "r-average-ink-coverage-cmyk",
+      "version": 1.0,
+      "title": "Average ink coverage of CMYK separations",
+      "text": "Ink coverage of CMYK separations (D00028) shall not exceed the average value <A>, within any square area with side <B>.",
+      "notes": null,
+      "discussion": null,
+      "applicability": {
+        "Magazine Ads CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "305%",
+            "B": "15mm"
+          }
+        },
+        "Magazine Ads CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "305%",
+            "B": "15mm"
+          }
+        },
+        "Newspaper Ads CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "245%",
+            "B": "15mm"
+          }
+        },
+        "Newspaper Ads CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "245%",
+            "B": "15mm"
+          }
+        },
+        "SheetCMYK CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "320%",
+            "B": "15mm"
+          }
+        },
+        "SheetCMYK CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "320%",
+            "B": "15mm"
+          }
+        },
+        "SheetSpot CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "320%",
+            "B": "15mm"
+          }
+        },
+        "SheetSpot CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "320%",
+            "B": "15mm"
+          }
+        },
+        "WebCMYK CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "305%",
+            "B": "15mm"
+          }
+        },
+        "WebCMYK CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "305%",
+            "B": "15mm"
+          }
+        },
+        "WebSpot CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "305%",
+            "B": "15mm"
+          }
+        },
+        "WebSpot CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "305%",
+            "B": "15mm"
+          }
+        },
+        "WebCMYKNews CMYK": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "245%",
+            "B": "15mm"
+          }
+        },
+        "WebCMYKNews CMYK + RGB": {
+          "severity": "warning",
+          "additional_values": {
+            "A": "245%",
+            "B": "15mm"
+          }
+        }
+      }
+    },
+    {
+      "id": "R0027",
+      "text_id": "r-early-binding-mode",
+      "version": 1.0,
+      "title": "Early binding mode",
+      "text": "No Page Element (D0003) shall use the following colour spaces as intended or alternate colour space:\n- DeviceRGB\n- CalRGB\n- CalGray\n- ICCBased (ICC based grayscale, RGB, Lab and CMYK)\n\nNo Page Element (D0003) shall use the following colour space as an intended colour space:\n- Lab",
+      "notes": null,
+      "discussion": null,
+      "applicability": {
+        "Magazine Ads CMYK": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Newspaper Ads CMYK": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "SheetCMYK CMYK": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "SheetSpot CMYK": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "WebCMYK CMYK": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "WebSpot CMYK": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "WebCMYKNews CMYK": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Packaging Offset": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Packaging Gravure": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Packaging Flexo": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Label & Leaflet": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Folding Carton & Corrugated Box": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Flexible": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Corrugated Display": {
+          "severity": "error",
+          "additional_values": {}
+        }
+      }
+    },
+    {
+      "id": "R0028",
+      "text_id": "r-intermediate-binding-mode",
+      "version": 1.0,
+      "title": "Intermediate binding mode",
+      "text": "Page Elements (D0003) that are Image Elements (D0006) but not Image Mask Elements (D0009), shall not use the following colour spaces as intended colour space:\n- DeviceRGB\n- ICCBasedGray\n- CalGray\n- ICCBasedCMYK\n\nPage Elements (D0003) that are not Image Elements (D0006), or that are Image Mask Elements (D0009), shall not use the following colour space as an intended colour space:\n- DeviceRGB\n- CalRGB\n- CalGray\n- ICCBased (ICC based grayscale, RGB, Lab and CMYK)\n- Lab\n\nPage Elements (D0003) shall not use the following colour space as an alternate colour space:\n- DeviceRGB\n- ICCBasedGray\n- CalGray\n- ICCBasedCMYK",
+      "notes": null,
+      "discussion": null,
+      "applicability": {
+        "Magazine Ads CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Newspaper Ads CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "SheetCMYK CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "SheetSpot CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "WebCMYK CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "WebSpot CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "WebCMYKNews CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Digital Print": {
+          "severity": "error",
+          "additional_values": {}
+        }
+      }
+    },
+    {
+      "id": "R0029",
+      "text_id": "r-late-binding-mode",
+      "version": 1.0,
+      "title": "Late binding mode",
+      "text": "Page Elements (D0003) that are Image Elements (D0006) but not Image Mask Elements (D0009), shall not use the following colour spaces as intended colour space:\n- DeviceRGB\n- ICCBasedGray\n- CalGray\n\nPage Elements (D0003) that are not Image Elements (D0006), or that are Image Mask Elements (D0009), shall not use the following colour space as an intended colour space:\n- DeviceRGB\n- CalRGB\n- CalGray\n- ICCbasedCMYK\n- ICCbasedGray\n\nPage Elements (D0003) shall not use the following colour space as an alternate colour space:\n- DeviceRGB\n- ICCBasedGray\n- CalGray",
+      "notes": null,
+      "discussion": null,
+      "applicability": {
+        "Large Format Print": {
+          "severity": "error",
+          "additional_values": {}
+        }
+      }
+    },
+    {
+      "id": "R0030",
+      "text_id": "r-transparency-blend-space",
+      "version": 1.0,
+      "title": "Transparency blend colour space",
+      "text": "In a transparency group attributes dictionary, if the CS key is present, it shall have the value DeviceCMYK. As an exception to this rule, if the transparency group attributes dictionary is the value of the G key in a Luminosity sub-type soft mask dictionary, the value of the CS key shall either be DeviceCMYK or DeviceGray.",
+      "notes": null,
+      "discussion": null,
+      "applicability": {
+        "Magazine Ads CMYK": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Magazine Ads CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Newspaper Ads CMYK": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Newspaper Ads CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "SheetCMYK CMYK": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "SheetCMYK CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "SheetSpot CMYK": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "SheetSpot CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "WebCMYK CMYK": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "WebCMYK CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "WebSpot CMYK": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "WebSpot CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "WebCMYKNews CMYK": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "WebCMYKNews CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Packaging Offset": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Packaging Gravure": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Packaging Flexo": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Label & Leaflet": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Folding Carton & Corrugated Box": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Flexible": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Corrugated Display": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Digital Print": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Large Format Print": {
+          "severity": "error",
+          "additional_values": {}
+        }
+      }
+    },
+    {
+      "id": "R0031",
+      "text_id": "r-image-resolution-gray-colour",
+      "version": 1.0,
+      "title": "Image resolution for grayscale and colour images",
+      "text": "The Effective Image Resolution (D0018) of a Continuous-Tone Image Element (D0008) not covered by the requirement on Rasterized pages (R0033), shall be greater than <A> for images with a width or height greater than 16 pixels.",
+      "notes": null,
+      "discussion": null,
+      "applicability": {
+        "Magazine Ads CMYK": {
+          "severity": "error_and_warning",
+          "additional_values": {
+            "A": "224ppi"
+          }
+        },
+        "Magazine Ads CMYK + RGB": {
+          "severity": "error_and_warning",
+          "additional_values": {
+            "A": "224ppi"
+          }
+        },
+        "Newspaper Ads CMYK": {
+          "severity": "error_and_warning",
+          "additional_values": {
+            "A": "149ppi"
+          }
+        },
+        "Newspaper Ads CMYK + RGB": {
+          "severity": "error_and_warning",
+          "additional_values": {
+            "A": "149ppi"
+          }
+        },
+        "SheetCMYK CMYK": {
+          "severity": "error_and_warning",
+          "additional_values": {
+            "A": "224ppi"
+          }
+        },
+        "SheetCMYK CMYK + RGB": {
+          "severity": "error_and_warning",
+          "additional_values": {
+            "A": "224ppi"
+          }
+        },
+        "SheetSpot CMYK": {
+          "severity": "error_and_warning",
+          "additional_values": {
+            "A": "224ppi"
+          }
+        },
+        "SheetSpot CMYK + RGB": {
+          "severity": "error_and_warning",
+          "additional_values": {
+            "A": "224ppi"
+          }
+        },
+        "WebCMYK CMYK": {
+          "severity": "error_and_warning",
+          "additional_values": {
+            "A": "224ppi"
+          }
+        },
+        "WebCMYK CMYK + RGB": {
+          "severity": "error_and_warning",
+          "additional_values": {
+            "A": "224ppi"
+          }
+        },
+        "WebSpot CMYK": {
+          "severity": "error_and_warning",
+          "additional_values": {
+            "A": "224ppi"
+          }
+        },
+        "WebSpot CMYK + RGB": {
+          "severity": "error_and_warning",
+          "additional_values": {
+            "A": "224ppi"
+          }
+        },
+        "WebCMYKNews CMYK": {
+          "severity": "error_and_warning",
+          "additional_values": {
+            "A": "149ppi"
+          }
+        },
+        "WebCMYKNews CMYK + RGB": {
+          "severity": "error_and_warning",
+          "additional_values": {
+            "A": "149ppi"
+          }
+        },
+        "Packaging Offset": {
+          "severity": "error_and_warning",
+          "additional_values": {
+            "A": "299ppi"
+          }
+        },
+        "Packaging Gravure": {
+          "severity": "error_and_warning",
+          "additional_values": {
+            "A": "299ppi"
+          }
+        },
+        "Packaging Flexo": {
+          "severity": "error_and_warning",
+          "additional_values": {
+            "A": "239ppi"
+          }
+        },
+        "Label & Leaflet": {
+          "severity": "error_and_warning",
+          "additional_values": {
+            "A": "239ppi"
+          }
+        },
+        "Folding Carton & Corrugated Box": {
+          "severity": "error_and_warning",
+          "additional_values": {
+            "A": "239ppi"
+          }
+        },
+        "Flexible": {
+          "severity": "error_and_warning",
+          "additional_values": {
+            "A": "239ppi"
+          }
+        },
+        "Corrugated Display": {
+          "severity": "error_and_warning",
+          "additional_values": {
+            "A": "239ppi"
+          }
+        },
+        "Digital Print": {
+          "severity": "error_and_warning",
+          "additional_values": {
+            "A": "149ppi"
+          }
+        },
+        "Large Format Print": {
+          "severity": "error_and_warning",
+          "additional_values": {
+            "A": "299ppi"
+          }
+        }
+      }
+    },
+    {
+      "id": "R0032",
+      "text_id": "r-image-resolution-1bit",
+      "version": 1.0,
+      "title": "Image resolution for 1-bit images",
+      "text": "The Effective Image Resolution (D0018) of a 1-Bit Image Element (D0007), shall be greater than <A> for images with a width or height greater than 16 pixels.",
+      "notes": null,
+      "discussion": null,
+      "applicability": {
+        "Magazine Ads CMYK": {
+          "severity": "error_and_warning",
+          "additional_values": {
+            "A": "799ppi"
+          }
+        },
+        "Magazine Ads CMYK + RGB": {
+          "severity": "error_and_warning",
+          "additional_values": {
+            "A": "799ppi"
+          }
+        },
+        "Newspaper Ads CMYK": {
+          "severity": "error_and_warning",
+          "additional_values": {
+            "A": "799ppi"
+          }
+        },
+        "Newspaper Ads CMYK + RGB": {
+          "severity": "error_and_warning",
+          "additional_values": {
+            "A": "799ppi"
+          }
+        },
+        "SheetCMYK CMYK": {
+          "severity": "error_and_warning",
+          "additional_values": {
+            "A": "799ppi"
+          }
+        },
+        "SheetCMYK CMYK + RGB": {
+          "severity": "error_and_warning",
+          "additional_values": {
+            "A": "799ppi"
+          }
+        },
+        "SheetSpot CMYK": {
+          "severity": "error_and_warning",
+          "additional_values": {
+            "A": "799ppi"
+          }
+        },
+        "SheetSpot CMYK + RGB": {
+          "severity": "error_and_warning",
+          "additional_values": {
+            "A": "799ppi"
+          }
+        },
+        "WebCMYK CMYK": {
+          "severity": "error_and_warning",
+          "additional_values": {
+            "A": "799ppi"
+          }
+        },
+        "WebCMYK CMYK + RGB": {
+          "severity": "error_and_warning",
+          "additional_values": {
+            "A": "799ppi"
+          }
+        },
+        "WebSpot CMYK": {
+          "severity": "error_and_warning",
+          "additional_values": {
+            "A": "799ppi"
+          }
+        },
+        "WebSpot CMYK + RGB": {
+          "severity": "error_and_warning",
+          "additional_values": {
+            "A": "799ppi"
+          }
+        },
+        "WebCMYKNews CMYK": {
+          "severity": "error_and_warning",
+          "additional_values": {
+            "A": "799ppi"
+          }
+        },
+        "WebCMYKNews CMYK + RGB": {
+          "severity": "error_and_warning",
+          "additional_values": {
+            "A": "799ppi"
+          }
+        },
+        "Packaging Offset": {
+          "severity": "error_and_warning",
+          "additional_values": {
+            "A": "799ppi"
+          }
+        },
+        "Packaging Gravure": {
+          "severity": "error_and_warning",
+          "additional_values": {
+            "A": "799ppi"
+          }
+        },
+        "Packaging Flexo": {
+          "severity": "error_and_warning",
+          "additional_values": {
+            "A": "799ppi"
+          }
+        },
+        "Label & Leaflet": {
+          "severity": "error_and_warning",
+          "additional_values": {
+            "A": "799ppi"
+          }
+        },
+        "Folding Carton & Corrugated Box": {
+          "severity": "error_and_warning",
+          "additional_values": {
+            "A": "799ppi"
+          }
+        },
+        "Flexible": {
+          "severity": "error_and_warning",
+          "additional_values": {
+            "A": "799ppi"
+          }
+        },
+        "Corrugated Display": {
+          "severity": "error_and_warning",
+          "additional_values": {
+            "A": "799ppi"
+          }
+        },
+        "Digital Print": {
+          "severity": "error_and_warning",
+          "additional_values": {
+            "A": "599ppi"
+          }
+        },
+        "Large Format Print": {
+          "severity": "error_and_warning",
+          "additional_values": {
+            "A": "799ppi"
+          }
+        }
+      }
+    },
+    {
+      "id": "R0033",
+      "text_id": "r-rasterized-page",
+      "version": 1.0,
+      "title": "Rasterized pages",
+      "text": "If a page in a PDF file contains only one Page Element (D0003), which is a Continuous-Tone Image Element (D0008) that covers the TrimBox, its Effective Image Resolution (D0018) shall be greater than <A>.",
+      "notes": null,
+      "discussion": null,
+      "applicability": {
+        "Magazine Ads CMYK": {
+          "severity": "error_and_warning",
+          "additional_values": {
+            "A": "449ppi"
+          }
+        },
+        "Magazine Ads CMYK + RGB": {
+          "severity": "error_and_warning",
+          "additional_values": {
+            "A": "449ppi"
+          }
+        },
+        "Newspaper Ads CMYK": {
+          "severity": "error_and_warning",
+          "additional_values": {
+            "A": "449ppi"
+          }
+        },
+        "Newspaper Ads CMYK + RGB": {
+          "severity": "error_and_warning",
+          "additional_values": {
+            "A": "449ppi"
+          }
+        },
+        "Packaging Offset": {
+          "severity": "error_and_warning",
+          "additional_values": {
+            "A": "1199ppi"
+          }
+        },
+        "Packaging Gravure": {
+          "severity": "error_and_warning",
+          "additional_values": {
+            "A": "1199ppi"
+          }
+        },
+        "Packaging Flexo": {
+          "severity": "error_and_warning",
+          "additional_values": {
+            "A": "1199ppi"
+          }
+        },
+        "Label & Leaflet": {
+          "severity": "error_and_warning",
+          "additional_values": {
+            "A": "1199ppi"
+          }
+        },
+        "Folding Carton & Corrugated Box": {
+          "severity": "error_and_warning",
+          "additional_values": {
+            "A": "1199ppi"
+          }
+        },
+        "Flexible": {
+          "severity": "error_and_warning",
+          "additional_values": {
+            "A": "1199ppi"
+          }
+        },
+        "Corrugated Display": {
+          "severity": "error_and_warning",
+          "additional_values": {
+            "A": "1199ppi"
+          }
+        }
+      }
+    },
+    {
+      "id": "R0034",
+      "text_id": "r-optional-content-configs",
+      "version": 1.0,
+      "title": "Optional content",
+      "text": "If the document catalog dictionary contains an optional content properties dictionary as the value of the OCProperties key, the optional content properties dictionary shall not contain a Configs key.",
+      "notes": null,
+      "discussion": null,
+      "applicability": {
+        "Magazine Ads CMYK": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Magazine Ads CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Newspaper Ads CMYK": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Newspaper Ads CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Packaging Offset": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Packaging Gravure": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Packaging Flexo": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Label & Leaflet": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Folding Carton & Corrugated Box": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Flexible": {
+          "severity": "warning",
+          "additional_values": {}
+        },
+        "Corrugated Display": {
+          "severity": "warning",
+          "additional_values": {}
+        }
+      }
+    },
+    {
+      "id": "R0035",
+      "text_id": "r-output-intent",
+      "version": 1.0,
+      "title": "Output intent colour space",
+      "text": "The colour space of the ICC Profile that is the destination profile in PDF/X output intent object(s), shall be CMYK.",
+      "notes": null,
+      "discussion": null,
+      "applicability": {
+        "Magazine Ads CMYK": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Magazine Ads CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Newspaper Ads CMYK": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Newspaper Ads CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "SheetCMYK CMYK": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "SheetCMYK CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "SheetSpot CMYK": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "SheetSpot CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "WebCMYK CMYK": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "WebCMYK CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "WebSpot CMYK": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "WebSpot CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "WebCMYKNews CMYK": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "WebCMYKNews CMYK + RGB": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Packaging Offset": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Packaging Gravure": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Packaging Flexo": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Label & Leaflet": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Folding Carton & Corrugated Box": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Flexible": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Corrugated Display": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Digital Print": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Large Format Print": {
+          "severity": "error",
+          "additional_values": {}
+        }
+      }
+    },
+    {
+      "id": "R0036",
+      "text_id": "r-optional-content-hidden",
+      "version": 1.0,
+      "title": "Hidden optional content",
+      "text": "If the document contains an optional content properties dictionary as the value of the D entry in the OCProperties entry of the document catalog dictionary, it shall be configured so that the initial state of all optional content groups it references is ON.",
+      "notes": "This requirement means that all optional content groups in the document must be visible (and thus print). Make note that this requirement complements the requirements already present in the Base ISO Standards (R0001) for the variant where this requirement is used.",
+      "discussion": null,
+      "applicability": {
+        "Large Format Print": {
+          "severity": "error",
+          "additional_values": {}
+        }
+      }
+    },
+    {
+      "id": "R0037",
+      "text_id": "r-scaling-viewing-distance",
+      "version": 1.0,
+      "title": "Scaling factor and viewing distance",
+      "text": "If the variant table contains a value of \"Warning\" or \"Error\" for this requirement, the Scaling Factor (D0025) and Viewing Distance (D0026) will be taken into account in the defintions for Effective Line Width (D0017), Effective Image Resolution (D0018), and Effective Font Size (D0019).",
+      "notes": null,
+      "discussion": null,
+      "applicability": {
+        "Large Format Print": {
+          "severity": "error",
+          "additional_values": {}
+        }
+      }
+    },
+    {
+      "id": "R1001",
+      "text_id": "r-processing-steps",
+      "version": 1.0,
+      "title": "Use of processing steps",
+      "text": "A PDF that corresponds with a certain Product Type (D0029) shall contain all processing steps that are marked as \"required\" in the variants table. Such a PDF shall not contain a processing step that is marked as \"not allowed\" in that variant table.\n\nAny processing step marked as \"recommended\" in the variant table should be present in the document but may be reported.",
+      "notes": null,
+      "discussion": null,
+      "applicability": {
+        "Packaging Offset": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Packaging Gravure": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Packaging Flexo": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Label & Leaflet": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Folding Carton & Corrugated Box": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Flexible": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Corrugated Display": {
+          "severity": "error",
+          "additional_values": {}
+        }
+      }
+    },
+    {
+      "id": "R1002",
+      "text_id": "r-processing-steps-creasing",
+      "version": 1.0,
+      "title": "Required creasing",
+      "text": "The PDF file shall contain at least one of the Processing Steps defined below:\n- GTS_ProcStepsGroup = \"Structural\", GTS_ProcStepsType = \"Creasing\"\n- GTS_ProcStepsGroup = \"Structural\", GTS_ProcStepsType = \"ReverseCreasing\"",
+      "notes": null,
+      "discussion": null,
+      "applicability": {
+        "Packaging Offset": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Packaging Gravure": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Packaging Flexo": {
+          "severity": "error",
+          "additional_values": {}
+        },
+        "Folding Carton & Corrugated Box": {
+          "severity": "error",
+          "additional_values": {}
+        }
+      }
+    }
+  ]
+}

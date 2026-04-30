@@ -135,9 +135,10 @@ warn_return_any = true
 warn_unreachable = true
 ignore_missing_imports = false
 
-[[tool.mypy.overrides]]
-module = ["pikepdf.*", "reportlab.*"]
-ignore_missing_imports = true
+# Re-enable in Commit 3 once these are actually imported:
+# [[tool.mypy.overrides]]
+# module = ["pikepdf.*", "reportlab.*"]
+# ignore_missing_imports = true
 
 # ─── Pytest ─────────────────────────────────────────────────────────────────────
 [tool.pytest.ini_options]
