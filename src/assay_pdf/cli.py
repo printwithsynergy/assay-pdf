@@ -56,10 +56,16 @@ def fetch(
 
 
 @app.command()
-def generate() -> None:
-    """Generate the corpus PDFs (Commit 3 — not yet implemented)."""
-    rprint("[yellow]Not yet implemented[/yellow] — lands in Commit 3.")
-    raise typer.Exit(code=2)
+def generate(
+    only_rule: Annotated[str | None, typer.Option("--only-rule", help="Generate only files for one rule ID (e.g. R0014).")] = None,
+    only_variant: Annotated[str | None, typer.Option("--only-variant", help="Generate only files for one variant kebab.")] = None,
+    seed: Annotated[int, typer.Option("--seed", help="Deterministic generation seed.")] = 0,
+) -> None:
+    """Generate the PDF/X-4 corpus into corpus/."""
+    from assay_pdf.generator.orchestrator import generate_corpus
+
+    manifest = generate_corpus(only_rule=only_rule, only_variant=only_variant, seed=seed)
+    rprint(f"[green]✓[/green] Generated {len(manifest.files)} PDFs")
 
 
 @app.command()
@@ -87,10 +93,16 @@ def report(
 def validate(
     schema_only: Annotated[bool, typer.Option("--schema-only", help="Skip verapdf; just validate manifests against schemas.")] = False,
 ) -> None:
-    """Validate every corpus PDF against verapdf PDF/X-4 (Commit 3 — not yet implemented)."""
-    _ = schema_only
-    rprint("[yellow]Not yet implemented[/yellow] — lands in Commit 3.")
-    raise typer.Exit(code=2)
+    """Validate every corpus PDF against verapdf PDF/X-4."""
+    from assay_pdf.generator.validation import validate_corpus
+
+    failures = validate_corpus(schema_only=schema_only)
+    if failures:
+        rprint(f"[red]✗ {len(failures)} validation failure(s)[/red]")
+        for path, msg in failures:
+            rprint(f"  {path}: {msg}")
+        raise typer.Exit(code=1)
+    rprint("[green]✓[/green] All corpus PDFs valid")
 
 
 if __name__ == "__main__":

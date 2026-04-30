@@ -1,0 +1,1142 @@
+{
+  "version": "0.1.0",
+  "spec": "GWG 2022",
+  "generated_at": "2026-04-30T15:44:27.431430Z",
+  "tool": "assay-pdf",
+  "tool_version": "0.1.0",
+  "deterministic_seed": 0,
+  "files": [
+    {
+      "path": "corpus/negative/r0001/r0001-sheetcmyk-cmyk.pdf",
+      "category": "negative",
+      "primary_rule_id": "R0001",
+      "applicable_variants": [
+        "SheetCMYK CMYK"
+      ],
+      "expected_severity": {
+        "SheetCMYK CMYK": "error"
+      },
+      "description": "PDF lacks /OutputIntents and PDF/X-4 XMP — not conformant to ISO 15930-7.",
+      "generator_function": "assay_pdf.generator.rules.gen_r0001_not_pdfx4",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "sheetcmyk-cmyk"
+      },
+      "sha256": "da10d3c3d2ce8d793bb7f2428123012b1293ae0319c3448f91a13257bfeb200f",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/negative/r0002/r0002-sheetcmyk-cmyk.pdf",
+      "category": "negative",
+      "primary_rule_id": "R0002",
+      "applicable_variants": [
+        "SheetCMYK CMYK"
+      ],
+      "expected_severity": {
+        "SheetCMYK CMYK": "error"
+      },
+      "description": "Page dictionary has /UserUnit 2.0 — forbidden by R0002.",
+      "generator_function": "assay_pdf.generator.rules.gen_r0002_user_unit",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "sheetcmyk-cmyk"
+      },
+      "sha256": "b6e7e95ebaea16a76b029a9bdb29c40affec2daad1e62ab3c92e21a4a3f1c2d2",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/negative/r0003/r0003-sheetcmyk-cmyk.pdf",
+      "category": "negative",
+      "primary_rule_id": "R0003",
+      "applicable_variants": [
+        "SheetCMYK CMYK"
+      ],
+      "expected_severity": {
+        "SheetCMYK CMYK": "error"
+      },
+      "description": "CropBox inset 18pt from MediaBox — violates R0003.",
+      "generator_function": "assay_pdf.generator.rules.gen_r0003_cropbox_mismatch",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "sheetcmyk-cmyk"
+      },
+      "sha256": "aca204afe89c60201b881be173901c5d37841a555c9a7cb4c79399439aff9dc2",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/negative/r0004/r0004-sheetcmyk-cmyk.pdf",
+      "category": "negative",
+      "primary_rule_id": "R0004",
+      "applicable_variants": [
+        "SheetCMYK CMYK"
+      ],
+      "expected_severity": {
+        "SheetCMYK CMYK": "error"
+      },
+      "description": "TrimBox absent and /Rotate 90 — violates R0004 on two counts.",
+      "generator_function": "assay_pdf.generator.rules.gen_r0004_no_trimbox",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "sheetcmyk-cmyk"
+      },
+      "sha256": "fc135a49a659a3754a6fbb929f6647645a2fdfe94963c201a2520c76632c7866",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/negative/r0005/r0005-sheetcmyk-cmyk.pdf",
+      "category": "negative",
+      "primary_rule_id": "R0005",
+      "applicable_variants": [
+        "SheetCMYK CMYK"
+      ],
+      "expected_severity": {
+        "SheetCMYK CMYK": "error"
+      },
+      "description": "Page contains no marking operators — Total Ink Coverage = 0.",
+      "generator_function": "assay_pdf.generator.rules.gen_r0005_empty_page",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "sheetcmyk-cmyk"
+      },
+      "sha256": "c1418836c9178e979a547b186edeb03db4912dedad018b0b8d1c9ec777e79398",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/negative/r0006/r0006-magazine-ads-cmyk.pdf",
+      "category": "negative",
+      "primary_rule_id": "R0006",
+      "applicable_variants": [
+        "Magazine Ads CMYK"
+      ],
+      "expected_severity": {
+        "Magazine Ads CMYK": "error"
+      },
+      "description": "PDF contains 2 pages — R0006 requires exactly 1.",
+      "generator_function": "assay_pdf.generator.rules.gen_r0006_two_pages",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "magazine-ads-cmyk"
+      },
+      "sha256": "6e79c4b3fb720fd3a556aa66a8a8750368ea0585a6aa75bf36aa0ed919898095",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/negative/r0007/r0007-sheetcmyk-cmyk.pdf",
+      "category": "negative",
+      "primary_rule_id": "R0007",
+      "applicable_variants": [
+        "SheetCMYK CMYK"
+      ],
+      "expected_severity": {
+        "SheetCMYK CMYK": "error"
+      },
+      "description": "White-filled text element with ExtGState /op true — disappears on press.",
+      "generator_function": "assay_pdf.generator.rules.gen_r0007_white_text_op",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "sheetcmyk-cmyk"
+      },
+      "sha256": "6eb4664b361ce63efea565e79d670af7315b52dbad847db07e48f37e1a3bc38e",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/negative/r0008/r0008-sheetcmyk-cmyk.pdf",
+      "category": "negative",
+      "primary_rule_id": "R0008",
+      "applicable_variants": [
+        "SheetCMYK CMYK"
+      ],
+      "expected_severity": {
+        "SheetCMYK CMYK": "error"
+      },
+      "description": "White-filled rectangle path with ExtGState /op true.",
+      "generator_function": "assay_pdf.generator.rules.gen_r0008_white_path_op",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "sheetcmyk-cmyk"
+      },
+      "sha256": "8a181d8bdaffdb40a05ae66c0ea62ca8f4938555ce7e84a7f7421f8efc6823a2",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/negative/r0009/r0009-sheetcmyk-cmyk.pdf",
+      "category": "negative",
+      "primary_rule_id": "R0009",
+      "applicable_variants": [
+        "SheetCMYK CMYK"
+      ],
+      "expected_severity": {
+        "SheetCMYK CMYK": "error"
+      },
+      "description": "[v0.1.1 STUB] Pure black text overprint — needs ExtGState OPM modeling per variant — no actual rule violation injected; engines will not flag.",
+      "generator_function": "assay_pdf.generator.rules._stub_negative(R0009)",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "sheetcmyk-cmyk"
+      },
+      "sha256": "430803a60968fc696a0eb5b0f34fab0eb8303dff29b30738070aa81687a7d8c6",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/negative/r0010/r0010-sheetcmyk-cmyk.pdf",
+      "category": "negative",
+      "primary_rule_id": "R0010",
+      "applicable_variants": [
+        "SheetCMYK CMYK"
+      ],
+      "expected_severity": {
+        "SheetCMYK CMYK": "error"
+      },
+      "description": "[v0.1.1 STUB] Pure black thin lines overprint — no actual rule violation injected; engines will not flag.",
+      "generator_function": "assay_pdf.generator.rules._stub_negative(R0010)",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "sheetcmyk-cmyk"
+      },
+      "sha256": "d30f5269aa1e19f65cc481aed6613d27955f4df7f0f592024c5475844f73cd1c",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/negative/r0011/r0011-sheetcmyk-cmyk.pdf",
+      "category": "negative",
+      "primary_rule_id": "R0011",
+      "applicable_variants": [
+        "SheetCMYK CMYK"
+      ],
+      "expected_severity": {
+        "SheetCMYK CMYK": "error"
+      },
+      "description": "[v0.1.1 STUB] Pure black small text in DeviceGray — stroke overprint variant — no actual rule violation injected; engines will not flag.",
+      "generator_function": "assay_pdf.generator.rules._stub_negative(R0011)",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "sheetcmyk-cmyk"
+      },
+      "sha256": "0bc8ec1285e43ca25f5a6bb1187cfd87be1059ad94f0416a574176f7cc9d85e7",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/negative/r0012/r0012-sheetcmyk-cmyk.pdf",
+      "category": "negative",
+      "primary_rule_id": "R0012",
+      "applicable_variants": [
+        "SheetCMYK CMYK"
+      ],
+      "expected_severity": {
+        "SheetCMYK CMYK": "error"
+      },
+      "description": "[v0.1.1 STUB] Pure black thin lines in DeviceGray — stroke overprint variant — no actual rule violation injected; engines will not flag.",
+      "generator_function": "assay_pdf.generator.rules._stub_negative(R0012)",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "sheetcmyk-cmyk"
+      },
+      "sha256": "dc19c3f8832059ba87a78af6b5b5e9e8c04dce538b6e314140a5d44bd2168a45",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/negative/r0013/r0013-sheetcmyk-cmyk.pdf",
+      "category": "negative",
+      "primary_rule_id": "R0013",
+      "applicable_variants": [
+        "SheetCMYK CMYK"
+      ],
+      "expected_severity": {
+        "SheetCMYK CMYK": "error"
+      },
+      "description": "[v0.1.1 STUB] DeviceGray fill overprint — no actual rule violation injected; engines will not flag.",
+      "generator_function": "assay_pdf.generator.rules._stub_negative(R0013)",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "sheetcmyk-cmyk"
+      },
+      "sha256": "907ba5f911332a019d3eb7ac8807a74316168f537a0f4e21e8e1a929248da39c",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/negative/r0014/r0014-sheetcmyk-cmyk.pdf",
+      "category": "negative",
+      "primary_rule_id": "R0014",
+      "applicable_variants": [
+        "SheetCMYK CMYK"
+      ],
+      "expected_severity": {
+        "SheetCMYK CMYK": "error"
+      },
+      "description": "Page contains a text element using the Courier font.",
+      "generator_function": "assay_pdf.generator.rules.gen_r0014_courier_text",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "sheetcmyk-cmyk"
+      },
+      "sha256": "0dea4ebce319abba83d80ffc631e5b94ba0f24692872122cf59446fb3fe59ec7",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/negative/r0015/r0015-sheetcmyk-cmyk.pdf",
+      "category": "negative",
+      "primary_rule_id": "R0015",
+      "applicable_variants": [
+        "SheetCMYK CMYK"
+      ],
+      "expected_severity": {
+        "SheetCMYK CMYK": "error"
+      },
+      "description": "7pt text filled with CMYK 100/100/100/100 — should use single black ink.",
+      "generator_function": "assay_pdf.generator.rules.gen_r0015_rich_black_text",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "sheetcmyk-cmyk"
+      },
+      "sha256": "b12cc456f672fb1ff8b3300c0e61d4e2d75bddf4ef79798ef268857406990bb8",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/negative/r0016/r0016-sheetcmyk-cmyk.pdf",
+      "category": "negative",
+      "primary_rule_id": "R0016",
+      "applicable_variants": [
+        "SheetCMYK CMYK"
+      ],
+      "expected_severity": {
+        "SheetCMYK CMYK": "error"
+      },
+      "description": "[v0.1.1 STUB] Registration-problems small white text (4.99pt threshold case) — no actual rule violation injected; engines will not flag.",
+      "generator_function": "assay_pdf.generator.rules._stub_negative(R0016)",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "sheetcmyk-cmyk"
+      },
+      "sha256": "46c09ded878df4360637a545b9a179029bfd36dd59abf4714f06fd8183b97efd",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/negative/r0017/r0017-sheetcmyk-cmyk.pdf",
+      "category": "negative",
+      "primary_rule_id": "R0017",
+      "applicable_variants": [
+        "SheetCMYK CMYK"
+      ],
+      "expected_severity": {
+        "SheetCMYK CMYK": "error"
+      },
+      "description": "[v0.1.1 STUB] Registration-problems small multi-channel text — no actual rule violation injected; engines will not flag.",
+      "generator_function": "assay_pdf.generator.rules._stub_negative(R0017)",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "sheetcmyk-cmyk"
+      },
+      "sha256": "0e661852d733c5a18df649f1f139244324862a4b2e4e3f142d54630aeaf47538",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/negative/r0018/r0018-sheetcmyk-cmyk.pdf",
+      "category": "negative",
+      "primary_rule_id": "R0018",
+      "applicable_variants": [
+        "SheetCMYK CMYK"
+      ],
+      "expected_severity": {
+        "SheetCMYK CMYK": "error"
+      },
+      "description": "[v0.1.1 STUB] Registration-problems thin white lines — no actual rule violation injected; engines will not flag.",
+      "generator_function": "assay_pdf.generator.rules._stub_negative(R0018)",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "sheetcmyk-cmyk"
+      },
+      "sha256": "514823236b1e3a09983181ede357f05c677680bfd373f3a41b6cf9de87e8f584",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/negative/r0019/r0019-sheetcmyk-cmyk.pdf",
+      "category": "negative",
+      "primary_rule_id": "R0019",
+      "applicable_variants": [
+        "SheetCMYK CMYK"
+      ],
+      "expected_severity": {
+        "SheetCMYK CMYK": "error"
+      },
+      "description": "[v0.1.1 STUB] Registration-problems thin multi-channel lines — no actual rule violation injected; engines will not flag.",
+      "generator_function": "assay_pdf.generator.rules._stub_negative(R0019)",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "sheetcmyk-cmyk"
+      },
+      "sha256": "5d1b1c8d9eac753d689241ef9c69196165ca58d8f379358a3d56d217cfe58713",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/negative/r0020/r0020-sheetcmyk-cmyk.pdf",
+      "category": "negative",
+      "primary_rule_id": "R0020",
+      "applicable_variants": [
+        "SheetCMYK CMYK"
+      ],
+      "expected_severity": {
+        "SheetCMYK CMYK": "error"
+      },
+      "description": "12 distinct PANTONE spot color separations declared as resources.",
+      "generator_function": "assay_pdf.generator.rules.gen_r0020_too_many_spots",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "sheetcmyk-cmyk"
+      },
+      "sha256": "d9ca93301736c40ae9fb7676661848fd5ff78dc7b7d87d2cb6427d7126ea528c",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/negative/r0021/r0021-sheetspot-cmyk.pdf",
+      "category": "negative",
+      "primary_rule_id": "R0021",
+      "applicable_variants": [
+        "SheetSpot CMYK"
+      ],
+      "expected_severity": {
+        "SheetSpot CMYK": "error"
+      },
+      "description": "[v0.1.1 STUB] Spot color suffix inconsistency (PANTONE 638 C vs Pantone 638 C) — no actual rule violation injected; engines will not flag.",
+      "generator_function": "assay_pdf.generator.rules._stub_negative(R0021)",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "sheetspot-cmyk"
+      },
+      "sha256": "45fefb4c56ebde491e1a0dc39a6b34935d0f8c8a1b63b8fd7efd62f67a39d1f2",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/negative/r0022/r0022-sheetspot-cmyk.pdf",
+      "category": "negative",
+      "primary_rule_id": "R0022",
+      "applicable_variants": [
+        "SheetSpot CMYK"
+      ],
+      "expected_severity": {
+        "SheetSpot CMYK": "error"
+      },
+      "description": "[v0.1.1 STUB] Spot color case-sensitive collision — no actual rule violation injected; engines will not flag.",
+      "generator_function": "assay_pdf.generator.rules._stub_negative(R0022)",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "sheetspot-cmyk"
+      },
+      "sha256": "a1dade9f8fa58c30da2da91c4a70e08506c8cad38592dec82e543b849bf45381",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/negative/r0023/r0023-sheetspot-cmyk.pdf",
+      "category": "negative",
+      "primary_rule_id": "R0023",
+      "applicable_variants": [
+        "SheetSpot CMYK"
+      ],
+      "expected_severity": {
+        "SheetSpot CMYK": "error"
+      },
+      "description": "[v0.1.1 STUB] Visually identical spot colors — no actual rule violation injected; engines will not flag.",
+      "generator_function": "assay_pdf.generator.rules._stub_negative(R0023)",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "sheetspot-cmyk"
+      },
+      "sha256": "d62dbea8941efc62ade1fc35165606870ec946b84c912ec38f4a078bea51137d",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/negative/r0024/r0024-sheetcmyk-cmyk.pdf",
+      "category": "negative",
+      "primary_rule_id": "R0024",
+      "applicable_variants": [
+        "SheetCMYK CMYK"
+      ],
+      "expected_severity": {
+        "SheetCMYK CMYK": "error"
+      },
+      "description": "Page uses /Separation /All — registration colour, forbidden in production.",
+      "generator_function": "assay_pdf.generator.rules.gen_r0024_all_spot",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "sheetcmyk-cmyk"
+      },
+      "sha256": "a9c87bb59b574d108b93eb3394e24bf18781729081f44d8806e62c1ec4cd5b91",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/negative/r0025/r0025-packaging-offset.pdf",
+      "category": "negative",
+      "primary_rule_id": "R0025",
+      "applicable_variants": [
+        "Packaging Offset"
+      ],
+      "expected_severity": {
+        "Packaging Offset": "error"
+      },
+      "description": "Half-page rectangle at CMYK 90/90/90/90 = 360% TAC; variant ceiling = 320%.",
+      "generator_function": "assay_pdf.generator.rules.gen_r0025_tac_overflow",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "packaging-offset"
+      },
+      "sha256": "4bf7b50cc67c54baa4ff5b719ee399177f3b1ddfeda2dc8d2478051b41755d44",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/negative/r0026/r0026-sheetcmyk-cmyk.pdf",
+      "category": "negative",
+      "primary_rule_id": "R0026",
+      "applicable_variants": [
+        "SheetCMYK CMYK"
+      ],
+      "expected_severity": {
+        "SheetCMYK CMYK": "error"
+      },
+      "description": "Large area at CMYK 95/85/85/85 = 350% > 300% (variant CMYK ceiling).",
+      "generator_function": "assay_pdf.generator.rules.gen_r0026_cmyk_tac_overflow",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "sheetcmyk-cmyk"
+      },
+      "sha256": "9fb28597bfbbbf3fd5aad3eab56513331cf026a636d06a131172bb5a5140fafe",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/negative/r0027/r0027-sheetcmyk-cmyk.pdf",
+      "category": "negative",
+      "primary_rule_id": "R0027",
+      "applicable_variants": [
+        "SheetCMYK CMYK"
+      ],
+      "expected_severity": {
+        "SheetCMYK CMYK": "error"
+      },
+      "description": "Path filled with DeviceRGB color — forbidden by R0027 in early-binding mode.",
+      "generator_function": "assay_pdf.generator.rules.gen_r0027_devicergb",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "sheetcmyk-cmyk"
+      },
+      "sha256": "6801460e75c6d11acaa620f177cd6513d1cdf60242fb45c88eb37459c0f58db8",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/negative/r0028/r0028-magazine-ads-cmyk-plus-rgb.pdf",
+      "category": "negative",
+      "primary_rule_id": "R0028",
+      "applicable_variants": [
+        "Magazine Ads CMYK + RGB"
+      ],
+      "expected_severity": {
+        "Magazine Ads CMYK + RGB": "error"
+      },
+      "description": "[v0.1.1 STUB] Intermediate-binding image with CalRGB — no actual rule violation injected; engines will not flag.",
+      "generator_function": "assay_pdf.generator.rules._stub_negative(R0028)",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "magazine-ads-cmyk-plus-rgb"
+      },
+      "sha256": "c00a01cb46b48994e0dd5f1aae95fcbf50c6db711131ec7d990010e34ea828c0",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/negative/r0029/r0029-large-format-print.pdf",
+      "category": "negative",
+      "primary_rule_id": "R0029",
+      "applicable_variants": [
+        "Large Format Print"
+      ],
+      "expected_severity": {
+        "Large Format Print": "error"
+      },
+      "description": "[v0.1.1 STUB] Late-binding image with Indexed-DeviceRGB — no actual rule violation injected; engines will not flag.",
+      "generator_function": "assay_pdf.generator.rules._stub_negative(R0029)",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "large-format-print"
+      },
+      "sha256": "41df853c23c21059caa7da27aa9eb109aa9638a9e10e1c53287481533969fa11",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/negative/r0030/r0030-sheetcmyk-cmyk.pdf",
+      "category": "negative",
+      "primary_rule_id": "R0030",
+      "applicable_variants": [
+        "SheetCMYK CMYK"
+      ],
+      "expected_severity": {
+        "SheetCMYK CMYK": "error"
+      },
+      "description": "[v0.1.1 STUB] Transparency blend space with /CS DeviceRGB — no actual rule violation injected; engines will not flag.",
+      "generator_function": "assay_pdf.generator.rules._stub_negative(R0030)",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "sheetcmyk-cmyk"
+      },
+      "sha256": "a0786a162f89349d43458d133f78860d738f3adcd47ba1ea520b23807bf3441e",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/negative/r0031/r0031-sheetcmyk-cmyk.pdf",
+      "category": "negative",
+      "primary_rule_id": "R0031",
+      "applicable_variants": [
+        "SheetCMYK CMYK"
+      ],
+      "expected_severity": {
+        "SheetCMYK CMYK": "error"
+      },
+      "description": "50x50 DeviceCMYK image scaled to 400pt = ~9 ppi effective; threshold A = 224 ppi.",
+      "generator_function": "assay_pdf.generator.rules.gen_r0031_low_res_color_image",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "sheetcmyk-cmyk"
+      },
+      "sha256": "1906b3e20a5b53ba934dcb2a678d9dd137f29e2bc571a973a611a5d5fc8f7f79",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/negative/r0032/r0032-sheetcmyk-cmyk.pdf",
+      "category": "negative",
+      "primary_rule_id": "R0032",
+      "applicable_variants": [
+        "SheetCMYK CMYK"
+      ],
+      "expected_severity": {
+        "SheetCMYK CMYK": "error"
+      },
+      "description": "100x100 1-bit image scaled to 400pt = 18 ppi; threshold A = 1000 ppi.",
+      "generator_function": "assay_pdf.generator.rules.gen_r0032_low_res_1bit",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "sheetcmyk-cmyk"
+      },
+      "sha256": "541624dbfbc535da75305d2825d2eb2bc41dfefe25e5944877ed93c1959d8d70",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/negative/r0033/r0033-magazine-ads-cmyk.pdf",
+      "category": "negative",
+      "primary_rule_id": "R0033",
+      "applicable_variants": [
+        "Magazine Ads CMYK"
+      ],
+      "expected_severity": {
+        "Magazine Ads CMYK": "error"
+      },
+      "description": "[v0.1.1 STUB] Rasterized page (full-page raster) — no actual rule violation injected; engines will not flag.",
+      "generator_function": "assay_pdf.generator.rules._stub_negative(R0033)",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "magazine-ads-cmyk"
+      },
+      "sha256": "93d024227a52e242e835ee4f36ecc787fbd47e38fea2db1b48a471629a1bf52e",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/negative/r0034/r0034-magazine-ads-cmyk.pdf",
+      "category": "negative",
+      "primary_rule_id": "R0034",
+      "applicable_variants": [
+        "Magazine Ads CMYK"
+      ],
+      "expected_severity": {
+        "Magazine Ads CMYK": "error"
+      },
+      "description": "OCProperties present, /Configs array missing — violates R0034 structural requirement.",
+      "generator_function": "assay_pdf.generator.rules.gen_r0034_ocg_no_configs",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "magazine-ads-cmyk"
+      },
+      "sha256": "9a6273ff3e36e54b2695377dba5912014f6404bb54619f5eb254ba667b9636e7",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/negative/r0035/r0035-sheetcmyk-cmyk.pdf",
+      "category": "negative",
+      "primary_rule_id": "R0035",
+      "applicable_variants": [
+        "SheetCMYK CMYK"
+      ],
+      "expected_severity": {
+        "SheetCMYK CMYK": "error"
+      },
+      "description": "OutputIntent /DestOutputProfile has /N 3 (RGB) — R0035 requires CMYK (/N 4).",
+      "generator_function": "assay_pdf.generator.rules.gen_r0035_rgb_output_intent",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "sheetcmyk-cmyk"
+      },
+      "sha256": "127fe3334a58686f626f96b124c7509452184dbad183d6b47419d3478244b284",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/negative/r0036/r0036-large-format-print.pdf",
+      "category": "negative",
+      "primary_rule_id": "R0036",
+      "applicable_variants": [
+        "Large Format Print"
+      ],
+      "expected_severity": {
+        "Large Format Print": "error"
+      },
+      "description": "[v0.1.1 STUB] Hidden OCG (intent=Hidden) — no actual rule violation injected; engines will not flag.",
+      "generator_function": "assay_pdf.generator.rules._stub_negative(R0036)",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "large-format-print"
+      },
+      "sha256": "61e8f769a95e12bb70411ae747ccc0519146c70a37778579c52f25a60a3b8ef5",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/negative/r0037/r0037-large-format-print.pdf",
+      "category": "negative",
+      "primary_rule_id": "R0037",
+      "applicable_variants": [
+        "Large Format Print"
+      ],
+      "expected_severity": {
+        "Large Format Print": "error"
+      },
+      "description": "No Scaling Factor (D0025) or Viewing Distance (D0026) metadata — required for sign/display.",
+      "generator_function": "assay_pdf.generator.rules.gen_r0037_no_scaling",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "large-format-print"
+      },
+      "sha256": "63c8b3cf943ad7fdfb2f5e5a50542e06bd123cbcc16b41a89aad85f75b31406f",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/negative/r1001/r1001-packaging-offset.pdf",
+      "category": "negative",
+      "primary_rule_id": "R1001",
+      "applicable_variants": [
+        "Packaging Offset"
+      ],
+      "expected_severity": {
+        "Packaging Offset": "error"
+      },
+      "description": "Packaging-variant PDF lacks ISO 19593-1 Processing Steps layer (Cutting/Creasing/etc.).",
+      "generator_function": "assay_pdf.generator.rules.gen_r1001_no_processing_steps",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "packaging-offset"
+      },
+      "sha256": "52c350fd80bd1c994838a50da3dc6b610435eec1d78970808c89ca0d6622ff88",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/negative/r1002/r1002-packaging-offset.pdf",
+      "category": "negative",
+      "primary_rule_id": "R1002",
+      "applicable_variants": [
+        "Packaging Offset"
+      ],
+      "expected_severity": {
+        "Packaging Offset": "error"
+      },
+      "description": "[v0.1.1 STUB] Folding carton without required Creasing layer — no actual rule violation injected; engines will not flag.",
+      "generator_function": "assay_pdf.generator.rules._stub_negative(R1002)",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "packaging-offset"
+      },
+      "sha256": "b48be1d5e3a665bae59e5cc11b08059fd3f337f963eea6cab4dee2b77b78bcc6",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/positive/corrugated-display/corrugated-display.pdf",
+      "category": "positive",
+      "primary_rule_id": null,
+      "applicable_variants": [
+        "Corrugated Display"
+      ],
+      "expected_severity": {},
+      "description": "Minimal PDF/X-4 baseline for variant 'Corrugated Display' — should pass every rule.",
+      "generator_function": "assay_pdf.generator.rules.gen_positive_baseline",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "corrugated-display"
+      },
+      "sha256": "33650e9152f086f5c34519b61473fc47e2cf40c19edf6fc8107a3d3a5313aa2b",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/positive/digital-print/digital-print.pdf",
+      "category": "positive",
+      "primary_rule_id": null,
+      "applicable_variants": [
+        "Digital Print"
+      ],
+      "expected_severity": {},
+      "description": "Minimal PDF/X-4 baseline for variant 'Digital Print' — should pass every rule.",
+      "generator_function": "assay_pdf.generator.rules.gen_positive_baseline",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "digital-print"
+      },
+      "sha256": "3f79591f887a41fddc5921b450effe640152bbbe6f39d54df348756164572c9b",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/positive/flexible/flexible.pdf",
+      "category": "positive",
+      "primary_rule_id": null,
+      "applicable_variants": [
+        "Flexible"
+      ],
+      "expected_severity": {},
+      "description": "Minimal PDF/X-4 baseline for variant 'Flexible' — should pass every rule.",
+      "generator_function": "assay_pdf.generator.rules.gen_positive_baseline",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "flexible"
+      },
+      "sha256": "1f219445f35b84d0a61f650875fe043db707934eb682374349d2a1f8a0cfbcb3",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/positive/folding-carton-corrugated-box/folding-carton-corrugated-box.pdf",
+      "category": "positive",
+      "primary_rule_id": null,
+      "applicable_variants": [
+        "Folding Carton & Corrugated Box"
+      ],
+      "expected_severity": {},
+      "description": "Minimal PDF/X-4 baseline for variant 'Folding Carton & Corrugated Box' — should pass every rule.",
+      "generator_function": "assay_pdf.generator.rules.gen_positive_baseline",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "folding-carton-corrugated-box"
+      },
+      "sha256": "191db422aab7394608fcb25cdae34c3eb6d4b3e470d0cbcc2d7561a8b5848f49",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/positive/label-leaflet/label-leaflet.pdf",
+      "category": "positive",
+      "primary_rule_id": null,
+      "applicable_variants": [
+        "Label & Leaflet"
+      ],
+      "expected_severity": {},
+      "description": "Minimal PDF/X-4 baseline for variant 'Label & Leaflet' — should pass every rule.",
+      "generator_function": "assay_pdf.generator.rules.gen_positive_baseline",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "label-leaflet"
+      },
+      "sha256": "43fe1d3e899a2bc912f25300df678b37e2643f0aae2c36307132758b2079e268",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/positive/large-format-print/large-format-print.pdf",
+      "category": "positive",
+      "primary_rule_id": null,
+      "applicable_variants": [
+        "Large Format Print"
+      ],
+      "expected_severity": {},
+      "description": "Minimal PDF/X-4 baseline for variant 'Large Format Print' — should pass every rule.",
+      "generator_function": "assay_pdf.generator.rules.gen_positive_baseline",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "large-format-print"
+      },
+      "sha256": "5a18005cad61d041702de945ab1f3f6401017744cd0df2100f9a505d4d21e1ab",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/positive/magazine-ads-cmyk-plus-rgb/magazine-ads-cmyk-plus-rgb.pdf",
+      "category": "positive",
+      "primary_rule_id": null,
+      "applicable_variants": [
+        "Magazine Ads CMYK + RGB"
+      ],
+      "expected_severity": {},
+      "description": "Minimal PDF/X-4 baseline for variant 'Magazine Ads CMYK + RGB' — should pass every rule.",
+      "generator_function": "assay_pdf.generator.rules.gen_positive_baseline",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "magazine-ads-cmyk-plus-rgb"
+      },
+      "sha256": "9534b9b26c913a87ac23752bfa7cd62113558e4cb1d5d3f21e4d94811bd00813",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/positive/magazine-ads-cmyk/magazine-ads-cmyk.pdf",
+      "category": "positive",
+      "primary_rule_id": null,
+      "applicable_variants": [
+        "Magazine Ads CMYK"
+      ],
+      "expected_severity": {},
+      "description": "Minimal PDF/X-4 baseline for variant 'Magazine Ads CMYK' — should pass every rule.",
+      "generator_function": "assay_pdf.generator.rules.gen_positive_baseline",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "magazine-ads-cmyk"
+      },
+      "sha256": "ab2838d431c7afee5fb1581f1b167288c9137d32fa131630e68a98c1d1dd19dc",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/positive/newspaper-ads-cmyk-plus-rgb/newspaper-ads-cmyk-plus-rgb.pdf",
+      "category": "positive",
+      "primary_rule_id": null,
+      "applicable_variants": [
+        "Newspaper Ads CMYK + RGB"
+      ],
+      "expected_severity": {},
+      "description": "Minimal PDF/X-4 baseline for variant 'Newspaper Ads CMYK + RGB' — should pass every rule.",
+      "generator_function": "assay_pdf.generator.rules.gen_positive_baseline",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "newspaper-ads-cmyk-plus-rgb"
+      },
+      "sha256": "ead2539392012db17c2fcae3cb1bfd9e88472969fe31fcf098f487549550d95d",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/positive/newspaper-ads-cmyk/newspaper-ads-cmyk.pdf",
+      "category": "positive",
+      "primary_rule_id": null,
+      "applicable_variants": [
+        "Newspaper Ads CMYK"
+      ],
+      "expected_severity": {},
+      "description": "Minimal PDF/X-4 baseline for variant 'Newspaper Ads CMYK' — should pass every rule.",
+      "generator_function": "assay_pdf.generator.rules.gen_positive_baseline",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "newspaper-ads-cmyk"
+      },
+      "sha256": "15093a5cf55fae3728f78dcb2a62fb2dadf727a952ffa1a48b4c51bb5fb05dfc",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/positive/packaging-flexo/packaging-flexo.pdf",
+      "category": "positive",
+      "primary_rule_id": null,
+      "applicable_variants": [
+        "Packaging Flexo"
+      ],
+      "expected_severity": {},
+      "description": "Minimal PDF/X-4 baseline for variant 'Packaging Flexo' — should pass every rule.",
+      "generator_function": "assay_pdf.generator.rules.gen_positive_baseline",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "packaging-flexo"
+      },
+      "sha256": "c220d8d6874280e50b35fb27b64b66ea5634896dbdee9a1681bfe0344d682316",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/positive/packaging-gravure/packaging-gravure.pdf",
+      "category": "positive",
+      "primary_rule_id": null,
+      "applicable_variants": [
+        "Packaging Gravure"
+      ],
+      "expected_severity": {},
+      "description": "Minimal PDF/X-4 baseline for variant 'Packaging Gravure' — should pass every rule.",
+      "generator_function": "assay_pdf.generator.rules.gen_positive_baseline",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "packaging-gravure"
+      },
+      "sha256": "ea13008c59486257573532993f83ffa9f50e32a5f70d33c9ec843902ebebaa6b",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/positive/packaging-offset/packaging-offset.pdf",
+      "category": "positive",
+      "primary_rule_id": null,
+      "applicable_variants": [
+        "Packaging Offset"
+      ],
+      "expected_severity": {},
+      "description": "Minimal PDF/X-4 baseline for variant 'Packaging Offset' — should pass every rule.",
+      "generator_function": "assay_pdf.generator.rules.gen_positive_baseline",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "packaging-offset"
+      },
+      "sha256": "ade742440393e58eeb6c43109d07bffd354cead2689ac92e82d5e65fea2e382d",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/positive/sheetcmyk-cmyk-plus-rgb/sheetcmyk-cmyk-plus-rgb.pdf",
+      "category": "positive",
+      "primary_rule_id": null,
+      "applicable_variants": [
+        "SheetCMYK CMYK + RGB"
+      ],
+      "expected_severity": {},
+      "description": "Minimal PDF/X-4 baseline for variant 'SheetCMYK CMYK + RGB' — should pass every rule.",
+      "generator_function": "assay_pdf.generator.rules.gen_positive_baseline",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "sheetcmyk-cmyk-plus-rgb"
+      },
+      "sha256": "af8c93b90129564646ca188f4c08f652f8792a30393ac73d433c89bff1cfc0da",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/positive/sheetcmyk-cmyk/sheetcmyk-cmyk.pdf",
+      "category": "positive",
+      "primary_rule_id": null,
+      "applicable_variants": [
+        "SheetCMYK CMYK"
+      ],
+      "expected_severity": {},
+      "description": "Minimal PDF/X-4 baseline for variant 'SheetCMYK CMYK' — should pass every rule.",
+      "generator_function": "assay_pdf.generator.rules.gen_positive_baseline",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "sheetcmyk-cmyk"
+      },
+      "sha256": "a8f336ca14dba5017a8db737b6cdbb2aa46b0b592e60d3cfe15a8be2a6440e78",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/positive/sheetspot-cmyk-plus-rgb/sheetspot-cmyk-plus-rgb.pdf",
+      "category": "positive",
+      "primary_rule_id": null,
+      "applicable_variants": [
+        "SheetSpot CMYK + RGB"
+      ],
+      "expected_severity": {},
+      "description": "Minimal PDF/X-4 baseline for variant 'SheetSpot CMYK + RGB' — should pass every rule.",
+      "generator_function": "assay_pdf.generator.rules.gen_positive_baseline",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "sheetspot-cmyk-plus-rgb"
+      },
+      "sha256": "e24cfa24ec16096ade253b232c9a7526ac9a7ba9a0d78e2e5aebfb51be963e66",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/positive/sheetspot-cmyk/sheetspot-cmyk.pdf",
+      "category": "positive",
+      "primary_rule_id": null,
+      "applicable_variants": [
+        "SheetSpot CMYK"
+      ],
+      "expected_severity": {},
+      "description": "Minimal PDF/X-4 baseline for variant 'SheetSpot CMYK' — should pass every rule.",
+      "generator_function": "assay_pdf.generator.rules.gen_positive_baseline",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "sheetspot-cmyk"
+      },
+      "sha256": "5efe69bc9293fb3d49fe6bafc0582a22fdd4cb1bf4d0840162d51e1e5c9064fb",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/positive/webcmyk-cmyk-plus-rgb/webcmyk-cmyk-plus-rgb.pdf",
+      "category": "positive",
+      "primary_rule_id": null,
+      "applicable_variants": [
+        "WebCMYK CMYK + RGB"
+      ],
+      "expected_severity": {},
+      "description": "Minimal PDF/X-4 baseline for variant 'WebCMYK CMYK + RGB' — should pass every rule.",
+      "generator_function": "assay_pdf.generator.rules.gen_positive_baseline",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "webcmyk-cmyk-plus-rgb"
+      },
+      "sha256": "236bd33f9a1893c583d84e69eac87590927200b7d2ff800d02661413487940d3",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/positive/webcmyk-cmyk/webcmyk-cmyk.pdf",
+      "category": "positive",
+      "primary_rule_id": null,
+      "applicable_variants": [
+        "WebCMYK CMYK"
+      ],
+      "expected_severity": {},
+      "description": "Minimal PDF/X-4 baseline for variant 'WebCMYK CMYK' — should pass every rule.",
+      "generator_function": "assay_pdf.generator.rules.gen_positive_baseline",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "webcmyk-cmyk"
+      },
+      "sha256": "313f74df419a4ae289fadf6dfddd1c0ed22c01ce2daab6a62e13ab12e8277326",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/positive/webcmyknews-cmyk-plus-rgb/webcmyknews-cmyk-plus-rgb.pdf",
+      "category": "positive",
+      "primary_rule_id": null,
+      "applicable_variants": [
+        "WebCMYKNews CMYK + RGB"
+      ],
+      "expected_severity": {},
+      "description": "Minimal PDF/X-4 baseline for variant 'WebCMYKNews CMYK + RGB' — should pass every rule.",
+      "generator_function": "assay_pdf.generator.rules.gen_positive_baseline",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "webcmyknews-cmyk-plus-rgb"
+      },
+      "sha256": "86056a06c22128e6c07013d603055ed17f2514037fc6edb43cf04ce0b3193f67",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/positive/webcmyknews-cmyk/webcmyknews-cmyk.pdf",
+      "category": "positive",
+      "primary_rule_id": null,
+      "applicable_variants": [
+        "WebCMYKNews CMYK"
+      ],
+      "expected_severity": {},
+      "description": "Minimal PDF/X-4 baseline for variant 'WebCMYKNews CMYK' — should pass every rule.",
+      "generator_function": "assay_pdf.generator.rules.gen_positive_baseline",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "webcmyknews-cmyk"
+      },
+      "sha256": "cae8d2e5bda15a5d8c72e105bcaef8b5717f188af054f835b801d93dd0ca216c",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/positive/webspot-cmyk-plus-rgb/webspot-cmyk-plus-rgb.pdf",
+      "category": "positive",
+      "primary_rule_id": null,
+      "applicable_variants": [
+        "WebSpot CMYK + RGB"
+      ],
+      "expected_severity": {},
+      "description": "Minimal PDF/X-4 baseline for variant 'WebSpot CMYK + RGB' — should pass every rule.",
+      "generator_function": "assay_pdf.generator.rules.gen_positive_baseline",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "webspot-cmyk-plus-rgb"
+      },
+      "sha256": "3b74ecef09dbdc919d53fd8955d4268a55246544ac678cc7384e94967fc9f00f",
+      "arch_generated_on": "x86_64"
+    },
+    {
+      "path": "corpus/positive/webspot-cmyk/webspot-cmyk.pdf",
+      "category": "positive",
+      "primary_rule_id": null,
+      "applicable_variants": [
+        "WebSpot CMYK"
+      ],
+      "expected_severity": {},
+      "description": "Minimal PDF/X-4 baseline for variant 'WebSpot CMYK' — should pass every rule.",
+      "generator_function": "assay_pdf.generator.rules.gen_positive_baseline",
+      "deterministic_inputs": {
+        "seed": 0,
+        "variant": "webspot-cmyk"
+      },
+      "sha256": "b0062c2c22b33dab009950ccc5d3897f89aaf4446baee4295f224d1bc89c191d",
+      "arch_generated_on": "x86_64"
+    }
+  ]
+}
