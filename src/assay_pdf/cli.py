@@ -71,12 +71,26 @@ def generate(
 @app.command()
 def benchmark(
     engine: Annotated[str, typer.Option("--engine", help="Engine name: pdftoolbox, pitstop, lintpdf.")],
-    profile: Annotated[str, typer.Option("--profile", help="GWG 2022 variant kebab name.")],
+    profile: Annotated[str | None, typer.Option("--profile", help="GWG 2022 variant kebab name (omit to run all variants).")] = None,
 ) -> None:
-    """Run an engine against the corpus (Commit 4 — not yet implemented)."""
-    _ = (engine, profile)
-    rprint("[yellow]Not yet implemented[/yellow] — lands in Commit 4.")
-    raise typer.Exit(code=2)
+    """Run an engine against the corpus and write results + score to results/."""
+    from assay_pdf.harness.driver import benchmark as do_benchmark
+    from assay_pdf.harness.runners import RunnerNotInstalledError
+
+    try:
+        score = do_benchmark(engine=engine, profile=profile)
+    except RunnerNotInstalledError as e:
+        rprint(f"[yellow]Engine not available[/yellow] — {e}")
+        raise typer.Exit(code=2) from e
+
+    total_tp = sum(s.true_positives for s in score.per_rule_per_variant)
+    total_fp = sum(s.false_positives for s in score.per_rule_per_variant)
+    total_fn = sum(s.false_negatives for s in score.per_rule_per_variant)
+    total_tn = sum(s.true_negatives for s in score.per_rule_per_variant)
+    rprint(
+        f"[green]✓[/green] {engine} score: TP={total_tp} FP={total_fp} FN={total_fn} TN={total_tn} "
+        f"({score.aggregate_runtime_ms}ms aggregate runtime)"
+    )
 
 
 @app.command()
