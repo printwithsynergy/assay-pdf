@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AssayPDF Scoreboard</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  body { font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+  .num { font-variant-numeric: tabular-nums; }
+  .navy { background-color: #0F172A; }
+  .lime { color: #A3E635; }
+</style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+<header class="navy text-white py-6 px-8 mb-8">
+  <h1 class="text-3xl font-bold">AssayPDF <span class="lime">Scoreboard</span></h1>
+  <p class="text-slate-300 text-sm mt-1">
+    Generated {{ generated_at }} · AssayPDF v{{ tool_version }} · Corpus v{{ corpus_version }}
+  </p>
+</header>
+
+<main class="px-8 max-w-7xl mx-auto">
+
+  {% if not engines %}
+  <div class="bg-yellow-100 border-l-4 border-yellow-400 p-4 mb-8">
+    <p class="font-semibold text-yellow-900">No results yet</p>
+    <p class="text-sm text-yellow-800 mt-1">
+      Run <code class="bg-yellow-50 px-1 rounded">uv run assay benchmark --engine pdftoolbox</code> first.
+    </p>
+  </div>
+  {% endif %}
+
+  <section class="mb-12">
+    <h2 class="text-2xl font-semibold mb-4">Engine summary</h2>
+    <table class="w-full bg-white rounded shadow overflow-hidden">
+      <thead class="navy text-white">
+        <tr>
+          <th class="text-left px-4 py-2">Engine</th>
+          <th class="text-right px-4 py-2 num">TP</th>
+          <th class="text-right px-4 py-2 num">FP</th>
+          <th class="text-right px-4 py-2 num">FN</th>
+          <th class="text-right px-4 py-2 num">TN</th>
+          <th class="text-right px-4 py-2 num">Accuracy</th>
+          <th class="text-right px-4 py-2 num">Precision</th>
+          <th class="text-right px-4 py-2 num">Recall</th>
+          <th class="text-right px-4 py-2 num">F1</th>
+          <th class="text-right px-4 py-2 num">Runtime</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for engine in engines %}
+        {% set s = engine_summaries[engine] %}
+        {% set r = (reports | selectattr("engine", "equalto", engine) | list)[0] %}
+        <tr class="border-t border-slate-200 hover:bg-slate-50">
+          <td class="px-4 py-2 font-semibold">{{ engine }}</td>
+          <td class="px-4 py-2 text-right num">{{ s.tp }}</td>
+          <td class="px-4 py-2 text-right num text-red-600">{{ s.fp }}</td>
+          <td class="px-4 py-2 text-right num text-orange-600">{{ s.fn }}</td>
+          <td class="px-4 py-2 text-right num">{{ s.tn }}</td>
+          <td class="px-4 py-2 text-right num">{{ "%.1f%%" | format(s.accuracy * 100) }}</td>
+          <td class="px-4 py-2 text-right num">{{ "%.1f%%" | format(s.precision * 100) }}</td>
+          <td class="px-4 py-2 text-right num">{{ "%.1f%%" | format(s.recall * 100) }}</td>
+          <td class="px-4 py-2 text-right num">{{ "%.2f" | format(s.f1) }}</td>
+          <td class="px-4 py-2 text-right num text-slate-500">{{ "%.1fs" | format(r.aggregate_runtime_ms / 1000.0) }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </section>
+
+  <section class="mb-12">
+    <h2 class="text-2xl font-semibold mb-4">Per-rule breakdown</h2>
+    <p class="text-sm text-slate-600 mb-3">
+      <span class="text-green-700 font-semibold">TP</span> /
+      <span class="text-red-600 font-semibold">FP</span> /
+      <span class="text-orange-600 font-semibold">FN</span>
+      per (rule × engine), summed across variants.
+    </p>
+    <table class="w-full bg-white rounded shadow overflow-hidden text-sm">
+      <thead class="navy text-white">
+        <tr>
+          <th class="text-left px-3 py-2">Rule</th>
+          {% for engine in engines %}
+          <th class="text-right px-3 py-2">{{ engine }}</th>
+          {% endfor %}
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in rule_breakdown %}
+        <tr class="border-t border-slate-200 hover:bg-slate-50">
+          <td class="px-3 py-1.5 font-mono">{{ row.rule_id }}</td>
+          {% for engine in engines %}
+          {% set cell = row.engines.get(engine, {"tp": 0, "fp": 0, "fn": 0}) %}
+          <td class="px-3 py-1.5 text-right num">
+            <span class="text-green-700">{{ cell.tp }}</span>
+            /
+            <span class="text-red-600">{{ cell.fp }}</span>
+            /
+            <span class="text-orange-600">{{ cell.fn }}</span>
+          </td>
+          {% endfor %}
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </section>
+
+  <section class="mb-12">
+    <h2 class="text-2xl font-semibold mb-4">Reading this</h2>
+    <dl class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+      <div><dt class="font-semibold">TP (true positive)</dt><dd class="text-slate-600">Negative test for rule R; engine flagged R. <strong>Higher is better.</strong></dd></div>
+      <div><dt class="font-semibold">FP (false positive)</dt><dd class="text-slate-600">Positive baseline; engine flagged R anyway. <strong>Lower is better</strong> — false-positive fatigue.</dd></div>
+      <div><dt class="font-semibold">FN (false negative)</dt><dd class="text-slate-600">Negative test for rule R; engine missed it. <strong>Lower is better.</strong></dd></div>
+      <div><dt class="font-semibold">TN (true negative)</dt><dd class="text-slate-600">Positive baseline; engine correctly silent. <strong>Higher is better.</strong></dd></div>
+    </dl>
+    <p class="text-xs text-slate-500 mt-4">
+      Stub negatives (R0009-R0013, R0016-R0019, R0021-R0023, R0028-R0030, R0033, R0036, R1002)
+      are excluded from scoring in v0.1.0 — full implementation lands in v0.1.1.
+    </p>
+  </section>
+
+  <footer class="text-xs text-slate-500 border-t border-slate-200 pt-6 mt-12 mb-12">
+    <p>
+      Reproducible: <code class="bg-slate-100 px-1 rounded">git clone … && uv sync && uv run assay generate && uv run assay benchmark --engine X && uv run assay report --format html</code>
+    </p>
+    <p class="mt-1">
+      Sister project: <a href="https://github.com/thinkneverland/lint-pdf" class="text-blue-600 hover:underline">lintPDF</a> — the API-first PDF preflight SaaS this benchmark validates against.
+    </p>
+  </footer>
+</main>
+</body>
+</html>

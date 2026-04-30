@@ -96,11 +96,21 @@ def benchmark(
 @app.command()
 def report(
     fmt: Annotated[str, typer.Option("--format", help="md or html.")] = "md",
+    output: Annotated[Path | None, typer.Option("--output", help="Write to this file instead of stdout.")] = None,
 ) -> None:
-    """Render the scoreboard from results/ (Commit 5 — not yet implemented)."""
-    _ = fmt
-    rprint("[yellow]Not yet implemented[/yellow] — lands in Commit 5.")
-    raise typer.Exit(code=2)
+    """Render a markdown or HTML scoreboard from every results/*.score.json."""
+    from assay_pdf.reports.generator import render_report
+
+    if fmt not in {"md", "html"}:
+        rprint(f"[red]Unknown format[/red] {fmt!r}; expected 'md' or 'html'.")
+        raise typer.Exit(code=2)
+    rendered = render_report(format=fmt)
+    if output:
+        output.parent.mkdir(parents=True, exist_ok=True)
+        output.write_text(rendered, encoding="utf-8")
+        rprint(f"[green]✓[/green] Wrote {output}")
+    else:
+        typer.echo(rendered)
 
 
 @app.command()

@@ -1,0 +1,61 @@
+{# Newline preservation: `+%}` overrides Jinja's trim_blocks for tables. #}
+# AssayPDF Scoreboard
+
+> Generated: `{{ generated_at }}` · AssayPDF `v{{ tool_version }}` · Corpus `v{{ corpus_version }}`
+
+## TL;DR
+
+| Engine | TP | FP | FN | TN | Accuracy | Precision | Recall | F1 | Runtime |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+{% for engine in engines -%}
+{% set s = engine_summaries[engine] -%}
+{% set r = (reports | selectattr("engine", "equalto", engine) | list)[0] -%}
+| **{{ engine }}** | {{ s.tp }} | {{ s.fp }} | {{ s.fn }} | {{ s.tn }} | {{ "%.1f%%" | format(s.accuracy * 100) }} | {{ "%.1f%%" | format(s.precision * 100) }} | {{ "%.1f%%" | format(s.recall * 100) }} | {{ "%.2f" | format(s.f1) }} | {{ "%.1fs" | format(r.aggregate_runtime_ms / 1000.0) }} |
+{% endfor +%}
+
+{% if not engines -%}
+_No score reports found in `results/` — run `uv run assay benchmark --engine pdftoolbox` first._
+{% endif +%}
+
+## Per-rule breakdown
+
+{% if rule_breakdown -%}
+| Rule |{% for engine in engines %} {{ engine }} TP/FP/FN |{% endfor +%}
+
+|---|{% for engine in engines %}---:|{% endfor +%}
+
+{% for row in rule_breakdown -%}
+| `{{ row.rule_id }}` |
+{%- for engine in engines -%}
+{% set cell = row.engines.get(engine, {"tp": 0, "fp": 0, "fn": 0}) %} {{ cell.tp }} / {{ cell.fp }} / {{ cell.fn }} |
+{%- endfor +%}
+
+{% endfor +%}
+{% else -%}
+_No per-rule data — see above note._
+{% endif +%}
+
+## Reading this
+
+- **TP** (true positive): negative test PDF for rule R, engine flagged R. Higher is better.
+- **FP** (false positive): positive baseline PDF, engine flagged R anyway. Lower is better — this is "false-positive fatigue" the AssayPDF thesis targets.
+- **FN** (false negative): negative test PDF for rule R, engine missed it. Lower is better.
+- **TN** (true negative): positive baseline, engine correctly silent. Higher is better.
+- **Precision** = TP / (TP + FP). How often is a flag correct?
+- **Recall** = TP / (TP + FN). How often does the engine catch real violations?
+- **F1** = harmonic mean of precision and recall.
+
+Rules in `R0009-R0013, R0016-R0019, R0021-R0023, R0028-R0030, R0033, R0036, R1002` have stub negatives in the v0.1.0 corpus (no actual rule violation injected). Engines won't flag them, which the scorer treats as a known coverage gap, not as engine failure. Track full v0.1.1 implementation [here](https://github.com/thinkneverland/assay-pdf/issues).
+
+## Reproduce
+
+```bash
+git clone https://github.com/thinkneverland/assay-pdf.git
+cd assay-pdf
+uv sync
+uv run assay generate
+uv run assay benchmark --engine pdftoolbox
+uv run assay report --format md
+```
+
+Same engine versions and licenses → same numbers, byte-for-byte.
