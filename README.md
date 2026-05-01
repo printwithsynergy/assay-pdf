@@ -26,12 +26,21 @@ It also doubles as the credibility layer for **lintPDF** (Think Neverland's PDF 
 ```bash
 git clone https://github.com/thinkneverland/assay-pdf.git
 cd assay-pdf
-uv sync                                  # install deps + Python 3.12
-uv run assay fetch                       # download GWG vendor assets (~183 MB)
-uv run assay generate                    # build the 175-file corpus
-uv run assay benchmark --engine pdftoolbox --profile sheet-cmyk-cmyk
+uv sync --all-extras                                      # install deps + Python 3.12
+uv run assay fetch                                        # download GWG vendor assets (~183 MB)
+uv run assay generate                                     # build the 175-file PDF/X-4 corpus
+uv run assay validate                                     # verify every PDF passes verapdf
+uv run assay benchmark --engine pdftoolbox --profile sheetcmyk-cmyk
 uv run assay report --format md > REPORT.md
 ```
+
+Detailed docs:
+
+- [docs/install.md](docs/install.md) — prerequisites (Python+uv, system binaries, engines)
+- [docs/usage.md](docs/usage.md) — end-to-end walkthrough (fetch → generate → benchmark → report → validate)
+- [docs/cli.md](docs/cli.md) — per-command flags, exit codes, engine and variant kebab names
+- [docs/troubleshooting.md](docs/troubleshooting.md) — common errors and fixes
+- [docs/reproducing.md](docs/reproducing.md) — reproducing a published score
 
 ## What you get
 
@@ -43,17 +52,6 @@ corpus/
 ```
 
 Every PDF passes `verapdf` PDF/X-4 validation (or has documented exception in the manifest). Every PDF is generated deterministically — same code, same seed, byte-identical output.
-
-## CLI reference
-
-```
-assay fetch                     Download vendor assets (GOS suites, processing-steps test suite)
-assay ingest                    Parse spec/gwg-2022-spec.xlsx → spec/requirement-ids.json
-assay generate                  Generate the 175-file corpus into corpus/
-assay benchmark <engine>        Run an engine against the corpus
-assay report                    Render scoreboard from results/
-assay validate                  Run verapdf over corpus/ and report failures
-```
 
 ## Coverage
 
