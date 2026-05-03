@@ -1,3 +1,10 @@
+---
+title: "Installing AssayPDF"
+description: "Prerequisites for AssayPDF: Python with uv, system binaries (ghostscript, qpdf, mupdf-tools, exiftool, imagemagick, verapdf), and optional preflight engines for benchmarking."
+group: "Getting started"
+order: 2
+---
+
 # Installing AssayPDF
 
 Prerequisites and initial setup. For the end-to-end workflow once you're installed, see [usage.md](usage.md).

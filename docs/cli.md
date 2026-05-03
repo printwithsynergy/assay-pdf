@@ -1,3 +1,10 @@
+---
+title: "CLI reference"
+description: "Per-command flags, exit codes, engine identifiers, and variant kebab names for every assay subcommand: fetch, ingest, generate, benchmark, report, and validate."
+group: "Reference"
+order: 5
+---
+
 # CLI reference
 
 All commands accept a global `-v` / `--verbose` flag for debug logging.

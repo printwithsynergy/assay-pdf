@@ -1,3 +1,10 @@
+---
+title: "Methodology"
+description: "How AssayPDF scores a preflight engine: confusion-matrix counts per rule and variant, rule-map translation, misattribution penalties, and reproducibility guarantees."
+group: "Reference"
+order: 6
+---
+
 # Methodology
 
 How AssayPDF actually scores a preflight engine.

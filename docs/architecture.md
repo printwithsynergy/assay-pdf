@@ -1,3 +1,10 @@
+---
+title: "Architecture"
+description: "How AssayPDF's spec layer, generator, harness, scorer, and reports fit together — from spec ingestion through deterministic PDF generation to per-engine accuracy reports."
+group: "Getting started"
+order: 4
+---
+
 # Architecture
 
 How the pieces fit together.
