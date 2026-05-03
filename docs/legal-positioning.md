@@ -1,4 +1,11 @@
-# Legal Positioning
+---
+title: "Legal positioning"
+description: "AssayPDF's legal posture: comparative-quality benchmarking under nominative fair use, no vendor redistribution, MIT licensing, and trial-license benchmarking guidance."
+group: "Project"
+order: 10
+---
+
+# Legal positioning
 
 AssayPDF is comparative-quality benchmarking. This document captures the legal posture so the project can ship and grow without surprises.
 

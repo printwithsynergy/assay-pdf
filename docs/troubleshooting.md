@@ -1,3 +1,10 @@
+---
+title: "Troubleshooting"
+description: "Common errors when running assay commands and how to fix them: missing engines, verapdf failures, checksum mismatches, unknown variant kebabs, and empty score reports."
+group: "Reference"
+order: 8
+---
+
 # Troubleshooting
 
 | Symptom | Cause / fix |

@@ -1,3 +1,10 @@
+---
+title: "Usage walkthrough"
+description: "End-to-end walkthrough: fetch vendor assets, generate the deterministic PDF corpus, benchmark a preflight engine, render reports, and validate against verapdf."
+group: "Getting started"
+order: 3
+---
+
 # Usage walkthrough
 
 End-to-end: fetch → generate → benchmark → report → validate. For installation, see [install.md](install.md). For per-flag CLI detail, see [cli.md](cli.md). For common errors, see [troubleshooting.md](troubleshooting.md).

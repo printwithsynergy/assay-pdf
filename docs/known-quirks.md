@@ -1,4 +1,11 @@
-# Known Quirks
+---
+title: "Known quirks"
+description: "Documented edge cases and surprising behaviors: verapdf JDK warnings, pikepdf XMP messages, ICC profile fallbacks, stub negatives, and architecture-specific determinism."
+group: "Reference"
+order: 9
+---
+
+# Known quirks
 
 Things that might surprise you running AssayPDF, with explanation.
 

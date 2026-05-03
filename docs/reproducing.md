@@ -1,3 +1,10 @@
+---
+title: "Reproducing AssayPDF"
+description: "Step-by-step guide to running AssayPDF end-to-end on your machine, generating the corpus, running engine benchmarks, and reproducing a published accuracy score."
+group: "Reference"
+order: 7
+---
+
 # Reproducing AssayPDF
 
 Step-by-step guide to running AssayPDF end-to-end on your machine and reproducing a published score.
