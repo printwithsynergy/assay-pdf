@@ -1,6 +1,6 @@
 [project]
 name = "assay-pdf"
-version = "0.1.0b1"
+version = "0.1.0b2"
 description = "Open-source GWG 2022 conformance assay for PDF preflight engines."
 readme = "README.md"
 requires-python = ">=3.12"

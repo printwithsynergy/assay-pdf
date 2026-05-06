@@ -1,11 +1,13 @@
 """Engine runners — one per preflight engine."""
 
 from assay_pdf.harness.runners.base import Runner, RunnerError, RunnerNotInstalledError
+from assay_pdf.harness.runners.codexpdf import CodexPDFRunner
 from assay_pdf.harness.runners.lintpdf import LintPDFRunner
 from assay_pdf.harness.runners.pdftoolbox import PdfToolboxRunner
 from assay_pdf.harness.runners.pitstop import PitStopRunner
 
 __all__ = [
+    "CodexPDFRunner",
     "LintPDFRunner",
     "PdfToolboxRunner",
     "PitStopRunner",
@@ -18,6 +20,7 @@ __all__ = [
 def get_runner(engine: str) -> Runner:
     """Return a Runner instance for the named engine."""
     runners: dict[str, type[Runner]] = {
+        "codexpdf": CodexPDFRunner,
         "lintpdf": LintPDFRunner,
         "pitstop": PitStopRunner,
         "pdftoolbox": PdfToolboxRunner,

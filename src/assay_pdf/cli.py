@@ -88,7 +88,7 @@ def generate(
 @app.command()
 def benchmark(
     engine: Annotated[
-        str, typer.Option("--engine", help="Engine name: pdftoolbox, pitstop, lintpdf.")
+        str, typer.Option("--engine", help="Engine name: pdftoolbox, pitstop, lintpdf, codexpdf.")
     ],
     profile: Annotated[
         str | None,
