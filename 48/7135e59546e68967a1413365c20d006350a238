@@ -1,0 +1,31 @@
+src/assay_pdf/harness/runners/lintpdf.py
+  s_b6db5244fff483::t_e9145416585933 1,5-6,9-10,15,18,21-25,27-29,34-44,47-48,50-51,53-64
+  s_1ec52510788653::t_c85ece2cd81ccf 30-33,45-46,49,52,66-89
+tests/test_lint_runner.py
+  s_b6db5244fff483::t_b43578c152a81a 1-17,25-38
+  s_1ec52510788653::t_f5eb8a2096ae4b 18-24,39-40
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.1",
+  "base_commit_sha": "487135e59546e68967a1413365c20d006350a238",
+  "prompts": {},
+  "sessions": {
+    "s_1ec52510788653": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "8501c3bf-ab93-45aa-ab86-4ea1ce17a4e1",
+        "model": "premium"
+      },
+      "human_author": "Quincy Adams <quincy@thinkneverland.com>"
+    },
+    "s_b6db5244fff483": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "c92fd016-5694-47f8-ae3a-6f1771ffb4ae",
+        "model": "premium"
+      },
+      "human_author": "Quincy Adams <quincy@thinkneverland.com>"
+    }
+  }
+}
