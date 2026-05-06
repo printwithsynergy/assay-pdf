@@ -1,0 +1,40 @@
+src/assay_pdf/harness/runners/codexpdf.py
+  3f0cdbd772e3e829 1-62
+src/assay_pdf/cli.py
+  3f0cdbd772e3e829 91
+src/assay_pdf/__init__.py
+  s_3f0cdbd772e3e8::t_965ca4f235f7a5 3
+src/assay_pdf/harness/runners/__init__.py
+  3f0cdbd772e3e829 4,10,23
+pyproject.toml
+  s_3f0cdbd772e3e8::t_3c1a2299e76248 3
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.1",
+  "base_commit_sha": "23163dc214887e5acdbd8c0d747b1c470165afcb",
+  "prompts": {
+    "3f0cdbd772e3e829": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "35baf435-0446-43c6-8341-50917f7cd5d6",
+        "model": "premium"
+      },
+      "human_author": "Quincy Adams <quincy@thinkneverland.com>",
+      "total_additions": 93,
+      "total_deletions": 1,
+      "accepted_lines": 66,
+      "overriden_lines": 0
+    }
+  },
+  "sessions": {
+    "s_3f0cdbd772e3e8": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "35baf435-0446-43c6-8341-50917f7cd5d6",
+        "model": "premium"
+      },
+      "human_author": "Quincy Adams <quincy@thinkneverland.com>"
+    }
+  }
+}
