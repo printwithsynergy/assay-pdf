@@ -1,0 +1,29 @@
+reports/audit/mislocated-closure.json
+  s_4d925a565f4237::t_959465e94561f4 1-53
+reports/gwg2022/run_index.json
+  s_4d925a565f4237::t_ba859e47e4d27c 1-54
+scripts/gwg2022_baseline.py
+  s_4d925a565f4237::t_4838439721474c 192
+  s_4d925a565f4237::t_7bd4abfbbe6493 1-143,145-191,193-261
+  s_4d925a565f4237::t_692a415bfb9282 144
+scripts/bin/lint-pdf
+  s_4d925a565f4237::t_4fd2c739cdf56e 1-8
+APPROVALS.md
+  s_4d925a565f4237::t_ca1265277072d2 1-15
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.1",
+  "base_commit_sha": "1942184299b456cb3368cfe9637942ac905b7218",
+  "prompts": {},
+  "sessions": {
+    "s_4d925a565f4237": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "a4e4c49c-f417-4e57-8dfc-7c733b76d7c0",
+        "model": "claude-opus-4-7-thinking-xhigh"
+      },
+      "human_author": "Quincy Adams <quincy@thinkneverland.com>"
+    }
+  }
+}
