@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0.0",
+  "report_kind": "assay-pdf.gwg2022.run-index",
+  "engine": "lintpdf",
+  "engine_version": "lintpdf-codex-cluster-v1",
+  "spec": "GWG 2022",
+  "lint_pdf_path_shim": "scripts/bin/lint-pdf",
+  "shim_resolves_to": "uv run --project /Users/macadmin/Code/printwithsynergy/lint-pdf lint-pdf",
+  "runs": [
+    {
+      "label": "sheetcmyk-cmyk",
+      "command": "PATH=scripts/bin:$PATH uv run --project . assay benchmark --engine lintpdf --profile sheetcmyk-cmyk",
+      "score_files": [
+        "results/lintpdf-20260507T150357Z.score.json",
+        "results/lintpdf-20260507T150747Z.score.json"
+      ],
+      "raw_files": [
+        "results/lintpdf-20260507T150357Z.json",
+        "results/lintpdf-20260507T150747Z.json"
+      ],
+      "aggregate": {
+        "true_positives": 0,
+        "false_positives": 48,
+        "true_negatives": 26,
+        "false_negatives": 15
+      },
+      "rerun_diff": "reports/gwg2022/diff-sheetcmyk-cmyk.json",
+      "rerun_diff_count": 0
+    },
+    {
+      "label": "all",
+      "command": "PATH=scripts/bin:$PATH uv run --project . assay benchmark --engine lintpdf",
+      "score_files": [
+        "results/lintpdf-20260507T150556Z.score.json",
+        "results/lintpdf-20260507T150914Z.score.json"
+      ],
+      "raw_files": [
+        "results/lintpdf-20260507T150556Z.json",
+        "results/lintpdf-20260507T150914Z.json"
+      ],
+      "aggregate": {
+        "true_positives": 0,
+        "false_positives": 129,
+        "true_negatives": 39,
+        "false_negatives": 20
+      },
+      "rerun_diff": "reports/gwg2022/diff-all.json",
+      "rerun_diff_count": 0
+    }
+  ],
+  "baseline_path": "reports/baselines/gwg2022_baseline.json",
+  "diff_strategy": "Strip generated_at + aggregate_runtime_ms; sort per_rule_per_variant by (rule_id, variant); compare TP/FP/FN/TN per row.",
+  "verification_command": "python3 scripts/gwg2022_baseline.py diff --baseline reports/baselines/gwg2022_baseline.json --score <score.json> --label <label> --output reports/gwg2022"
+}

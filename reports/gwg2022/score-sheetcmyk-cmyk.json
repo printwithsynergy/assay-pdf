@@ -1,0 +1,241 @@
+{
+  "engine": "lintpdf",
+  "engine_version": "lintpdf-codex-cluster-v1",
+  "generated_at": "2026-05-07T15:03:57.101674Z",
+  "corpus_version": "0.1.0",
+  "per_rule_per_variant": [
+    {
+      "rule_id": "LPDF_BOX_003",
+      "variant": "SheetCMYK CMYK",
+      "true_positives": 0,
+      "false_positives": 16,
+      "true_negatives": 0,
+      "false_negatives": 0
+    },
+    {
+      "rule_id": "LPDF_BOX_004",
+      "variant": "SheetCMYK CMYK",
+      "true_positives": 0,
+      "false_positives": 16,
+      "true_negatives": 0,
+      "false_negatives": 0
+    },
+    {
+      "rule_id": "LPDF_BOX_TRIMBOX_DEFAULTED",
+      "variant": "SheetCMYK CMYK",
+      "true_positives": 0,
+      "false_positives": 16,
+      "true_negatives": 0,
+      "false_negatives": 0
+    },
+    {
+      "rule_id": "R0001",
+      "variant": "SheetCMYK CMYK",
+      "true_positives": 0,
+      "false_positives": 0,
+      "true_negatives": 1,
+      "false_negatives": 1
+    },
+    {
+      "rule_id": "R0002",
+      "variant": "SheetCMYK CMYK",
+      "true_positives": 0,
+      "false_positives": 0,
+      "true_negatives": 1,
+      "false_negatives": 1
+    },
+    {
+      "rule_id": "R0003",
+      "variant": "SheetCMYK CMYK",
+      "true_positives": 0,
+      "false_positives": 0,
+      "true_negatives": 1,
+      "false_negatives": 1
+    },
+    {
+      "rule_id": "R0004",
+      "variant": "SheetCMYK CMYK",
+      "true_positives": 0,
+      "false_positives": 0,
+      "true_negatives": 1,
+      "false_negatives": 1
+    },
+    {
+      "rule_id": "R0005",
+      "variant": "SheetCMYK CMYK",
+      "true_positives": 0,
+      "false_positives": 0,
+      "true_negatives": 1,
+      "false_negatives": 1
+    },
+    {
+      "rule_id": "R0007",
+      "variant": "SheetCMYK CMYK",
+      "true_positives": 0,
+      "false_positives": 0,
+      "true_negatives": 1,
+      "false_negatives": 1
+    },
+    {
+      "rule_id": "R0008",
+      "variant": "SheetCMYK CMYK",
+      "true_positives": 0,
+      "false_positives": 0,
+      "true_negatives": 1,
+      "false_negatives": 1
+    },
+    {
+      "rule_id": "R0009",
+      "variant": "SheetCMYK CMYK",
+      "true_positives": 0,
+      "false_positives": 0,
+      "true_negatives": 1,
+      "false_negatives": 0
+    },
+    {
+      "rule_id": "R0010",
+      "variant": "SheetCMYK CMYK",
+      "true_positives": 0,
+      "false_positives": 0,
+      "true_negatives": 1,
+      "false_negatives": 0
+    },
+    {
+      "rule_id": "R0011",
+      "variant": "SheetCMYK CMYK",
+      "true_positives": 0,
+      "false_positives": 0,
+      "true_negatives": 1,
+      "false_negatives": 0
+    },
+    {
+      "rule_id": "R0012",
+      "variant": "SheetCMYK CMYK",
+      "true_positives": 0,
+      "false_positives": 0,
+      "true_negatives": 1,
+      "false_negatives": 0
+    },
+    {
+      "rule_id": "R0013",
+      "variant": "SheetCMYK CMYK",
+      "true_positives": 0,
+      "false_positives": 0,
+      "true_negatives": 1,
+      "false_negatives": 0
+    },
+    {
+      "rule_id": "R0014",
+      "variant": "SheetCMYK CMYK",
+      "true_positives": 0,
+      "false_positives": 0,
+      "true_negatives": 1,
+      "false_negatives": 1
+    },
+    {
+      "rule_id": "R0015",
+      "variant": "SheetCMYK CMYK",
+      "true_positives": 0,
+      "false_positives": 0,
+      "true_negatives": 1,
+      "false_negatives": 1
+    },
+    {
+      "rule_id": "R0016",
+      "variant": "SheetCMYK CMYK",
+      "true_positives": 0,
+      "false_positives": 0,
+      "true_negatives": 1,
+      "false_negatives": 0
+    },
+    {
+      "rule_id": "R0017",
+      "variant": "SheetCMYK CMYK",
+      "true_positives": 0,
+      "false_positives": 0,
+      "true_negatives": 1,
+      "false_negatives": 0
+    },
+    {
+      "rule_id": "R0018",
+      "variant": "SheetCMYK CMYK",
+      "true_positives": 0,
+      "false_positives": 0,
+      "true_negatives": 1,
+      "false_negatives": 0
+    },
+    {
+      "rule_id": "R0019",
+      "variant": "SheetCMYK CMYK",
+      "true_positives": 0,
+      "false_positives": 0,
+      "true_negatives": 1,
+      "false_negatives": 0
+    },
+    {
+      "rule_id": "R0020",
+      "variant": "SheetCMYK CMYK",
+      "true_positives": 0,
+      "false_positives": 0,
+      "true_negatives": 1,
+      "false_negatives": 1
+    },
+    {
+      "rule_id": "R0024",
+      "variant": "SheetCMYK CMYK",
+      "true_positives": 0,
+      "false_positives": 0,
+      "true_negatives": 1,
+      "false_negatives": 1
+    },
+    {
+      "rule_id": "R0026",
+      "variant": "SheetCMYK CMYK",
+      "true_positives": 0,
+      "false_positives": 0,
+      "true_negatives": 1,
+      "false_negatives": 1
+    },
+    {
+      "rule_id": "R0027",
+      "variant": "SheetCMYK CMYK",
+      "true_positives": 0,
+      "false_positives": 0,
+      "true_negatives": 1,
+      "false_negatives": 1
+    },
+    {
+      "rule_id": "R0030",
+      "variant": "SheetCMYK CMYK",
+      "true_positives": 0,
+      "false_positives": 0,
+      "true_negatives": 1,
+      "false_negatives": 0
+    },
+    {
+      "rule_id": "R0031",
+      "variant": "SheetCMYK CMYK",
+      "true_positives": 0,
+      "false_positives": 0,
+      "true_negatives": 1,
+      "false_negatives": 1
+    },
+    {
+      "rule_id": "R0032",
+      "variant": "SheetCMYK CMYK",
+      "true_positives": 0,
+      "false_positives": 0,
+      "true_negatives": 1,
+      "false_negatives": 1
+    },
+    {
+      "rule_id": "R0035",
+      "variant": "SheetCMYK CMYK",
+      "true_positives": 0,
+      "false_positives": 0,
+      "true_negatives": 1,
+      "false_negatives": 0
+    }
+  ],
+  "aggregate_runtime_ms": 36666
+}

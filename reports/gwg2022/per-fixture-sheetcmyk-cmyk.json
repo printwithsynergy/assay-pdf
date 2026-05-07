@@ -1,0 +1,2316 @@
+[
+  {
+    "engine": "lintpdf",
+    "engine_version": "lintpdf-codex-cluster-v1",
+    "profile": "page-geometry",
+    "file": "/Users/macadmin/Code/printwithsynergy/assay-pdf/corpus/negative/r0001/r0001-sheetcmyk-cmyk.pdf",
+    "hits": [
+      {
+        "rule_id": "LPDF_BOX_003",
+        "severity": "warning",
+        "message": "Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "",
+          "details": {
+            "bleeds": {
+              "bottom": 0.0,
+              "left": 0.0,
+              "right": 0.0,
+              "top": 0.0
+            },
+            "inadequate_sides": {
+              "bottom": 0.0,
+              "left": 0.0,
+              "right": 0.0,
+              "top": 0.0
+            },
+            "min_bleed_pts": 8.5
+          },
+          "inspection_id": "LPDF_BOX_003",
+          "iso_clause": "GWG 2022 6.1",
+          "message": "Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)",
+          "object_id": null,
+          "object_type": null,
+          "page_num": 1,
+          "severity": "warning",
+          "source": "engine"
+        }
+      },
+      {
+        "rule_id": "LPDF_BOX_004",
+        "severity": "error",
+        "message": "Page 1 has no content stream (empty page)",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "",
+          "details": {
+            "page_num": 1
+          },
+          "inspection_id": "LPDF_BOX_004",
+          "iso_clause": "",
+          "message": "Page 1 has no content stream (empty page)",
+          "object_id": null,
+          "object_type": null,
+          "page_num": 1,
+          "severity": "advisory",
+          "source": "engine"
+        }
+      },
+      {
+        "rule_id": "LPDF_BOX_TRIMBOX_DEFAULTED",
+        "severity": "error",
+        "message": "Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "page",
+          "details": {
+            "page_size_inches": [
+              8.27,
+              11.69
+            ],
+            "trim_equals_media": true
+          },
+          "inspection_id": "LPDF_BOX_TRIMBOX_DEFAULTED",
+          "iso_clause": "ISO 15930-7:2010 6.2.1",
+          "message": "Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.",
+          "object_id": null,
+          "object_type": "page",
+          "page_num": 1,
+          "severity": "advisory",
+          "source": "engine"
+        }
+      }
+    ],
+    "runtime_ms": 1396,
+    "raw_output": "{\n  \"adapter_path\": \"codex\",\n  \"cluster\": \"page-geometry\",\n  \"codex_schema_version\": \"1.0.0\",\n  \"finding_count\": 3,\n  \"findings\": [\n    {\n      \"bbox\": null,\n      \"category\": \"\",\n      \"details\": {\n        \"bleeds\": {\n          \"bottom\": 0.0,\n          \"left\": 0.0,\n          \"right\": 0.0,\n          \"top\": 0.0\n        },\n        \"inadequate_sides\": {\n          \"bottom\": 0.0,\n          \"left\": 0.0,\n          \"right\": 0.0,\n          \"top\": 0.0\n        },\n        \"min_bleed_pts\": 8.5\n      },\n      \"inspection_id\": \"LPDF_BOX_003\",\n      \"iso_clause\": \"GWG 2022 6.1\",\n      \"message\": \"Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)\",\n      \"object_id\": null,\n      \"object_type\": null,\n      \"page_num\": 1,\n      \"severity\": \"warning\",\n      \"source\": \"engine\"\n    },\n    {\n      \"bbox\": null,\n      \"category\": \"\",\n      \"details\": {\n        \"page_num\": 1\n      },\n      \"inspection_id\": \"LPDF_BOX_004\",\n      \"iso_clause\": \"\",\n      \"message\": \"Page 1 has no content stream (empty page)\",\n      \"object_id\": null,\n      \"object_type\": null,\n      \"page_num\": 1,\n      \"severity\": \"advisory\",\n      \"source\": \"engine\"\n    },\n    {\n      \"bbox\": null,\n      \"category\": \"page\",\n      \"details\": {\n        \"page_size_inches\": [\n          8.27,\n          11.69\n        ],\n        \"trim_equals_media\": true\n      },\n      \"inspection_id\": \"LPDF_BOX_TRIMBOX_DEFAULTED\",\n      \"iso_clause\": \"ISO 15930-7:2010 6.2.1\",\n      \"message\": \"Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.\",\n      \"object_id\": null,\n      \"object_type\": \"page\",\n      \"page_num\": 1,\n      \"severity\": \"advisory\",\n      \"source\": \"engine\"\n    }\n  ],\n  \"page_count\": 1,\n  \"pdf_path\": \"/Users/macadmin/Code/printwithsynergy/assay-pdf/corpus/negative/r0001/r0001-sheetcmyk-cmyk.pdf\"\n}\n"
+  },
+  {
+    "engine": "lintpdf",
+    "engine_version": "lintpdf-codex-cluster-v1",
+    "profile": "page-geometry",
+    "file": "/Users/macadmin/Code/printwithsynergy/assay-pdf/corpus/negative/r0002/r0002-sheetcmyk-cmyk.pdf",
+    "hits": [
+      {
+        "rule_id": "LPDF_BOX_003",
+        "severity": "warning",
+        "message": "Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "",
+          "details": {
+            "bleeds": {
+              "bottom": 0.0,
+              "left": 0.0,
+              "right": 0.0,
+              "top": 0.0
+            },
+            "inadequate_sides": {
+              "bottom": 0.0,
+              "left": 0.0,
+              "right": 0.0,
+              "top": 0.0
+            },
+            "min_bleed_pts": 8.5
+          },
+          "inspection_id": "LPDF_BOX_003",
+          "iso_clause": "GWG 2022 6.1",
+          "message": "Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)",
+          "object_id": null,
+          "object_type": null,
+          "page_num": 1,
+          "severity": "warning",
+          "source": "engine"
+        }
+      },
+      {
+        "rule_id": "LPDF_BOX_004",
+        "severity": "error",
+        "message": "Page 1 has no content stream (empty page)",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "",
+          "details": {
+            "page_num": 1
+          },
+          "inspection_id": "LPDF_BOX_004",
+          "iso_clause": "",
+          "message": "Page 1 has no content stream (empty page)",
+          "object_id": null,
+          "object_type": null,
+          "page_num": 1,
+          "severity": "advisory",
+          "source": "engine"
+        }
+      },
+      {
+        "rule_id": "LPDF_BOX_TRIMBOX_DEFAULTED",
+        "severity": "error",
+        "message": "Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "page",
+          "details": {
+            "page_size_inches": [
+              16.54,
+              23.39
+            ],
+            "trim_equals_media": true
+          },
+          "inspection_id": "LPDF_BOX_TRIMBOX_DEFAULTED",
+          "iso_clause": "ISO 15930-7:2010 6.2.1",
+          "message": "Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.",
+          "object_id": null,
+          "object_type": "page",
+          "page_num": 1,
+          "severity": "advisory",
+          "source": "engine"
+        }
+      }
+    ],
+    "runtime_ms": 1247,
+    "raw_output": "{\n  \"adapter_path\": \"codex\",\n  \"cluster\": \"page-geometry\",\n  \"codex_schema_version\": \"1.0.0\",\n  \"finding_count\": 3,\n  \"findings\": [\n    {\n      \"bbox\": null,\n      \"category\": \"\",\n      \"details\": {\n        \"bleeds\": {\n          \"bottom\": 0.0,\n          \"left\": 0.0,\n          \"right\": 0.0,\n          \"top\": 0.0\n        },\n        \"inadequate_sides\": {\n          \"bottom\": 0.0,\n          \"left\": 0.0,\n          \"right\": 0.0,\n          \"top\": 0.0\n        },\n        \"min_bleed_pts\": 8.5\n      },\n      \"inspection_id\": \"LPDF_BOX_003\",\n      \"iso_clause\": \"GWG 2022 6.1\",\n      \"message\": \"Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)\",\n      \"object_id\": null,\n      \"object_type\": null,\n      \"page_num\": 1,\n      \"severity\": \"warning\",\n      \"source\": \"engine\"\n    },\n    {\n      \"bbox\": null,\n      \"category\": \"\",\n      \"details\": {\n        \"page_num\": 1\n      },\n      \"inspection_id\": \"LPDF_BOX_004\",\n      \"iso_clause\": \"\",\n      \"message\": \"Page 1 has no content stream (empty page)\",\n      \"object_id\": null,\n      \"object_type\": null,\n      \"page_num\": 1,\n      \"severity\": \"advisory\",\n      \"source\": \"engine\"\n    },\n    {\n      \"bbox\": null,\n      \"category\": \"page\",\n      \"details\": {\n        \"page_size_inches\": [\n          16.54,\n          23.39\n        ],\n        \"trim_equals_media\": true\n      },\n      \"inspection_id\": \"LPDF_BOX_TRIMBOX_DEFAULTED\",\n      \"iso_clause\": \"ISO 15930-7:2010 6.2.1\",\n      \"message\": \"Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.\",\n      \"object_id\": null,\n      \"object_type\": \"page\",\n      \"page_num\": 1,\n      \"severity\": \"advisory\",\n      \"source\": \"engine\"\n    }\n  ],\n  \"page_count\": 1,\n  \"pdf_path\": \"/Users/macadmin/Code/printwithsynergy/assay-pdf/corpus/negative/r0002/r0002-sheetcmyk-cmyk.pdf\"\n}\n"
+  },
+  {
+    "engine": "lintpdf",
+    "engine_version": "lintpdf-codex-cluster-v1",
+    "profile": "page-geometry",
+    "file": "/Users/macadmin/Code/printwithsynergy/assay-pdf/corpus/negative/r0003/r0003-sheetcmyk-cmyk.pdf",
+    "hits": [
+      {
+        "rule_id": "LPDF_BOX_003",
+        "severity": "warning",
+        "message": "Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "",
+          "details": {
+            "bleeds": {
+              "bottom": 0.0,
+              "left": 0.0,
+              "right": 0.0,
+              "top": 0.0
+            },
+            "inadequate_sides": {
+              "bottom": 0.0,
+              "left": 0.0,
+              "right": 0.0,
+              "top": 0.0
+            },
+            "min_bleed_pts": 8.5
+          },
+          "inspection_id": "LPDF_BOX_003",
+          "iso_clause": "GWG 2022 6.1",
+          "message": "Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)",
+          "object_id": null,
+          "object_type": null,
+          "page_num": 1,
+          "severity": "warning",
+          "source": "engine"
+        }
+      },
+      {
+        "rule_id": "LPDF_BOX_004",
+        "severity": "error",
+        "message": "Page 1 has no content stream (empty page)",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "",
+          "details": {
+            "page_num": 1
+          },
+          "inspection_id": "LPDF_BOX_004",
+          "iso_clause": "",
+          "message": "Page 1 has no content stream (empty page)",
+          "object_id": null,
+          "object_type": null,
+          "page_num": 1,
+          "severity": "advisory",
+          "source": "engine"
+        }
+      },
+      {
+        "rule_id": "LPDF_BOX_TRIMBOX_DEFAULTED",
+        "severity": "error",
+        "message": "Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "page",
+          "details": {
+            "page_size_inches": [
+              7.77,
+              11.19
+            ],
+            "trim_equals_media": true
+          },
+          "inspection_id": "LPDF_BOX_TRIMBOX_DEFAULTED",
+          "iso_clause": "ISO 15930-7:2010 6.2.1",
+          "message": "Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.",
+          "object_id": null,
+          "object_type": "page",
+          "page_num": 1,
+          "severity": "advisory",
+          "source": "engine"
+        }
+      }
+    ],
+    "runtime_ms": 1306,
+    "raw_output": "{\n  \"adapter_path\": \"codex\",\n  \"cluster\": \"page-geometry\",\n  \"codex_schema_version\": \"1.0.0\",\n  \"finding_count\": 3,\n  \"findings\": [\n    {\n      \"bbox\": null,\n      \"category\": \"\",\n      \"details\": {\n        \"bleeds\": {\n          \"bottom\": 0.0,\n          \"left\": 0.0,\n          \"right\": 0.0,\n          \"top\": 0.0\n        },\n        \"inadequate_sides\": {\n          \"bottom\": 0.0,\n          \"left\": 0.0,\n          \"right\": 0.0,\n          \"top\": 0.0\n        },\n        \"min_bleed_pts\": 8.5\n      },\n      \"inspection_id\": \"LPDF_BOX_003\",\n      \"iso_clause\": \"GWG 2022 6.1\",\n      \"message\": \"Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)\",\n      \"object_id\": null,\n      \"object_type\": null,\n      \"page_num\": 1,\n      \"severity\": \"warning\",\n      \"source\": \"engine\"\n    },\n    {\n      \"bbox\": null,\n      \"category\": \"\",\n      \"details\": {\n        \"page_num\": 1\n      },\n      \"inspection_id\": \"LPDF_BOX_004\",\n      \"iso_clause\": \"\",\n      \"message\": \"Page 1 has no content stream (empty page)\",\n      \"object_id\": null,\n      \"object_type\": null,\n      \"page_num\": 1,\n      \"severity\": \"advisory\",\n      \"source\": \"engine\"\n    },\n    {\n      \"bbox\": null,\n      \"category\": \"page\",\n      \"details\": {\n        \"page_size_inches\": [\n          7.77,\n          11.19\n        ],\n        \"trim_equals_media\": true\n      },\n      \"inspection_id\": \"LPDF_BOX_TRIMBOX_DEFAULTED\",\n      \"iso_clause\": \"ISO 15930-7:2010 6.2.1\",\n      \"message\": \"Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.\",\n      \"object_id\": null,\n      \"object_type\": \"page\",\n      \"page_num\": 1,\n      \"severity\": \"advisory\",\n      \"source\": \"engine\"\n    }\n  ],\n  \"page_count\": 1,\n  \"pdf_path\": \"/Users/macadmin/Code/printwithsynergy/assay-pdf/corpus/negative/r0003/r0003-sheetcmyk-cmyk.pdf\"\n}\n"
+  },
+  {
+    "engine": "lintpdf",
+    "engine_version": "lintpdf-codex-cluster-v1",
+    "profile": "page-geometry",
+    "file": "/Users/macadmin/Code/printwithsynergy/assay-pdf/corpus/negative/r0004/r0004-sheetcmyk-cmyk.pdf",
+    "hits": [
+      {
+        "rule_id": "LPDF_BOX_003",
+        "severity": "warning",
+        "message": "Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "",
+          "details": {
+            "bleeds": {
+              "bottom": 0.0,
+              "left": 0.0,
+              "right": 0.0,
+              "top": 0.0
+            },
+            "inadequate_sides": {
+              "bottom": 0.0,
+              "left": 0.0,
+              "right": 0.0,
+              "top": 0.0
+            },
+            "min_bleed_pts": 8.5
+          },
+          "inspection_id": "LPDF_BOX_003",
+          "iso_clause": "GWG 2022 6.1",
+          "message": "Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)",
+          "object_id": null,
+          "object_type": null,
+          "page_num": 1,
+          "severity": "warning",
+          "source": "engine"
+        }
+      },
+      {
+        "rule_id": "LPDF_BOX_004",
+        "severity": "error",
+        "message": "Page 1 has no content stream (empty page)",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "",
+          "details": {
+            "page_num": 1
+          },
+          "inspection_id": "LPDF_BOX_004",
+          "iso_clause": "",
+          "message": "Page 1 has no content stream (empty page)",
+          "object_id": null,
+          "object_type": null,
+          "page_num": 1,
+          "severity": "advisory",
+          "source": "engine"
+        }
+      },
+      {
+        "rule_id": "LPDF_BOX_TRIMBOX_DEFAULTED",
+        "severity": "error",
+        "message": "Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "page",
+          "details": {
+            "page_size_inches": [
+              11.69,
+              8.27
+            ],
+            "trim_equals_media": true
+          },
+          "inspection_id": "LPDF_BOX_TRIMBOX_DEFAULTED",
+          "iso_clause": "ISO 15930-7:2010 6.2.1",
+          "message": "Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.",
+          "object_id": null,
+          "object_type": "page",
+          "page_num": 1,
+          "severity": "advisory",
+          "source": "engine"
+        }
+      }
+    ],
+    "runtime_ms": 1302,
+    "raw_output": "{\n  \"adapter_path\": \"codex\",\n  \"cluster\": \"page-geometry\",\n  \"codex_schema_version\": \"1.0.0\",\n  \"finding_count\": 3,\n  \"findings\": [\n    {\n      \"bbox\": null,\n      \"category\": \"\",\n      \"details\": {\n        \"bleeds\": {\n          \"bottom\": 0.0,\n          \"left\": 0.0,\n          \"right\": 0.0,\n          \"top\": 0.0\n        },\n        \"inadequate_sides\": {\n          \"bottom\": 0.0,\n          \"left\": 0.0,\n          \"right\": 0.0,\n          \"top\": 0.0\n        },\n        \"min_bleed_pts\": 8.5\n      },\n      \"inspection_id\": \"LPDF_BOX_003\",\n      \"iso_clause\": \"GWG 2022 6.1\",\n      \"message\": \"Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)\",\n      \"object_id\": null,\n      \"object_type\": null,\n      \"page_num\": 1,\n      \"severity\": \"warning\",\n      \"source\": \"engine\"\n    },\n    {\n      \"bbox\": null,\n      \"category\": \"\",\n      \"details\": {\n        \"page_num\": 1\n      },\n      \"inspection_id\": \"LPDF_BOX_004\",\n      \"iso_clause\": \"\",\n      \"message\": \"Page 1 has no content stream (empty page)\",\n      \"object_id\": null,\n      \"object_type\": null,\n      \"page_num\": 1,\n      \"severity\": \"advisory\",\n      \"source\": \"engine\"\n    },\n    {\n      \"bbox\": null,\n      \"category\": \"page\",\n      \"details\": {\n        \"page_size_inches\": [\n          11.69,\n          8.27\n        ],\n        \"trim_equals_media\": true\n      },\n      \"inspection_id\": \"LPDF_BOX_TRIMBOX_DEFAULTED\",\n      \"iso_clause\": \"ISO 15930-7:2010 6.2.1\",\n      \"message\": \"Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.\",\n      \"object_id\": null,\n      \"object_type\": \"page\",\n      \"page_num\": 1,\n      \"severity\": \"advisory\",\n      \"source\": \"engine\"\n    }\n  ],\n  \"page_count\": 1,\n  \"pdf_path\": \"/Users/macadmin/Code/printwithsynergy/assay-pdf/corpus/negative/r0004/r0004-sheetcmyk-cmyk.pdf\"\n}\n"
+  },
+  {
+    "engine": "lintpdf",
+    "engine_version": "lintpdf-codex-cluster-v1",
+    "profile": "page-geometry",
+    "file": "/Users/macadmin/Code/printwithsynergy/assay-pdf/corpus/negative/r0005/r0005-sheetcmyk-cmyk.pdf",
+    "hits": [
+      {
+        "rule_id": "LPDF_BOX_003",
+        "severity": "warning",
+        "message": "Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "",
+          "details": {
+            "bleeds": {
+              "bottom": 0.0,
+              "left": 0.0,
+              "right": 0.0,
+              "top": 0.0
+            },
+            "inadequate_sides": {
+              "bottom": 0.0,
+              "left": 0.0,
+              "right": 0.0,
+              "top": 0.0
+            },
+            "min_bleed_pts": 8.5
+          },
+          "inspection_id": "LPDF_BOX_003",
+          "iso_clause": "GWG 2022 6.1",
+          "message": "Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)",
+          "object_id": null,
+          "object_type": null,
+          "page_num": 1,
+          "severity": "warning",
+          "source": "engine"
+        }
+      },
+      {
+        "rule_id": "LPDF_BOX_004",
+        "severity": "error",
+        "message": "Page 1 has no content stream (empty page)",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "",
+          "details": {
+            "page_num": 1
+          },
+          "inspection_id": "LPDF_BOX_004",
+          "iso_clause": "",
+          "message": "Page 1 has no content stream (empty page)",
+          "object_id": null,
+          "object_type": null,
+          "page_num": 1,
+          "severity": "advisory",
+          "source": "engine"
+        }
+      },
+      {
+        "rule_id": "LPDF_BOX_TRIMBOX_DEFAULTED",
+        "severity": "error",
+        "message": "Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "page",
+          "details": {
+            "page_size_inches": [
+              8.27,
+              11.69
+            ],
+            "trim_equals_media": true
+          },
+          "inspection_id": "LPDF_BOX_TRIMBOX_DEFAULTED",
+          "iso_clause": "ISO 15930-7:2010 6.2.1",
+          "message": "Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.",
+          "object_id": null,
+          "object_type": "page",
+          "page_num": 1,
+          "severity": "advisory",
+          "source": "engine"
+        }
+      }
+    ],
+    "runtime_ms": 1330,
+    "raw_output": "{\n  \"adapter_path\": \"codex\",\n  \"cluster\": \"page-geometry\",\n  \"codex_schema_version\": \"1.0.0\",\n  \"finding_count\": 3,\n  \"findings\": [\n    {\n      \"bbox\": null,\n      \"category\": \"\",\n      \"details\": {\n        \"bleeds\": {\n          \"bottom\": 0.0,\n          \"left\": 0.0,\n          \"right\": 0.0,\n          \"top\": 0.0\n        },\n        \"inadequate_sides\": {\n          \"bottom\": 0.0,\n          \"left\": 0.0,\n          \"right\": 0.0,\n          \"top\": 0.0\n        },\n        \"min_bleed_pts\": 8.5\n      },\n      \"inspection_id\": \"LPDF_BOX_003\",\n      \"iso_clause\": \"GWG 2022 6.1\",\n      \"message\": \"Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)\",\n      \"object_id\": null,\n      \"object_type\": null,\n      \"page_num\": 1,\n      \"severity\": \"warning\",\n      \"source\": \"engine\"\n    },\n    {\n      \"bbox\": null,\n      \"category\": \"\",\n      \"details\": {\n        \"page_num\": 1\n      },\n      \"inspection_id\": \"LPDF_BOX_004\",\n      \"iso_clause\": \"\",\n      \"message\": \"Page 1 has no content stream (empty page)\",\n      \"object_id\": null,\n      \"object_type\": null,\n      \"page_num\": 1,\n      \"severity\": \"advisory\",\n      \"source\": \"engine\"\n    },\n    {\n      \"bbox\": null,\n      \"category\": \"page\",\n      \"details\": {\n        \"page_size_inches\": [\n          8.27,\n          11.69\n        ],\n        \"trim_equals_media\": true\n      },\n      \"inspection_id\": \"LPDF_BOX_TRIMBOX_DEFAULTED\",\n      \"iso_clause\": \"ISO 15930-7:2010 6.2.1\",\n      \"message\": \"Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.\",\n      \"object_id\": null,\n      \"object_type\": \"page\",\n      \"page_num\": 1,\n      \"severity\": \"advisory\",\n      \"source\": \"engine\"\n    }\n  ],\n  \"page_count\": 1,\n  \"pdf_path\": \"/Users/macadmin/Code/printwithsynergy/assay-pdf/corpus/negative/r0005/r0005-sheetcmyk-cmyk.pdf\"\n}\n"
+  },
+  {
+    "engine": "lintpdf",
+    "engine_version": "lintpdf-codex-cluster-v1",
+    "profile": "page-geometry",
+    "file": "/Users/macadmin/Code/printwithsynergy/assay-pdf/corpus/negative/r0007/r0007-sheetcmyk-cmyk.pdf",
+    "hits": [
+      {
+        "rule_id": "LPDF_BOX_003",
+        "severity": "warning",
+        "message": "Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "",
+          "details": {
+            "bleeds": {
+              "bottom": 0.0,
+              "left": 0.0,
+              "right": 0.0,
+              "top": 0.0
+            },
+            "inadequate_sides": {
+              "bottom": 0.0,
+              "left": 0.0,
+              "right": 0.0,
+              "top": 0.0
+            },
+            "min_bleed_pts": 8.5
+          },
+          "inspection_id": "LPDF_BOX_003",
+          "iso_clause": "GWG 2022 6.1",
+          "message": "Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)",
+          "object_id": null,
+          "object_type": null,
+          "page_num": 1,
+          "severity": "warning",
+          "source": "engine"
+        }
+      },
+      {
+        "rule_id": "LPDF_BOX_004",
+        "severity": "error",
+        "message": "Page 1 has no content stream (empty page)",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "",
+          "details": {
+            "page_num": 1
+          },
+          "inspection_id": "LPDF_BOX_004",
+          "iso_clause": "",
+          "message": "Page 1 has no content stream (empty page)",
+          "object_id": null,
+          "object_type": null,
+          "page_num": 1,
+          "severity": "advisory",
+          "source": "engine"
+        }
+      },
+      {
+        "rule_id": "LPDF_BOX_TRIMBOX_DEFAULTED",
+        "severity": "error",
+        "message": "Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "page",
+          "details": {
+            "page_size_inches": [
+              8.27,
+              11.69
+            ],
+            "trim_equals_media": true
+          },
+          "inspection_id": "LPDF_BOX_TRIMBOX_DEFAULTED",
+          "iso_clause": "ISO 15930-7:2010 6.2.1",
+          "message": "Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.",
+          "object_id": null,
+          "object_type": "page",
+          "page_num": 1,
+          "severity": "advisory",
+          "source": "engine"
+        }
+      }
+    ],
+    "runtime_ms": 1432,
+    "raw_output": "{\n  \"adapter_path\": \"codex\",\n  \"cluster\": \"page-geometry\",\n  \"codex_schema_version\": \"1.0.0\",\n  \"finding_count\": 3,\n  \"findings\": [\n    {\n      \"bbox\": null,\n      \"category\": \"\",\n      \"details\": {\n        \"bleeds\": {\n          \"bottom\": 0.0,\n          \"left\": 0.0,\n          \"right\": 0.0,\n          \"top\": 0.0\n        },\n        \"inadequate_sides\": {\n          \"bottom\": 0.0,\n          \"left\": 0.0,\n          \"right\": 0.0,\n          \"top\": 0.0\n        },\n        \"min_bleed_pts\": 8.5\n      },\n      \"inspection_id\": \"LPDF_BOX_003\",\n      \"iso_clause\": \"GWG 2022 6.1\",\n      \"message\": \"Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)\",\n      \"object_id\": null,\n      \"object_type\": null,\n      \"page_num\": 1,\n      \"severity\": \"warning\",\n      \"source\": \"engine\"\n    },\n    {\n      \"bbox\": null,\n      \"category\": \"\",\n      \"details\": {\n        \"page_num\": 1\n      },\n      \"inspection_id\": \"LPDF_BOX_004\",\n      \"iso_clause\": \"\",\n      \"message\": \"Page 1 has no content stream (empty page)\",\n      \"object_id\": null,\n      \"object_type\": null,\n      \"page_num\": 1,\n      \"severity\": \"advisory\",\n      \"source\": \"engine\"\n    },\n    {\n      \"bbox\": null,\n      \"category\": \"page\",\n      \"details\": {\n        \"page_size_inches\": [\n          8.27,\n          11.69\n        ],\n        \"trim_equals_media\": true\n      },\n      \"inspection_id\": \"LPDF_BOX_TRIMBOX_DEFAULTED\",\n      \"iso_clause\": \"ISO 15930-7:2010 6.2.1\",\n      \"message\": \"Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.\",\n      \"object_id\": null,\n      \"object_type\": \"page\",\n      \"page_num\": 1,\n      \"severity\": \"advisory\",\n      \"source\": \"engine\"\n    }\n  ],\n  \"page_count\": 1,\n  \"pdf_path\": \"/Users/macadmin/Code/printwithsynergy/assay-pdf/corpus/negative/r0007/r0007-sheetcmyk-cmyk.pdf\"\n}\n"
+  },
+  {
+    "engine": "lintpdf",
+    "engine_version": "lintpdf-codex-cluster-v1",
+    "profile": "page-geometry",
+    "file": "/Users/macadmin/Code/printwithsynergy/assay-pdf/corpus/negative/r0008/r0008-sheetcmyk-cmyk.pdf",
+    "hits": [
+      {
+        "rule_id": "LPDF_BOX_003",
+        "severity": "warning",
+        "message": "Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "",
+          "details": {
+            "bleeds": {
+              "bottom": 0.0,
+              "left": 0.0,
+              "right": 0.0,
+              "top": 0.0
+            },
+            "inadequate_sides": {
+              "bottom": 0.0,
+              "left": 0.0,
+              "right": 0.0,
+              "top": 0.0
+            },
+            "min_bleed_pts": 8.5
+          },
+          "inspection_id": "LPDF_BOX_003",
+          "iso_clause": "GWG 2022 6.1",
+          "message": "Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)",
+          "object_id": null,
+          "object_type": null,
+          "page_num": 1,
+          "severity": "warning",
+          "source": "engine"
+        }
+      },
+      {
+        "rule_id": "LPDF_BOX_004",
+        "severity": "error",
+        "message": "Page 1 has no content stream (empty page)",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "",
+          "details": {
+            "page_num": 1
+          },
+          "inspection_id": "LPDF_BOX_004",
+          "iso_clause": "",
+          "message": "Page 1 has no content stream (empty page)",
+          "object_id": null,
+          "object_type": null,
+          "page_num": 1,
+          "severity": "advisory",
+          "source": "engine"
+        }
+      },
+      {
+        "rule_id": "LPDF_BOX_TRIMBOX_DEFAULTED",
+        "severity": "error",
+        "message": "Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "page",
+          "details": {
+            "page_size_inches": [
+              8.27,
+              11.69
+            ],
+            "trim_equals_media": true
+          },
+          "inspection_id": "LPDF_BOX_TRIMBOX_DEFAULTED",
+          "iso_clause": "ISO 15930-7:2010 6.2.1",
+          "message": "Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.",
+          "object_id": null,
+          "object_type": "page",
+          "page_num": 1,
+          "severity": "advisory",
+          "source": "engine"
+        }
+      }
+    ],
+    "runtime_ms": 1431,
+    "raw_output": "{\n  \"adapter_path\": \"codex\",\n  \"cluster\": \"page-geometry\",\n  \"codex_schema_version\": \"1.0.0\",\n  \"finding_count\": 3,\n  \"findings\": [\n    {\n      \"bbox\": null,\n      \"category\": \"\",\n      \"details\": {\n        \"bleeds\": {\n          \"bottom\": 0.0,\n          \"left\": 0.0,\n          \"right\": 0.0,\n          \"top\": 0.0\n        },\n        \"inadequate_sides\": {\n          \"bottom\": 0.0,\n          \"left\": 0.0,\n          \"right\": 0.0,\n          \"top\": 0.0\n        },\n        \"min_bleed_pts\": 8.5\n      },\n      \"inspection_id\": \"LPDF_BOX_003\",\n      \"iso_clause\": \"GWG 2022 6.1\",\n      \"message\": \"Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)\",\n      \"object_id\": null,\n      \"object_type\": null,\n      \"page_num\": 1,\n      \"severity\": \"warning\",\n      \"source\": \"engine\"\n    },\n    {\n      \"bbox\": null,\n      \"category\": \"\",\n      \"details\": {\n        \"page_num\": 1\n      },\n      \"inspection_id\": \"LPDF_BOX_004\",\n      \"iso_clause\": \"\",\n      \"message\": \"Page 1 has no content stream (empty page)\",\n      \"object_id\": null,\n      \"object_type\": null,\n      \"page_num\": 1,\n      \"severity\": \"advisory\",\n      \"source\": \"engine\"\n    },\n    {\n      \"bbox\": null,\n      \"category\": \"page\",\n      \"details\": {\n        \"page_size_inches\": [\n          8.27,\n          11.69\n        ],\n        \"trim_equals_media\": true\n      },\n      \"inspection_id\": \"LPDF_BOX_TRIMBOX_DEFAULTED\",\n      \"iso_clause\": \"ISO 15930-7:2010 6.2.1\",\n      \"message\": \"Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.\",\n      \"object_id\": null,\n      \"object_type\": \"page\",\n      \"page_num\": 1,\n      \"severity\": \"advisory\",\n      \"source\": \"engine\"\n    }\n  ],\n  \"page_count\": 1,\n  \"pdf_path\": \"/Users/macadmin/Code/printwithsynergy/assay-pdf/corpus/negative/r0008/r0008-sheetcmyk-cmyk.pdf\"\n}\n"
+  },
+  {
+    "engine": "lintpdf",
+    "engine_version": "lintpdf-codex-cluster-v1",
+    "profile": "page-geometry",
+    "file": "/Users/macadmin/Code/printwithsynergy/assay-pdf/corpus/negative/r0009/r0009-sheetcmyk-cmyk.pdf",
+    "hits": [
+      {
+        "rule_id": "LPDF_BOX_003",
+        "severity": "warning",
+        "message": "Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "",
+          "details": {
+            "bleeds": {
+              "bottom": 0.0,
+              "left": 0.0,
+              "right": 0.0,
+              "top": 0.0
+            },
+            "inadequate_sides": {
+              "bottom": 0.0,
+              "left": 0.0,
+              "right": 0.0,
+              "top": 0.0
+            },
+            "min_bleed_pts": 8.5
+          },
+          "inspection_id": "LPDF_BOX_003",
+          "iso_clause": "GWG 2022 6.1",
+          "message": "Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)",
+          "object_id": null,
+          "object_type": null,
+          "page_num": 1,
+          "severity": "warning",
+          "source": "engine"
+        }
+      },
+      {
+        "rule_id": "LPDF_BOX_004",
+        "severity": "error",
+        "message": "Page 1 has no content stream (empty page)",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "",
+          "details": {
+            "page_num": 1
+          },
+          "inspection_id": "LPDF_BOX_004",
+          "iso_clause": "",
+          "message": "Page 1 has no content stream (empty page)",
+          "object_id": null,
+          "object_type": null,
+          "page_num": 1,
+          "severity": "advisory",
+          "source": "engine"
+        }
+      },
+      {
+        "rule_id": "LPDF_BOX_TRIMBOX_DEFAULTED",
+        "severity": "error",
+        "message": "Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "page",
+          "details": {
+            "page_size_inches": [
+              8.27,
+              11.69
+            ],
+            "trim_equals_media": true
+          },
+          "inspection_id": "LPDF_BOX_TRIMBOX_DEFAULTED",
+          "iso_clause": "ISO 15930-7:2010 6.2.1",
+          "message": "Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.",
+          "object_id": null,
+          "object_type": "page",
+          "page_num": 1,
+          "severity": "advisory",
+          "source": "engine"
+        }
+      }
+    ],
+    "runtime_ms": 1416,
+    "raw_output": "{\n  \"adapter_path\": \"codex\",\n  \"cluster\": \"page-geometry\",\n  \"codex_schema_version\": \"1.0.0\",\n  \"finding_count\": 3,\n  \"findings\": [\n    {\n      \"bbox\": null,\n      \"category\": \"\",\n      \"details\": {\n        \"bleeds\": {\n          \"bottom\": 0.0,\n          \"left\": 0.0,\n          \"right\": 0.0,\n          \"top\": 0.0\n        },\n        \"inadequate_sides\": {\n          \"bottom\": 0.0,\n          \"left\": 0.0,\n          \"right\": 0.0,\n          \"top\": 0.0\n        },\n        \"min_bleed_pts\": 8.5\n      },\n      \"inspection_id\": \"LPDF_BOX_003\",\n      \"iso_clause\": \"GWG 2022 6.1\",\n      \"message\": \"Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)\",\n      \"object_id\": null,\n      \"object_type\": null,\n      \"page_num\": 1,\n      \"severity\": \"warning\",\n      \"source\": \"engine\"\n    },\n    {\n      \"bbox\": null,\n      \"category\": \"\",\n      \"details\": {\n        \"page_num\": 1\n      },\n      \"inspection_id\": \"LPDF_BOX_004\",\n      \"iso_clause\": \"\",\n      \"message\": \"Page 1 has no content stream (empty page)\",\n      \"object_id\": null,\n      \"object_type\": null,\n      \"page_num\": 1,\n      \"severity\": \"advisory\",\n      \"source\": \"engine\"\n    },\n    {\n      \"bbox\": null,\n      \"category\": \"page\",\n      \"details\": {\n        \"page_size_inches\": [\n          8.27,\n          11.69\n        ],\n        \"trim_equals_media\": true\n      },\n      \"inspection_id\": \"LPDF_BOX_TRIMBOX_DEFAULTED\",\n      \"iso_clause\": \"ISO 15930-7:2010 6.2.1\",\n      \"message\": \"Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.\",\n      \"object_id\": null,\n      \"object_type\": \"page\",\n      \"page_num\": 1,\n      \"severity\": \"advisory\",\n      \"source\": \"engine\"\n    }\n  ],\n  \"page_count\": 1,\n  \"pdf_path\": \"/Users/macadmin/Code/printwithsynergy/assay-pdf/corpus/negative/r0009/r0009-sheetcmyk-cmyk.pdf\"\n}\n"
+  },
+  {
+    "engine": "lintpdf",
+    "engine_version": "lintpdf-codex-cluster-v1",
+    "profile": "page-geometry",
+    "file": "/Users/macadmin/Code/printwithsynergy/assay-pdf/corpus/negative/r0010/r0010-sheetcmyk-cmyk.pdf",
+    "hits": [
+      {
+        "rule_id": "LPDF_BOX_003",
+        "severity": "warning",
+        "message": "Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "",
+          "details": {
+            "bleeds": {
+              "bottom": 0.0,
+              "left": 0.0,
+              "right": 0.0,
+              "top": 0.0
+            },
+            "inadequate_sides": {
+              "bottom": 0.0,
+              "left": 0.0,
+              "right": 0.0,
+              "top": 0.0
+            },
+            "min_bleed_pts": 8.5
+          },
+          "inspection_id": "LPDF_BOX_003",
+          "iso_clause": "GWG 2022 6.1",
+          "message": "Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)",
+          "object_id": null,
+          "object_type": null,
+          "page_num": 1,
+          "severity": "warning",
+          "source": "engine"
+        }
+      },
+      {
+        "rule_id": "LPDF_BOX_004",
+        "severity": "error",
+        "message": "Page 1 has no content stream (empty page)",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "",
+          "details": {
+            "page_num": 1
+          },
+          "inspection_id": "LPDF_BOX_004",
+          "iso_clause": "",
+          "message": "Page 1 has no content stream (empty page)",
+          "object_id": null,
+          "object_type": null,
+          "page_num": 1,
+          "severity": "advisory",
+          "source": "engine"
+        }
+      },
+      {
+        "rule_id": "LPDF_BOX_TRIMBOX_DEFAULTED",
+        "severity": "error",
+        "message": "Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "page",
+          "details": {
+            "page_size_inches": [
+              8.27,
+              11.69
+            ],
+            "trim_equals_media": true
+          },
+          "inspection_id": "LPDF_BOX_TRIMBOX_DEFAULTED",
+          "iso_clause": "ISO 15930-7:2010 6.2.1",
+          "message": "Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.",
+          "object_id": null,
+          "object_type": "page",
+          "page_num": 1,
+          "severity": "advisory",
+          "source": "engine"
+        }
+      }
+    ],
+    "runtime_ms": 1347,
+    "raw_output": "{\n  \"adapter_path\": \"codex\",\n  \"cluster\": \"page-geometry\",\n  \"codex_schema_version\": \"1.0.0\",\n  \"finding_count\": 3,\n  \"findings\": [\n    {\n      \"bbox\": null,\n      \"category\": \"\",\n      \"details\": {\n        \"bleeds\": {\n          \"bottom\": 0.0,\n          \"left\": 0.0,\n          \"right\": 0.0,\n          \"top\": 0.0\n        },\n        \"inadequate_sides\": {\n          \"bottom\": 0.0,\n          \"left\": 0.0,\n          \"right\": 0.0,\n          \"top\": 0.0\n        },\n        \"min_bleed_pts\": 8.5\n      },\n      \"inspection_id\": \"LPDF_BOX_003\",\n      \"iso_clause\": \"GWG 2022 6.1\",\n      \"message\": \"Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)\",\n      \"object_id\": null,\n      \"object_type\": null,\n      \"page_num\": 1,\n      \"severity\": \"warning\",\n      \"source\": \"engine\"\n    },\n    {\n      \"bbox\": null,\n      \"category\": \"\",\n      \"details\": {\n        \"page_num\": 1\n      },\n      \"inspection_id\": \"LPDF_BOX_004\",\n      \"iso_clause\": \"\",\n      \"message\": \"Page 1 has no content stream (empty page)\",\n      \"object_id\": null,\n      \"object_type\": null,\n      \"page_num\": 1,\n      \"severity\": \"advisory\",\n      \"source\": \"engine\"\n    },\n    {\n      \"bbox\": null,\n      \"category\": \"page\",\n      \"details\": {\n        \"page_size_inches\": [\n          8.27,\n          11.69\n        ],\n        \"trim_equals_media\": true\n      },\n      \"inspection_id\": \"LPDF_BOX_TRIMBOX_DEFAULTED\",\n      \"iso_clause\": \"ISO 15930-7:2010 6.2.1\",\n      \"message\": \"Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.\",\n      \"object_id\": null,\n      \"object_type\": \"page\",\n      \"page_num\": 1,\n      \"severity\": \"advisory\",\n      \"source\": \"engine\"\n    }\n  ],\n  \"page_count\": 1,\n  \"pdf_path\": \"/Users/macadmin/Code/printwithsynergy/assay-pdf/corpus/negative/r0010/r0010-sheetcmyk-cmyk.pdf\"\n}\n"
+  },
+  {
+    "engine": "lintpdf",
+    "engine_version": "lintpdf-codex-cluster-v1",
+    "profile": "page-geometry",
+    "file": "/Users/macadmin/Code/printwithsynergy/assay-pdf/corpus/negative/r0011/r0011-sheetcmyk-cmyk.pdf",
+    "hits": [
+      {
+        "rule_id": "LPDF_BOX_003",
+        "severity": "warning",
+        "message": "Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "",
+          "details": {
+            "bleeds": {
+              "bottom": 0.0,
+              "left": 0.0,
+              "right": 0.0,
+              "top": 0.0
+            },
+            "inadequate_sides": {
+              "bottom": 0.0,
+              "left": 0.0,
+              "right": 0.0,
+              "top": 0.0
+            },
+            "min_bleed_pts": 8.5
+          },
+          "inspection_id": "LPDF_BOX_003",
+          "iso_clause": "GWG 2022 6.1",
+          "message": "Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)",
+          "object_id": null,
+          "object_type": null,
+          "page_num": 1,
+          "severity": "warning",
+          "source": "engine"
+        }
+      },
+      {
+        "rule_id": "LPDF_BOX_004",
+        "severity": "error",
+        "message": "Page 1 has no content stream (empty page)",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "",
+          "details": {
+            "page_num": 1
+          },
+          "inspection_id": "LPDF_BOX_004",
+          "iso_clause": "",
+          "message": "Page 1 has no content stream (empty page)",
+          "object_id": null,
+          "object_type": null,
+          "page_num": 1,
+          "severity": "advisory",
+          "source": "engine"
+        }
+      },
+      {
+        "rule_id": "LPDF_BOX_TRIMBOX_DEFAULTED",
+        "severity": "error",
+        "message": "Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "page",
+          "details": {
+            "page_size_inches": [
+              8.27,
+              11.69
+            ],
+            "trim_equals_media": true
+          },
+          "inspection_id": "LPDF_BOX_TRIMBOX_DEFAULTED",
+          "iso_clause": "ISO 15930-7:2010 6.2.1",
+          "message": "Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.",
+          "object_id": null,
+          "object_type": "page",
+          "page_num": 1,
+          "severity": "advisory",
+          "source": "engine"
+        }
+      }
+    ],
+    "runtime_ms": 1339,
+    "raw_output": "{\n  \"adapter_path\": \"codex\",\n  \"cluster\": \"page-geometry\",\n  \"codex_schema_version\": \"1.0.0\",\n  \"finding_count\": 3,\n  \"findings\": [\n    {\n      \"bbox\": null,\n      \"category\": \"\",\n      \"details\": {\n        \"bleeds\": {\n          \"bottom\": 0.0,\n          \"left\": 0.0,\n          \"right\": 0.0,\n          \"top\": 0.0\n        },\n        \"inadequate_sides\": {\n          \"bottom\": 0.0,\n          \"left\": 0.0,\n          \"right\": 0.0,\n          \"top\": 0.0\n        },\n        \"min_bleed_pts\": 8.5\n      },\n      \"inspection_id\": \"LPDF_BOX_003\",\n      \"iso_clause\": \"GWG 2022 6.1\",\n      \"message\": \"Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)\",\n      \"object_id\": null,\n      \"object_type\": null,\n      \"page_num\": 1,\n      \"severity\": \"warning\",\n      \"source\": \"engine\"\n    },\n    {\n      \"bbox\": null,\n      \"category\": \"\",\n      \"details\": {\n        \"page_num\": 1\n      },\n      \"inspection_id\": \"LPDF_BOX_004\",\n      \"iso_clause\": \"\",\n      \"message\": \"Page 1 has no content stream (empty page)\",\n      \"object_id\": null,\n      \"object_type\": null,\n      \"page_num\": 1,\n      \"severity\": \"advisory\",\n      \"source\": \"engine\"\n    },\n    {\n      \"bbox\": null,\n      \"category\": \"page\",\n      \"details\": {\n        \"page_size_inches\": [\n          8.27,\n          11.69\n        ],\n        \"trim_equals_media\": true\n      },\n      \"inspection_id\": \"LPDF_BOX_TRIMBOX_DEFAULTED\",\n      \"iso_clause\": \"ISO 15930-7:2010 6.2.1\",\n      \"message\": \"Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.\",\n      \"object_id\": null,\n      \"object_type\": \"page\",\n      \"page_num\": 1,\n      \"severity\": \"advisory\",\n      \"source\": \"engine\"\n    }\n  ],\n  \"page_count\": 1,\n  \"pdf_path\": \"/Users/macadmin/Code/printwithsynergy/assay-pdf/corpus/negative/r0011/r0011-sheetcmyk-cmyk.pdf\"\n}\n"
+  },
+  {
+    "engine": "lintpdf",
+    "engine_version": "lintpdf-codex-cluster-v1",
+    "profile": "page-geometry",
+    "file": "/Users/macadmin/Code/printwithsynergy/assay-pdf/corpus/negative/r0012/r0012-sheetcmyk-cmyk.pdf",
+    "hits": [
+      {
+        "rule_id": "LPDF_BOX_003",
+        "severity": "warning",
+        "message": "Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "",
+          "details": {
+            "bleeds": {
+              "bottom": 0.0,
+              "left": 0.0,
+              "right": 0.0,
+              "top": 0.0
+            },
+            "inadequate_sides": {
+              "bottom": 0.0,
+              "left": 0.0,
+              "right": 0.0,
+              "top": 0.0
+            },
+            "min_bleed_pts": 8.5
+          },
+          "inspection_id": "LPDF_BOX_003",
+          "iso_clause": "GWG 2022 6.1",
+          "message": "Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)",
+          "object_id": null,
+          "object_type": null,
+          "page_num": 1,
+          "severity": "warning",
+          "source": "engine"
+        }
+      },
+      {
+        "rule_id": "LPDF_BOX_004",
+        "severity": "error",
+        "message": "Page 1 has no content stream (empty page)",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "",
+          "details": {
+            "page_num": 1
+          },
+          "inspection_id": "LPDF_BOX_004",
+          "iso_clause": "",
+          "message": "Page 1 has no content stream (empty page)",
+          "object_id": null,
+          "object_type": null,
+          "page_num": 1,
+          "severity": "advisory",
+          "source": "engine"
+        }
+      },
+      {
+        "rule_id": "LPDF_BOX_TRIMBOX_DEFAULTED",
+        "severity": "error",
+        "message": "Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "page",
+          "details": {
+            "page_size_inches": [
+              8.27,
+              11.69
+            ],
+            "trim_equals_media": true
+          },
+          "inspection_id": "LPDF_BOX_TRIMBOX_DEFAULTED",
+          "iso_clause": "ISO 15930-7:2010 6.2.1",
+          "message": "Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.",
+          "object_id": null,
+          "object_type": "page",
+          "page_num": 1,
+          "severity": "advisory",
+          "source": "engine"
+        }
+      }
+    ],
+    "runtime_ms": 1344,
+    "raw_output": "{\n  \"adapter_path\": \"codex\",\n  \"cluster\": \"page-geometry\",\n  \"codex_schema_version\": \"1.0.0\",\n  \"finding_count\": 3,\n  \"findings\": [\n    {\n      \"bbox\": null,\n      \"category\": \"\",\n      \"details\": {\n        \"bleeds\": {\n          \"bottom\": 0.0,\n          \"left\": 0.0,\n          \"right\": 0.0,\n          \"top\": 0.0\n        },\n        \"inadequate_sides\": {\n          \"bottom\": 0.0,\n          \"left\": 0.0,\n          \"right\": 0.0,\n          \"top\": 0.0\n        },\n        \"min_bleed_pts\": 8.5\n      },\n      \"inspection_id\": \"LPDF_BOX_003\",\n      \"iso_clause\": \"GWG 2022 6.1\",\n      \"message\": \"Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)\",\n      \"object_id\": null,\n      \"object_type\": null,\n      \"page_num\": 1,\n      \"severity\": \"warning\",\n      \"source\": \"engine\"\n    },\n    {\n      \"bbox\": null,\n      \"category\": \"\",\n      \"details\": {\n        \"page_num\": 1\n      },\n      \"inspection_id\": \"LPDF_BOX_004\",\n      \"iso_clause\": \"\",\n      \"message\": \"Page 1 has no content stream (empty page)\",\n      \"object_id\": null,\n      \"object_type\": null,\n      \"page_num\": 1,\n      \"severity\": \"advisory\",\n      \"source\": \"engine\"\n    },\n    {\n      \"bbox\": null,\n      \"category\": \"page\",\n      \"details\": {\n        \"page_size_inches\": [\n          8.27,\n          11.69\n        ],\n        \"trim_equals_media\": true\n      },\n      \"inspection_id\": \"LPDF_BOX_TRIMBOX_DEFAULTED\",\n      \"iso_clause\": \"ISO 15930-7:2010 6.2.1\",\n      \"message\": \"Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.\",\n      \"object_id\": null,\n      \"object_type\": \"page\",\n      \"page_num\": 1,\n      \"severity\": \"advisory\",\n      \"source\": \"engine\"\n    }\n  ],\n  \"page_count\": 1,\n  \"pdf_path\": \"/Users/macadmin/Code/printwithsynergy/assay-pdf/corpus/negative/r0012/r0012-sheetcmyk-cmyk.pdf\"\n}\n"
+  },
+  {
+    "engine": "lintpdf",
+    "engine_version": "lintpdf-codex-cluster-v1",
+    "profile": "page-geometry",
+    "file": "/Users/macadmin/Code/printwithsynergy/assay-pdf/corpus/negative/r0013/r0013-sheetcmyk-cmyk.pdf",
+    "hits": [
+      {
+        "rule_id": "LPDF_BOX_003",
+        "severity": "warning",
+        "message": "Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "",
+          "details": {
+            "bleeds": {
+              "bottom": 0.0,
+              "left": 0.0,
+              "right": 0.0,
+              "top": 0.0
+            },
+            "inadequate_sides": {
+              "bottom": 0.0,
+              "left": 0.0,
+              "right": 0.0,
+              "top": 0.0
+            },
+            "min_bleed_pts": 8.5
+          },
+          "inspection_id": "LPDF_BOX_003",
+          "iso_clause": "GWG 2022 6.1",
+          "message": "Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)",
+          "object_id": null,
+          "object_type": null,
+          "page_num": 1,
+          "severity": "warning",
+          "source": "engine"
+        }
+      },
+      {
+        "rule_id": "LPDF_BOX_004",
+        "severity": "error",
+        "message": "Page 1 has no content stream (empty page)",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "",
+          "details": {
+            "page_num": 1
+          },
+          "inspection_id": "LPDF_BOX_004",
+          "iso_clause": "",
+          "message": "Page 1 has no content stream (empty page)",
+          "object_id": null,
+          "object_type": null,
+          "page_num": 1,
+          "severity": "advisory",
+          "source": "engine"
+        }
+      },
+      {
+        "rule_id": "LPDF_BOX_TRIMBOX_DEFAULTED",
+        "severity": "error",
+        "message": "Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "page",
+          "details": {
+            "page_size_inches": [
+              8.27,
+              11.69
+            ],
+            "trim_equals_media": true
+          },
+          "inspection_id": "LPDF_BOX_TRIMBOX_DEFAULTED",
+          "iso_clause": "ISO 15930-7:2010 6.2.1",
+          "message": "Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.",
+          "object_id": null,
+          "object_type": "page",
+          "page_num": 1,
+          "severity": "advisory",
+          "source": "engine"
+        }
+      }
+    ],
+    "runtime_ms": 1321,
+    "raw_output": "{\n  \"adapter_path\": \"codex\",\n  \"cluster\": \"page-geometry\",\n  \"codex_schema_version\": \"1.0.0\",\n  \"finding_count\": 3,\n  \"findings\": [\n    {\n      \"bbox\": null,\n      \"category\": \"\",\n      \"details\": {\n        \"bleeds\": {\n          \"bottom\": 0.0,\n          \"left\": 0.0,\n          \"right\": 0.0,\n          \"top\": 0.0\n        },\n        \"inadequate_sides\": {\n          \"bottom\": 0.0,\n          \"left\": 0.0,\n          \"right\": 0.0,\n          \"top\": 0.0\n        },\n        \"min_bleed_pts\": 8.5\n      },\n      \"inspection_id\": \"LPDF_BOX_003\",\n      \"iso_clause\": \"GWG 2022 6.1\",\n      \"message\": \"Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)\",\n      \"object_id\": null,\n      \"object_type\": null,\n      \"page_num\": 1,\n      \"severity\": \"warning\",\n      \"source\": \"engine\"\n    },\n    {\n      \"bbox\": null,\n      \"category\": \"\",\n      \"details\": {\n        \"page_num\": 1\n      },\n      \"inspection_id\": \"LPDF_BOX_004\",\n      \"iso_clause\": \"\",\n      \"message\": \"Page 1 has no content stream (empty page)\",\n      \"object_id\": null,\n      \"object_type\": null,\n      \"page_num\": 1,\n      \"severity\": \"advisory\",\n      \"source\": \"engine\"\n    },\n    {\n      \"bbox\": null,\n      \"category\": \"page\",\n      \"details\": {\n        \"page_size_inches\": [\n          8.27,\n          11.69\n        ],\n        \"trim_equals_media\": true\n      },\n      \"inspection_id\": \"LPDF_BOX_TRIMBOX_DEFAULTED\",\n      \"iso_clause\": \"ISO 15930-7:2010 6.2.1\",\n      \"message\": \"Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.\",\n      \"object_id\": null,\n      \"object_type\": \"page\",\n      \"page_num\": 1,\n      \"severity\": \"advisory\",\n      \"source\": \"engine\"\n    }\n  ],\n  \"page_count\": 1,\n  \"pdf_path\": \"/Users/macadmin/Code/printwithsynergy/assay-pdf/corpus/negative/r0013/r0013-sheetcmyk-cmyk.pdf\"\n}\n"
+  },
+  {
+    "engine": "lintpdf",
+    "engine_version": "lintpdf-codex-cluster-v1",
+    "profile": "page-geometry",
+    "file": "/Users/macadmin/Code/printwithsynergy/assay-pdf/corpus/negative/r0014/r0014-sheetcmyk-cmyk.pdf",
+    "hits": [
+      {
+        "rule_id": "LPDF_BOX_003",
+        "severity": "warning",
+        "message": "Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "",
+          "details": {
+            "bleeds": {
+              "bottom": 0.0,
+              "left": 0.0,
+              "right": 0.0,
+              "top": 0.0
+            },
+            "inadequate_sides": {
+              "bottom": 0.0,
+              "left": 0.0,
+              "right": 0.0,
+              "top": 0.0
+            },
+            "min_bleed_pts": 8.5
+          },
+          "inspection_id": "LPDF_BOX_003",
+          "iso_clause": "GWG 2022 6.1",
+          "message": "Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)",
+          "object_id": null,
+          "object_type": null,
+          "page_num": 1,
+          "severity": "warning",
+          "source": "engine"
+        }
+      },
+      {
+        "rule_id": "LPDF_BOX_004",
+        "severity": "error",
+        "message": "Page 1 has no content stream (empty page)",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "",
+          "details": {
+            "page_num": 1
+          },
+          "inspection_id": "LPDF_BOX_004",
+          "iso_clause": "",
+          "message": "Page 1 has no content stream (empty page)",
+          "object_id": null,
+          "object_type": null,
+          "page_num": 1,
+          "severity": "advisory",
+          "source": "engine"
+        }
+      },
+      {
+        "rule_id": "LPDF_BOX_TRIMBOX_DEFAULTED",
+        "severity": "error",
+        "message": "Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "page",
+          "details": {
+            "page_size_inches": [
+              8.27,
+              11.69
+            ],
+            "trim_equals_media": true
+          },
+          "inspection_id": "LPDF_BOX_TRIMBOX_DEFAULTED",
+          "iso_clause": "ISO 15930-7:2010 6.2.1",
+          "message": "Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.",
+          "object_id": null,
+          "object_type": "page",
+          "page_num": 1,
+          "severity": "advisory",
+          "source": "engine"
+        }
+      }
+    ],
+    "runtime_ms": 1280,
+    "raw_output": "{\n  \"adapter_path\": \"codex\",\n  \"cluster\": \"page-geometry\",\n  \"codex_schema_version\": \"1.0.0\",\n  \"finding_count\": 3,\n  \"findings\": [\n    {\n      \"bbox\": null,\n      \"category\": \"\",\n      \"details\": {\n        \"bleeds\": {\n          \"bottom\": 0.0,\n          \"left\": 0.0,\n          \"right\": 0.0,\n          \"top\": 0.0\n        },\n        \"inadequate_sides\": {\n          \"bottom\": 0.0,\n          \"left\": 0.0,\n          \"right\": 0.0,\n          \"top\": 0.0\n        },\n        \"min_bleed_pts\": 8.5\n      },\n      \"inspection_id\": \"LPDF_BOX_003\",\n      \"iso_clause\": \"GWG 2022 6.1\",\n      \"message\": \"Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)\",\n      \"object_id\": null,\n      \"object_type\": null,\n      \"page_num\": 1,\n      \"severity\": \"warning\",\n      \"source\": \"engine\"\n    },\n    {\n      \"bbox\": null,\n      \"category\": \"\",\n      \"details\": {\n        \"page_num\": 1\n      },\n      \"inspection_id\": \"LPDF_BOX_004\",\n      \"iso_clause\": \"\",\n      \"message\": \"Page 1 has no content stream (empty page)\",\n      \"object_id\": null,\n      \"object_type\": null,\n      \"page_num\": 1,\n      \"severity\": \"advisory\",\n      \"source\": \"engine\"\n    },\n    {\n      \"bbox\": null,\n      \"category\": \"page\",\n      \"details\": {\n        \"page_size_inches\": [\n          8.27,\n          11.69\n        ],\n        \"trim_equals_media\": true\n      },\n      \"inspection_id\": \"LPDF_BOX_TRIMBOX_DEFAULTED\",\n      \"iso_clause\": \"ISO 15930-7:2010 6.2.1\",\n      \"message\": \"Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.\",\n      \"object_id\": null,\n      \"object_type\": \"page\",\n      \"page_num\": 1,\n      \"severity\": \"advisory\",\n      \"source\": \"engine\"\n    }\n  ],\n  \"page_count\": 1,\n  \"pdf_path\": \"/Users/macadmin/Code/printwithsynergy/assay-pdf/corpus/negative/r0014/r0014-sheetcmyk-cmyk.pdf\"\n}\n"
+  },
+  {
+    "engine": "lintpdf",
+    "engine_version": "lintpdf-codex-cluster-v1",
+    "profile": "page-geometry",
+    "file": "/Users/macadmin/Code/printwithsynergy/assay-pdf/corpus/negative/r0015/r0015-sheetcmyk-cmyk.pdf",
+    "hits": [
+      {
+        "rule_id": "LPDF_BOX_003",
+        "severity": "warning",
+        "message": "Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "",
+          "details": {
+            "bleeds": {
+              "bottom": 0.0,
+              "left": 0.0,
+              "right": 0.0,
+              "top": 0.0
+            },
+            "inadequate_sides": {
+              "bottom": 0.0,
+              "left": 0.0,
+              "right": 0.0,
+              "top": 0.0
+            },
+            "min_bleed_pts": 8.5
+          },
+          "inspection_id": "LPDF_BOX_003",
+          "iso_clause": "GWG 2022 6.1",
+          "message": "Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)",
+          "object_id": null,
+          "object_type": null,
+          "page_num": 1,
+          "severity": "warning",
+          "source": "engine"
+        }
+      },
+      {
+        "rule_id": "LPDF_BOX_004",
+        "severity": "error",
+        "message": "Page 1 has no content stream (empty page)",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "",
+          "details": {
+            "page_num": 1
+          },
+          "inspection_id": "LPDF_BOX_004",
+          "iso_clause": "",
+          "message": "Page 1 has no content stream (empty page)",
+          "object_id": null,
+          "object_type": null,
+          "page_num": 1,
+          "severity": "advisory",
+          "source": "engine"
+        }
+      },
+      {
+        "rule_id": "LPDF_BOX_TRIMBOX_DEFAULTED",
+        "severity": "error",
+        "message": "Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "page",
+          "details": {
+            "page_size_inches": [
+              8.27,
+              11.69
+            ],
+            "trim_equals_media": true
+          },
+          "inspection_id": "LPDF_BOX_TRIMBOX_DEFAULTED",
+          "iso_clause": "ISO 15930-7:2010 6.2.1",
+          "message": "Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.",
+          "object_id": null,
+          "object_type": "page",
+          "page_num": 1,
+          "severity": "advisory",
+          "source": "engine"
+        }
+      }
+    ],
+    "runtime_ms": 1441,
+    "raw_output": "{\n  \"adapter_path\": \"codex\",\n  \"cluster\": \"page-geometry\",\n  \"codex_schema_version\": \"1.0.0\",\n  \"finding_count\": 3,\n  \"findings\": [\n    {\n      \"bbox\": null,\n      \"category\": \"\",\n      \"details\": {\n        \"bleeds\": {\n          \"bottom\": 0.0,\n          \"left\": 0.0,\n          \"right\": 0.0,\n          \"top\": 0.0\n        },\n        \"inadequate_sides\": {\n          \"bottom\": 0.0,\n          \"left\": 0.0,\n          \"right\": 0.0,\n          \"top\": 0.0\n        },\n        \"min_bleed_pts\": 8.5\n      },\n      \"inspection_id\": \"LPDF_BOX_003\",\n      \"iso_clause\": \"GWG 2022 6.1\",\n      \"message\": \"Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)\",\n      \"object_id\": null,\n      \"object_type\": null,\n      \"page_num\": 1,\n      \"severity\": \"warning\",\n      \"source\": \"engine\"\n    },\n    {\n      \"bbox\": null,\n      \"category\": \"\",\n      \"details\": {\n        \"page_num\": 1\n      },\n      \"inspection_id\": \"LPDF_BOX_004\",\n      \"iso_clause\": \"\",\n      \"message\": \"Page 1 has no content stream (empty page)\",\n      \"object_id\": null,\n      \"object_type\": null,\n      \"page_num\": 1,\n      \"severity\": \"advisory\",\n      \"source\": \"engine\"\n    },\n    {\n      \"bbox\": null,\n      \"category\": \"page\",\n      \"details\": {\n        \"page_size_inches\": [\n          8.27,\n          11.69\n        ],\n        \"trim_equals_media\": true\n      },\n      \"inspection_id\": \"LPDF_BOX_TRIMBOX_DEFAULTED\",\n      \"iso_clause\": \"ISO 15930-7:2010 6.2.1\",\n      \"message\": \"Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.\",\n      \"object_id\": null,\n      \"object_type\": \"page\",\n      \"page_num\": 1,\n      \"severity\": \"advisory\",\n      \"source\": \"engine\"\n    }\n  ],\n  \"page_count\": 1,\n  \"pdf_path\": \"/Users/macadmin/Code/printwithsynergy/assay-pdf/corpus/negative/r0015/r0015-sheetcmyk-cmyk.pdf\"\n}\n"
+  },
+  {
+    "engine": "lintpdf",
+    "engine_version": "lintpdf-codex-cluster-v1",
+    "profile": "page-geometry",
+    "file": "/Users/macadmin/Code/printwithsynergy/assay-pdf/corpus/negative/r0016/r0016-sheetcmyk-cmyk.pdf",
+    "hits": [
+      {
+        "rule_id": "LPDF_BOX_003",
+        "severity": "warning",
+        "message": "Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "",
+          "details": {
+            "bleeds": {
+              "bottom": 0.0,
+              "left": 0.0,
+              "right": 0.0,
+              "top": 0.0
+            },
+            "inadequate_sides": {
+              "bottom": 0.0,
+              "left": 0.0,
+              "right": 0.0,
+              "top": 0.0
+            },
+            "min_bleed_pts": 8.5
+          },
+          "inspection_id": "LPDF_BOX_003",
+          "iso_clause": "GWG 2022 6.1",
+          "message": "Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)",
+          "object_id": null,
+          "object_type": null,
+          "page_num": 1,
+          "severity": "warning",
+          "source": "engine"
+        }
+      },
+      {
+        "rule_id": "LPDF_BOX_004",
+        "severity": "error",
+        "message": "Page 1 has no content stream (empty page)",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "",
+          "details": {
+            "page_num": 1
+          },
+          "inspection_id": "LPDF_BOX_004",
+          "iso_clause": "",
+          "message": "Page 1 has no content stream (empty page)",
+          "object_id": null,
+          "object_type": null,
+          "page_num": 1,
+          "severity": "advisory",
+          "source": "engine"
+        }
+      },
+      {
+        "rule_id": "LPDF_BOX_TRIMBOX_DEFAULTED",
+        "severity": "error",
+        "message": "Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "page",
+          "details": {
+            "page_size_inches": [
+              8.27,
+              11.69
+            ],
+            "trim_equals_media": true
+          },
+          "inspection_id": "LPDF_BOX_TRIMBOX_DEFAULTED",
+          "iso_clause": "ISO 15930-7:2010 6.2.1",
+          "message": "Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.",
+          "object_id": null,
+          "object_type": "page",
+          "page_num": 1,
+          "severity": "advisory",
+          "source": "engine"
+        }
+      }
+    ],
+    "runtime_ms": 1347,
+    "raw_output": "{\n  \"adapter_path\": \"codex\",\n  \"cluster\": \"page-geometry\",\n  \"codex_schema_version\": \"1.0.0\",\n  \"finding_count\": 3,\n  \"findings\": [\n    {\n      \"bbox\": null,\n      \"category\": \"\",\n      \"details\": {\n        \"bleeds\": {\n          \"bottom\": 0.0,\n          \"left\": 0.0,\n          \"right\": 0.0,\n          \"top\": 0.0\n        },\n        \"inadequate_sides\": {\n          \"bottom\": 0.0,\n          \"left\": 0.0,\n          \"right\": 0.0,\n          \"top\": 0.0\n        },\n        \"min_bleed_pts\": 8.5\n      },\n      \"inspection_id\": \"LPDF_BOX_003\",\n      \"iso_clause\": \"GWG 2022 6.1\",\n      \"message\": \"Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)\",\n      \"object_id\": null,\n      \"object_type\": null,\n      \"page_num\": 1,\n      \"severity\": \"warning\",\n      \"source\": \"engine\"\n    },\n    {\n      \"bbox\": null,\n      \"category\": \"\",\n      \"details\": {\n        \"page_num\": 1\n      },\n      \"inspection_id\": \"LPDF_BOX_004\",\n      \"iso_clause\": \"\",\n      \"message\": \"Page 1 has no content stream (empty page)\",\n      \"object_id\": null,\n      \"object_type\": null,\n      \"page_num\": 1,\n      \"severity\": \"advisory\",\n      \"source\": \"engine\"\n    },\n    {\n      \"bbox\": null,\n      \"category\": \"page\",\n      \"details\": {\n        \"page_size_inches\": [\n          8.27,\n          11.69\n        ],\n        \"trim_equals_media\": true\n      },\n      \"inspection_id\": \"LPDF_BOX_TRIMBOX_DEFAULTED\",\n      \"iso_clause\": \"ISO 15930-7:2010 6.2.1\",\n      \"message\": \"Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.\",\n      \"object_id\": null,\n      \"object_type\": \"page\",\n      \"page_num\": 1,\n      \"severity\": \"advisory\",\n      \"source\": \"engine\"\n    }\n  ],\n  \"page_count\": 1,\n  \"pdf_path\": \"/Users/macadmin/Code/printwithsynergy/assay-pdf/corpus/negative/r0016/r0016-sheetcmyk-cmyk.pdf\"\n}\n"
+  },
+  {
+    "engine": "lintpdf",
+    "engine_version": "lintpdf-codex-cluster-v1",
+    "profile": "page-geometry",
+    "file": "/Users/macadmin/Code/printwithsynergy/assay-pdf/corpus/negative/r0017/r0017-sheetcmyk-cmyk.pdf",
+    "hits": [
+      {
+        "rule_id": "LPDF_BOX_003",
+        "severity": "warning",
+        "message": "Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "",
+          "details": {
+            "bleeds": {
+              "bottom": 0.0,
+              "left": 0.0,
+              "right": 0.0,
+              "top": 0.0
+            },
+            "inadequate_sides": {
+              "bottom": 0.0,
+              "left": 0.0,
+              "right": 0.0,
+              "top": 0.0
+            },
+            "min_bleed_pts": 8.5
+          },
+          "inspection_id": "LPDF_BOX_003",
+          "iso_clause": "GWG 2022 6.1",
+          "message": "Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)",
+          "object_id": null,
+          "object_type": null,
+          "page_num": 1,
+          "severity": "warning",
+          "source": "engine"
+        }
+      },
+      {
+        "rule_id": "LPDF_BOX_004",
+        "severity": "error",
+        "message": "Page 1 has no content stream (empty page)",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "",
+          "details": {
+            "page_num": 1
+          },
+          "inspection_id": "LPDF_BOX_004",
+          "iso_clause": "",
+          "message": "Page 1 has no content stream (empty page)",
+          "object_id": null,
+          "object_type": null,
+          "page_num": 1,
+          "severity": "advisory",
+          "source": "engine"
+        }
+      },
+      {
+        "rule_id": "LPDF_BOX_TRIMBOX_DEFAULTED",
+        "severity": "error",
+        "message": "Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "page",
+          "details": {
+            "page_size_inches": [
+              8.27,
+              11.69
+            ],
+            "trim_equals_media": true
+          },
+          "inspection_id": "LPDF_BOX_TRIMBOX_DEFAULTED",
+          "iso_clause": "ISO 15930-7:2010 6.2.1",
+          "message": "Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.",
+          "object_id": null,
+          "object_type": "page",
+          "page_num": 1,
+          "severity": "advisory",
+          "source": "engine"
+        }
+      }
+    ],
+    "runtime_ms": 1498,
+    "raw_output": "{\n  \"adapter_path\": \"codex\",\n  \"cluster\": \"page-geometry\",\n  \"codex_schema_version\": \"1.0.0\",\n  \"finding_count\": 3,\n  \"findings\": [\n    {\n      \"bbox\": null,\n      \"category\": \"\",\n      \"details\": {\n        \"bleeds\": {\n          \"bottom\": 0.0,\n          \"left\": 0.0,\n          \"right\": 0.0,\n          \"top\": 0.0\n        },\n        \"inadequate_sides\": {\n          \"bottom\": 0.0,\n          \"left\": 0.0,\n          \"right\": 0.0,\n          \"top\": 0.0\n        },\n        \"min_bleed_pts\": 8.5\n      },\n      \"inspection_id\": \"LPDF_BOX_003\",\n      \"iso_clause\": \"GWG 2022 6.1\",\n      \"message\": \"Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)\",\n      \"object_id\": null,\n      \"object_type\": null,\n      \"page_num\": 1,\n      \"severity\": \"warning\",\n      \"source\": \"engine\"\n    },\n    {\n      \"bbox\": null,\n      \"category\": \"\",\n      \"details\": {\n        \"page_num\": 1\n      },\n      \"inspection_id\": \"LPDF_BOX_004\",\n      \"iso_clause\": \"\",\n      \"message\": \"Page 1 has no content stream (empty page)\",\n      \"object_id\": null,\n      \"object_type\": null,\n      \"page_num\": 1,\n      \"severity\": \"advisory\",\n      \"source\": \"engine\"\n    },\n    {\n      \"bbox\": null,\n      \"category\": \"page\",\n      \"details\": {\n        \"page_size_inches\": [\n          8.27,\n          11.69\n        ],\n        \"trim_equals_media\": true\n      },\n      \"inspection_id\": \"LPDF_BOX_TRIMBOX_DEFAULTED\",\n      \"iso_clause\": \"ISO 15930-7:2010 6.2.1\",\n      \"message\": \"Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.\",\n      \"object_id\": null,\n      \"object_type\": \"page\",\n      \"page_num\": 1,\n      \"severity\": \"advisory\",\n      \"source\": \"engine\"\n    }\n  ],\n  \"page_count\": 1,\n  \"pdf_path\": \"/Users/macadmin/Code/printwithsynergy/assay-pdf/corpus/negative/r0017/r0017-sheetcmyk-cmyk.pdf\"\n}\n"
+  },
+  {
+    "engine": "lintpdf",
+    "engine_version": "lintpdf-codex-cluster-v1",
+    "profile": "page-geometry",
+    "file": "/Users/macadmin/Code/printwithsynergy/assay-pdf/corpus/negative/r0018/r0018-sheetcmyk-cmyk.pdf",
+    "hits": [
+      {
+        "rule_id": "LPDF_BOX_003",
+        "severity": "warning",
+        "message": "Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "",
+          "details": {
+            "bleeds": {
+              "bottom": 0.0,
+              "left": 0.0,
+              "right": 0.0,
+              "top": 0.0
+            },
+            "inadequate_sides": {
+              "bottom": 0.0,
+              "left": 0.0,
+              "right": 0.0,
+              "top": 0.0
+            },
+            "min_bleed_pts": 8.5
+          },
+          "inspection_id": "LPDF_BOX_003",
+          "iso_clause": "GWG 2022 6.1",
+          "message": "Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)",
+          "object_id": null,
+          "object_type": null,
+          "page_num": 1,
+          "severity": "warning",
+          "source": "engine"
+        }
+      },
+      {
+        "rule_id": "LPDF_BOX_004",
+        "severity": "error",
+        "message": "Page 1 has no content stream (empty page)",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "",
+          "details": {
+            "page_num": 1
+          },
+          "inspection_id": "LPDF_BOX_004",
+          "iso_clause": "",
+          "message": "Page 1 has no content stream (empty page)",
+          "object_id": null,
+          "object_type": null,
+          "page_num": 1,
+          "severity": "advisory",
+          "source": "engine"
+        }
+      },
+      {
+        "rule_id": "LPDF_BOX_TRIMBOX_DEFAULTED",
+        "severity": "error",
+        "message": "Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "page",
+          "details": {
+            "page_size_inches": [
+              8.27,
+              11.69
+            ],
+            "trim_equals_media": true
+          },
+          "inspection_id": "LPDF_BOX_TRIMBOX_DEFAULTED",
+          "iso_clause": "ISO 15930-7:2010 6.2.1",
+          "message": "Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.",
+          "object_id": null,
+          "object_type": "page",
+          "page_num": 1,
+          "severity": "advisory",
+          "source": "engine"
+        }
+      }
+    ],
+    "runtime_ms": 1370,
+    "raw_output": "{\n  \"adapter_path\": \"codex\",\n  \"cluster\": \"page-geometry\",\n  \"codex_schema_version\": \"1.0.0\",\n  \"finding_count\": 3,\n  \"findings\": [\n    {\n      \"bbox\": null,\n      \"category\": \"\",\n      \"details\": {\n        \"bleeds\": {\n          \"bottom\": 0.0,\n          \"left\": 0.0,\n          \"right\": 0.0,\n          \"top\": 0.0\n        },\n        \"inadequate_sides\": {\n          \"bottom\": 0.0,\n          \"left\": 0.0,\n          \"right\": 0.0,\n          \"top\": 0.0\n        },\n        \"min_bleed_pts\": 8.5\n      },\n      \"inspection_id\": \"LPDF_BOX_003\",\n      \"iso_clause\": \"GWG 2022 6.1\",\n      \"message\": \"Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)\",\n      \"object_id\": null,\n      \"object_type\": null,\n      \"page_num\": 1,\n      \"severity\": \"warning\",\n      \"source\": \"engine\"\n    },\n    {\n      \"bbox\": null,\n      \"category\": \"\",\n      \"details\": {\n        \"page_num\": 1\n      },\n      \"inspection_id\": \"LPDF_BOX_004\",\n      \"iso_clause\": \"\",\n      \"message\": \"Page 1 has no content stream (empty page)\",\n      \"object_id\": null,\n      \"object_type\": null,\n      \"page_num\": 1,\n      \"severity\": \"advisory\",\n      \"source\": \"engine\"\n    },\n    {\n      \"bbox\": null,\n      \"category\": \"page\",\n      \"details\": {\n        \"page_size_inches\": [\n          8.27,\n          11.69\n        ],\n        \"trim_equals_media\": true\n      },\n      \"inspection_id\": \"LPDF_BOX_TRIMBOX_DEFAULTED\",\n      \"iso_clause\": \"ISO 15930-7:2010 6.2.1\",\n      \"message\": \"Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.\",\n      \"object_id\": null,\n      \"object_type\": \"page\",\n      \"page_num\": 1,\n      \"severity\": \"advisory\",\n      \"source\": \"engine\"\n    }\n  ],\n  \"page_count\": 1,\n  \"pdf_path\": \"/Users/macadmin/Code/printwithsynergy/assay-pdf/corpus/negative/r0018/r0018-sheetcmyk-cmyk.pdf\"\n}\n"
+  },
+  {
+    "engine": "lintpdf",
+    "engine_version": "lintpdf-codex-cluster-v1",
+    "profile": "page-geometry",
+    "file": "/Users/macadmin/Code/printwithsynergy/assay-pdf/corpus/negative/r0019/r0019-sheetcmyk-cmyk.pdf",
+    "hits": [
+      {
+        "rule_id": "LPDF_BOX_003",
+        "severity": "warning",
+        "message": "Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "",
+          "details": {
+            "bleeds": {
+              "bottom": 0.0,
+              "left": 0.0,
+              "right": 0.0,
+              "top": 0.0
+            },
+            "inadequate_sides": {
+              "bottom": 0.0,
+              "left": 0.0,
+              "right": 0.0,
+              "top": 0.0
+            },
+            "min_bleed_pts": 8.5
+          },
+          "inspection_id": "LPDF_BOX_003",
+          "iso_clause": "GWG 2022 6.1",
+          "message": "Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)",
+          "object_id": null,
+          "object_type": null,
+          "page_num": 1,
+          "severity": "warning",
+          "source": "engine"
+        }
+      },
+      {
+        "rule_id": "LPDF_BOX_004",
+        "severity": "error",
+        "message": "Page 1 has no content stream (empty page)",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "",
+          "details": {
+            "page_num": 1
+          },
+          "inspection_id": "LPDF_BOX_004",
+          "iso_clause": "",
+          "message": "Page 1 has no content stream (empty page)",
+          "object_id": null,
+          "object_type": null,
+          "page_num": 1,
+          "severity": "advisory",
+          "source": "engine"
+        }
+      },
+      {
+        "rule_id": "LPDF_BOX_TRIMBOX_DEFAULTED",
+        "severity": "error",
+        "message": "Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "page",
+          "details": {
+            "page_size_inches": [
+              8.27,
+              11.69
+            ],
+            "trim_equals_media": true
+          },
+          "inspection_id": "LPDF_BOX_TRIMBOX_DEFAULTED",
+          "iso_clause": "ISO 15930-7:2010 6.2.1",
+          "message": "Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.",
+          "object_id": null,
+          "object_type": "page",
+          "page_num": 1,
+          "severity": "advisory",
+          "source": "engine"
+        }
+      }
+    ],
+    "runtime_ms": 1600,
+    "raw_output": "{\n  \"adapter_path\": \"codex\",\n  \"cluster\": \"page-geometry\",\n  \"codex_schema_version\": \"1.0.0\",\n  \"finding_count\": 3,\n  \"findings\": [\n    {\n      \"bbox\": null,\n      \"category\": \"\",\n      \"details\": {\n        \"bleeds\": {\n          \"bottom\": 0.0,\n          \"left\": 0.0,\n          \"right\": 0.0,\n          \"top\": 0.0\n        },\n        \"inadequate_sides\": {\n          \"bottom\": 0.0,\n          \"left\": 0.0,\n          \"right\": 0.0,\n          \"top\": 0.0\n        },\n        \"min_bleed_pts\": 8.5\n      },\n      \"inspection_id\": \"LPDF_BOX_003\",\n      \"iso_clause\": \"GWG 2022 6.1\",\n      \"message\": \"Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)\",\n      \"object_id\": null,\n      \"object_type\": null,\n      \"page_num\": 1,\n      \"severity\": \"warning\",\n      \"source\": \"engine\"\n    },\n    {\n      \"bbox\": null,\n      \"category\": \"\",\n      \"details\": {\n        \"page_num\": 1\n      },\n      \"inspection_id\": \"LPDF_BOX_004\",\n      \"iso_clause\": \"\",\n      \"message\": \"Page 1 has no content stream (empty page)\",\n      \"object_id\": null,\n      \"object_type\": null,\n      \"page_num\": 1,\n      \"severity\": \"advisory\",\n      \"source\": \"engine\"\n    },\n    {\n      \"bbox\": null,\n      \"category\": \"page\",\n      \"details\": {\n        \"page_size_inches\": [\n          8.27,\n          11.69\n        ],\n        \"trim_equals_media\": true\n      },\n      \"inspection_id\": \"LPDF_BOX_TRIMBOX_DEFAULTED\",\n      \"iso_clause\": \"ISO 15930-7:2010 6.2.1\",\n      \"message\": \"Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.\",\n      \"object_id\": null,\n      \"object_type\": \"page\",\n      \"page_num\": 1,\n      \"severity\": \"advisory\",\n      \"source\": \"engine\"\n    }\n  ],\n  \"page_count\": 1,\n  \"pdf_path\": \"/Users/macadmin/Code/printwithsynergy/assay-pdf/corpus/negative/r0019/r0019-sheetcmyk-cmyk.pdf\"\n}\n"
+  },
+  {
+    "engine": "lintpdf",
+    "engine_version": "lintpdf-codex-cluster-v1",
+    "profile": "page-geometry",
+    "file": "/Users/macadmin/Code/printwithsynergy/assay-pdf/corpus/negative/r0020/r0020-sheetcmyk-cmyk.pdf",
+    "hits": [
+      {
+        "rule_id": "LPDF_BOX_003",
+        "severity": "warning",
+        "message": "Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "",
+          "details": {
+            "bleeds": {
+              "bottom": 0.0,
+              "left": 0.0,
+              "right": 0.0,
+              "top": 0.0
+            },
+            "inadequate_sides": {
+              "bottom": 0.0,
+              "left": 0.0,
+              "right": 0.0,
+              "top": 0.0
+            },
+            "min_bleed_pts": 8.5
+          },
+          "inspection_id": "LPDF_BOX_003",
+          "iso_clause": "GWG 2022 6.1",
+          "message": "Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)",
+          "object_id": null,
+          "object_type": null,
+          "page_num": 1,
+          "severity": "warning",
+          "source": "engine"
+        }
+      },
+      {
+        "rule_id": "LPDF_BOX_004",
+        "severity": "error",
+        "message": "Page 1 has no content stream (empty page)",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "",
+          "details": {
+            "page_num": 1
+          },
+          "inspection_id": "LPDF_BOX_004",
+          "iso_clause": "",
+          "message": "Page 1 has no content stream (empty page)",
+          "object_id": null,
+          "object_type": null,
+          "page_num": 1,
+          "severity": "advisory",
+          "source": "engine"
+        }
+      },
+      {
+        "rule_id": "LPDF_BOX_TRIMBOX_DEFAULTED",
+        "severity": "error",
+        "message": "Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "page",
+          "details": {
+            "page_size_inches": [
+              8.27,
+              11.69
+            ],
+            "trim_equals_media": true
+          },
+          "inspection_id": "LPDF_BOX_TRIMBOX_DEFAULTED",
+          "iso_clause": "ISO 15930-7:2010 6.2.1",
+          "message": "Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.",
+          "object_id": null,
+          "object_type": "page",
+          "page_num": 1,
+          "severity": "advisory",
+          "source": "engine"
+        }
+      }
+    ],
+    "runtime_ms": 1296,
+    "raw_output": "{\n  \"adapter_path\": \"codex\",\n  \"cluster\": \"page-geometry\",\n  \"codex_schema_version\": \"1.0.0\",\n  \"finding_count\": 3,\n  \"findings\": [\n    {\n      \"bbox\": null,\n      \"category\": \"\",\n      \"details\": {\n        \"bleeds\": {\n          \"bottom\": 0.0,\n          \"left\": 0.0,\n          \"right\": 0.0,\n          \"top\": 0.0\n        },\n        \"inadequate_sides\": {\n          \"bottom\": 0.0,\n          \"left\": 0.0,\n          \"right\": 0.0,\n          \"top\": 0.0\n        },\n        \"min_bleed_pts\": 8.5\n      },\n      \"inspection_id\": \"LPDF_BOX_003\",\n      \"iso_clause\": \"GWG 2022 6.1\",\n      \"message\": \"Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)\",\n      \"object_id\": null,\n      \"object_type\": null,\n      \"page_num\": 1,\n      \"severity\": \"warning\",\n      \"source\": \"engine\"\n    },\n    {\n      \"bbox\": null,\n      \"category\": \"\",\n      \"details\": {\n        \"page_num\": 1\n      },\n      \"inspection_id\": \"LPDF_BOX_004\",\n      \"iso_clause\": \"\",\n      \"message\": \"Page 1 has no content stream (empty page)\",\n      \"object_id\": null,\n      \"object_type\": null,\n      \"page_num\": 1,\n      \"severity\": \"advisory\",\n      \"source\": \"engine\"\n    },\n    {\n      \"bbox\": null,\n      \"category\": \"page\",\n      \"details\": {\n        \"page_size_inches\": [\n          8.27,\n          11.69\n        ],\n        \"trim_equals_media\": true\n      },\n      \"inspection_id\": \"LPDF_BOX_TRIMBOX_DEFAULTED\",\n      \"iso_clause\": \"ISO 15930-7:2010 6.2.1\",\n      \"message\": \"Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.\",\n      \"object_id\": null,\n      \"object_type\": \"page\",\n      \"page_num\": 1,\n      \"severity\": \"advisory\",\n      \"source\": \"engine\"\n    }\n  ],\n  \"page_count\": 1,\n  \"pdf_path\": \"/Users/macadmin/Code/printwithsynergy/assay-pdf/corpus/negative/r0020/r0020-sheetcmyk-cmyk.pdf\"\n}\n"
+  },
+  {
+    "engine": "lintpdf",
+    "engine_version": "lintpdf-codex-cluster-v1",
+    "profile": "page-geometry",
+    "file": "/Users/macadmin/Code/printwithsynergy/assay-pdf/corpus/negative/r0024/r0024-sheetcmyk-cmyk.pdf",
+    "hits": [
+      {
+        "rule_id": "LPDF_BOX_003",
+        "severity": "warning",
+        "message": "Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "",
+          "details": {
+            "bleeds": {
+              "bottom": 0.0,
+              "left": 0.0,
+              "right": 0.0,
+              "top": 0.0
+            },
+            "inadequate_sides": {
+              "bottom": 0.0,
+              "left": 0.0,
+              "right": 0.0,
+              "top": 0.0
+            },
+            "min_bleed_pts": 8.5
+          },
+          "inspection_id": "LPDF_BOX_003",
+          "iso_clause": "GWG 2022 6.1",
+          "message": "Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)",
+          "object_id": null,
+          "object_type": null,
+          "page_num": 1,
+          "severity": "warning",
+          "source": "engine"
+        }
+      },
+      {
+        "rule_id": "LPDF_BOX_004",
+        "severity": "error",
+        "message": "Page 1 has no content stream (empty page)",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "",
+          "details": {
+            "page_num": 1
+          },
+          "inspection_id": "LPDF_BOX_004",
+          "iso_clause": "",
+          "message": "Page 1 has no content stream (empty page)",
+          "object_id": null,
+          "object_type": null,
+          "page_num": 1,
+          "severity": "advisory",
+          "source": "engine"
+        }
+      },
+      {
+        "rule_id": "LPDF_BOX_TRIMBOX_DEFAULTED",
+        "severity": "error",
+        "message": "Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "page",
+          "details": {
+            "page_size_inches": [
+              8.27,
+              11.69
+            ],
+            "trim_equals_media": true
+          },
+          "inspection_id": "LPDF_BOX_TRIMBOX_DEFAULTED",
+          "iso_clause": "ISO 15930-7:2010 6.2.1",
+          "message": "Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.",
+          "object_id": null,
+          "object_type": "page",
+          "page_num": 1,
+          "severity": "advisory",
+          "source": "engine"
+        }
+      }
+    ],
+    "runtime_ms": 1403,
+    "raw_output": "{\n  \"adapter_path\": \"codex\",\n  \"cluster\": \"page-geometry\",\n  \"codex_schema_version\": \"1.0.0\",\n  \"finding_count\": 3,\n  \"findings\": [\n    {\n      \"bbox\": null,\n      \"category\": \"\",\n      \"details\": {\n        \"bleeds\": {\n          \"bottom\": 0.0,\n          \"left\": 0.0,\n          \"right\": 0.0,\n          \"top\": 0.0\n        },\n        \"inadequate_sides\": {\n          \"bottom\": 0.0,\n          \"left\": 0.0,\n          \"right\": 0.0,\n          \"top\": 0.0\n        },\n        \"min_bleed_pts\": 8.5\n      },\n      \"inspection_id\": \"LPDF_BOX_003\",\n      \"iso_clause\": \"GWG 2022 6.1\",\n      \"message\": \"Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)\",\n      \"object_id\": null,\n      \"object_type\": null,\n      \"page_num\": 1,\n      \"severity\": \"warning\",\n      \"source\": \"engine\"\n    },\n    {\n      \"bbox\": null,\n      \"category\": \"\",\n      \"details\": {\n        \"page_num\": 1\n      },\n      \"inspection_id\": \"LPDF_BOX_004\",\n      \"iso_clause\": \"\",\n      \"message\": \"Page 1 has no content stream (empty page)\",\n      \"object_id\": null,\n      \"object_type\": null,\n      \"page_num\": 1,\n      \"severity\": \"advisory\",\n      \"source\": \"engine\"\n    },\n    {\n      \"bbox\": null,\n      \"category\": \"page\",\n      \"details\": {\n        \"page_size_inches\": [\n          8.27,\n          11.69\n        ],\n        \"trim_equals_media\": true\n      },\n      \"inspection_id\": \"LPDF_BOX_TRIMBOX_DEFAULTED\",\n      \"iso_clause\": \"ISO 15930-7:2010 6.2.1\",\n      \"message\": \"Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.\",\n      \"object_id\": null,\n      \"object_type\": \"page\",\n      \"page_num\": 1,\n      \"severity\": \"advisory\",\n      \"source\": \"engine\"\n    }\n  ],\n  \"page_count\": 1,\n  \"pdf_path\": \"/Users/macadmin/Code/printwithsynergy/assay-pdf/corpus/negative/r0024/r0024-sheetcmyk-cmyk.pdf\"\n}\n"
+  },
+  {
+    "engine": "lintpdf",
+    "engine_version": "lintpdf-codex-cluster-v1",
+    "profile": "page-geometry",
+    "file": "/Users/macadmin/Code/printwithsynergy/assay-pdf/corpus/negative/r0026/r0026-sheetcmyk-cmyk.pdf",
+    "hits": [
+      {
+        "rule_id": "LPDF_BOX_003",
+        "severity": "warning",
+        "message": "Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "",
+          "details": {
+            "bleeds": {
+              "bottom": 0.0,
+              "left": 0.0,
+              "right": 0.0,
+              "top": 0.0
+            },
+            "inadequate_sides": {
+              "bottom": 0.0,
+              "left": 0.0,
+              "right": 0.0,
+              "top": 0.0
+            },
+            "min_bleed_pts": 8.5
+          },
+          "inspection_id": "LPDF_BOX_003",
+          "iso_clause": "GWG 2022 6.1",
+          "message": "Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)",
+          "object_id": null,
+          "object_type": null,
+          "page_num": 1,
+          "severity": "warning",
+          "source": "engine"
+        }
+      },
+      {
+        "rule_id": "LPDF_BOX_004",
+        "severity": "error",
+        "message": "Page 1 has no content stream (empty page)",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "",
+          "details": {
+            "page_num": 1
+          },
+          "inspection_id": "LPDF_BOX_004",
+          "iso_clause": "",
+          "message": "Page 1 has no content stream (empty page)",
+          "object_id": null,
+          "object_type": null,
+          "page_num": 1,
+          "severity": "advisory",
+          "source": "engine"
+        }
+      },
+      {
+        "rule_id": "LPDF_BOX_TRIMBOX_DEFAULTED",
+        "severity": "error",
+        "message": "Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "page",
+          "details": {
+            "page_size_inches": [
+              8.27,
+              11.69
+            ],
+            "trim_equals_media": true
+          },
+          "inspection_id": "LPDF_BOX_TRIMBOX_DEFAULTED",
+          "iso_clause": "ISO 15930-7:2010 6.2.1",
+          "message": "Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.",
+          "object_id": null,
+          "object_type": "page",
+          "page_num": 1,
+          "severity": "advisory",
+          "source": "engine"
+        }
+      }
+    ],
+    "runtime_ms": 1312,
+    "raw_output": "{\n  \"adapter_path\": \"codex\",\n  \"cluster\": \"page-geometry\",\n  \"codex_schema_version\": \"1.0.0\",\n  \"finding_count\": 3,\n  \"findings\": [\n    {\n      \"bbox\": null,\n      \"category\": \"\",\n      \"details\": {\n        \"bleeds\": {\n          \"bottom\": 0.0,\n          \"left\": 0.0,\n          \"right\": 0.0,\n          \"top\": 0.0\n        },\n        \"inadequate_sides\": {\n          \"bottom\": 0.0,\n          \"left\": 0.0,\n          \"right\": 0.0,\n          \"top\": 0.0\n        },\n        \"min_bleed_pts\": 8.5\n      },\n      \"inspection_id\": \"LPDF_BOX_003\",\n      \"iso_clause\": \"GWG 2022 6.1\",\n      \"message\": \"Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)\",\n      \"object_id\": null,\n      \"object_type\": null,\n      \"page_num\": 1,\n      \"severity\": \"warning\",\n      \"source\": \"engine\"\n    },\n    {\n      \"bbox\": null,\n      \"category\": \"\",\n      \"details\": {\n        \"page_num\": 1\n      },\n      \"inspection_id\": \"LPDF_BOX_004\",\n      \"iso_clause\": \"\",\n      \"message\": \"Page 1 has no content stream (empty page)\",\n      \"object_id\": null,\n      \"object_type\": null,\n      \"page_num\": 1,\n      \"severity\": \"advisory\",\n      \"source\": \"engine\"\n    },\n    {\n      \"bbox\": null,\n      \"category\": \"page\",\n      \"details\": {\n        \"page_size_inches\": [\n          8.27,\n          11.69\n        ],\n        \"trim_equals_media\": true\n      },\n      \"inspection_id\": \"LPDF_BOX_TRIMBOX_DEFAULTED\",\n      \"iso_clause\": \"ISO 15930-7:2010 6.2.1\",\n      \"message\": \"Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.\",\n      \"object_id\": null,\n      \"object_type\": \"page\",\n      \"page_num\": 1,\n      \"severity\": \"advisory\",\n      \"source\": \"engine\"\n    }\n  ],\n  \"page_count\": 1,\n  \"pdf_path\": \"/Users/macadmin/Code/printwithsynergy/assay-pdf/corpus/negative/r0026/r0026-sheetcmyk-cmyk.pdf\"\n}\n"
+  },
+  {
+    "engine": "lintpdf",
+    "engine_version": "lintpdf-codex-cluster-v1",
+    "profile": "page-geometry",
+    "file": "/Users/macadmin/Code/printwithsynergy/assay-pdf/corpus/negative/r0027/r0027-sheetcmyk-cmyk.pdf",
+    "hits": [
+      {
+        "rule_id": "LPDF_BOX_003",
+        "severity": "warning",
+        "message": "Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "",
+          "details": {
+            "bleeds": {
+              "bottom": 0.0,
+              "left": 0.0,
+              "right": 0.0,
+              "top": 0.0
+            },
+            "inadequate_sides": {
+              "bottom": 0.0,
+              "left": 0.0,
+              "right": 0.0,
+              "top": 0.0
+            },
+            "min_bleed_pts": 8.5
+          },
+          "inspection_id": "LPDF_BOX_003",
+          "iso_clause": "GWG 2022 6.1",
+          "message": "Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)",
+          "object_id": null,
+          "object_type": null,
+          "page_num": 1,
+          "severity": "warning",
+          "source": "engine"
+        }
+      },
+      {
+        "rule_id": "LPDF_BOX_004",
+        "severity": "error",
+        "message": "Page 1 has no content stream (empty page)",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "",
+          "details": {
+            "page_num": 1
+          },
+          "inspection_id": "LPDF_BOX_004",
+          "iso_clause": "",
+          "message": "Page 1 has no content stream (empty page)",
+          "object_id": null,
+          "object_type": null,
+          "page_num": 1,
+          "severity": "advisory",
+          "source": "engine"
+        }
+      },
+      {
+        "rule_id": "LPDF_BOX_TRIMBOX_DEFAULTED",
+        "severity": "error",
+        "message": "Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "page",
+          "details": {
+            "page_size_inches": [
+              8.27,
+              11.69
+            ],
+            "trim_equals_media": true
+          },
+          "inspection_id": "LPDF_BOX_TRIMBOX_DEFAULTED",
+          "iso_clause": "ISO 15930-7:2010 6.2.1",
+          "message": "Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.",
+          "object_id": null,
+          "object_type": "page",
+          "page_num": 1,
+          "severity": "advisory",
+          "source": "engine"
+        }
+      }
+    ],
+    "runtime_ms": 2045,
+    "raw_output": "{\n  \"adapter_path\": \"codex\",\n  \"cluster\": \"page-geometry\",\n  \"codex_schema_version\": \"1.0.0\",\n  \"finding_count\": 3,\n  \"findings\": [\n    {\n      \"bbox\": null,\n      \"category\": \"\",\n      \"details\": {\n        \"bleeds\": {\n          \"bottom\": 0.0,\n          \"left\": 0.0,\n          \"right\": 0.0,\n          \"top\": 0.0\n        },\n        \"inadequate_sides\": {\n          \"bottom\": 0.0,\n          \"left\": 0.0,\n          \"right\": 0.0,\n          \"top\": 0.0\n        },\n        \"min_bleed_pts\": 8.5\n      },\n      \"inspection_id\": \"LPDF_BOX_003\",\n      \"iso_clause\": \"GWG 2022 6.1\",\n      \"message\": \"Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)\",\n      \"object_id\": null,\n      \"object_type\": null,\n      \"page_num\": 1,\n      \"severity\": \"warning\",\n      \"source\": \"engine\"\n    },\n    {\n      \"bbox\": null,\n      \"category\": \"\",\n      \"details\": {\n        \"page_num\": 1\n      },\n      \"inspection_id\": \"LPDF_BOX_004\",\n      \"iso_clause\": \"\",\n      \"message\": \"Page 1 has no content stream (empty page)\",\n      \"object_id\": null,\n      \"object_type\": null,\n      \"page_num\": 1,\n      \"severity\": \"advisory\",\n      \"source\": \"engine\"\n    },\n    {\n      \"bbox\": null,\n      \"category\": \"page\",\n      \"details\": {\n        \"page_size_inches\": [\n          8.27,\n          11.69\n        ],\n        \"trim_equals_media\": true\n      },\n      \"inspection_id\": \"LPDF_BOX_TRIMBOX_DEFAULTED\",\n      \"iso_clause\": \"ISO 15930-7:2010 6.2.1\",\n      \"message\": \"Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.\",\n      \"object_id\": null,\n      \"object_type\": \"page\",\n      \"page_num\": 1,\n      \"severity\": \"advisory\",\n      \"source\": \"engine\"\n    }\n  ],\n  \"page_count\": 1,\n  \"pdf_path\": \"/Users/macadmin/Code/printwithsynergy/assay-pdf/corpus/negative/r0027/r0027-sheetcmyk-cmyk.pdf\"\n}\n"
+  },
+  {
+    "engine": "lintpdf",
+    "engine_version": "lintpdf-codex-cluster-v1",
+    "profile": "page-geometry",
+    "file": "/Users/macadmin/Code/printwithsynergy/assay-pdf/corpus/negative/r0030/r0030-sheetcmyk-cmyk.pdf",
+    "hits": [
+      {
+        "rule_id": "LPDF_BOX_003",
+        "severity": "warning",
+        "message": "Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "",
+          "details": {
+            "bleeds": {
+              "bottom": 0.0,
+              "left": 0.0,
+              "right": 0.0,
+              "top": 0.0
+            },
+            "inadequate_sides": {
+              "bottom": 0.0,
+              "left": 0.0,
+              "right": 0.0,
+              "top": 0.0
+            },
+            "min_bleed_pts": 8.5
+          },
+          "inspection_id": "LPDF_BOX_003",
+          "iso_clause": "GWG 2022 6.1",
+          "message": "Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)",
+          "object_id": null,
+          "object_type": null,
+          "page_num": 1,
+          "severity": "warning",
+          "source": "engine"
+        }
+      },
+      {
+        "rule_id": "LPDF_BOX_004",
+        "severity": "error",
+        "message": "Page 1 has no content stream (empty page)",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "",
+          "details": {
+            "page_num": 1
+          },
+          "inspection_id": "LPDF_BOX_004",
+          "iso_clause": "",
+          "message": "Page 1 has no content stream (empty page)",
+          "object_id": null,
+          "object_type": null,
+          "page_num": 1,
+          "severity": "advisory",
+          "source": "engine"
+        }
+      },
+      {
+        "rule_id": "LPDF_BOX_TRIMBOX_DEFAULTED",
+        "severity": "error",
+        "message": "Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "page",
+          "details": {
+            "page_size_inches": [
+              8.27,
+              11.69
+            ],
+            "trim_equals_media": true
+          },
+          "inspection_id": "LPDF_BOX_TRIMBOX_DEFAULTED",
+          "iso_clause": "ISO 15930-7:2010 6.2.1",
+          "message": "Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.",
+          "object_id": null,
+          "object_type": "page",
+          "page_num": 1,
+          "severity": "advisory",
+          "source": "engine"
+        }
+      }
+    ],
+    "runtime_ms": 1456,
+    "raw_output": "{\n  \"adapter_path\": \"codex\",\n  \"cluster\": \"page-geometry\",\n  \"codex_schema_version\": \"1.0.0\",\n  \"finding_count\": 3,\n  \"findings\": [\n    {\n      \"bbox\": null,\n      \"category\": \"\",\n      \"details\": {\n        \"bleeds\": {\n          \"bottom\": 0.0,\n          \"left\": 0.0,\n          \"right\": 0.0,\n          \"top\": 0.0\n        },\n        \"inadequate_sides\": {\n          \"bottom\": 0.0,\n          \"left\": 0.0,\n          \"right\": 0.0,\n          \"top\": 0.0\n        },\n        \"min_bleed_pts\": 8.5\n      },\n      \"inspection_id\": \"LPDF_BOX_003\",\n      \"iso_clause\": \"GWG 2022 6.1\",\n      \"message\": \"Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)\",\n      \"object_id\": null,\n      \"object_type\": null,\n      \"page_num\": 1,\n      \"severity\": \"warning\",\n      \"source\": \"engine\"\n    },\n    {\n      \"bbox\": null,\n      \"category\": \"\",\n      \"details\": {\n        \"page_num\": 1\n      },\n      \"inspection_id\": \"LPDF_BOX_004\",\n      \"iso_clause\": \"\",\n      \"message\": \"Page 1 has no content stream (empty page)\",\n      \"object_id\": null,\n      \"object_type\": null,\n      \"page_num\": 1,\n      \"severity\": \"advisory\",\n      \"source\": \"engine\"\n    },\n    {\n      \"bbox\": null,\n      \"category\": \"page\",\n      \"details\": {\n        \"page_size_inches\": [\n          8.27,\n          11.69\n        ],\n        \"trim_equals_media\": true\n      },\n      \"inspection_id\": \"LPDF_BOX_TRIMBOX_DEFAULTED\",\n      \"iso_clause\": \"ISO 15930-7:2010 6.2.1\",\n      \"message\": \"Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.\",\n      \"object_id\": null,\n      \"object_type\": \"page\",\n      \"page_num\": 1,\n      \"severity\": \"advisory\",\n      \"source\": \"engine\"\n    }\n  ],\n  \"page_count\": 1,\n  \"pdf_path\": \"/Users/macadmin/Code/printwithsynergy/assay-pdf/corpus/negative/r0030/r0030-sheetcmyk-cmyk.pdf\"\n}\n"
+  },
+  {
+    "engine": "lintpdf",
+    "engine_version": "lintpdf-codex-cluster-v1",
+    "profile": "page-geometry",
+    "file": "/Users/macadmin/Code/printwithsynergy/assay-pdf/corpus/negative/r0031/r0031-sheetcmyk-cmyk.pdf",
+    "hits": [
+      {
+        "rule_id": "LPDF_BOX_003",
+        "severity": "warning",
+        "message": "Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "",
+          "details": {
+            "bleeds": {
+              "bottom": 0.0,
+              "left": 0.0,
+              "right": 0.0,
+              "top": 0.0
+            },
+            "inadequate_sides": {
+              "bottom": 0.0,
+              "left": 0.0,
+              "right": 0.0,
+              "top": 0.0
+            },
+            "min_bleed_pts": 8.5
+          },
+          "inspection_id": "LPDF_BOX_003",
+          "iso_clause": "GWG 2022 6.1",
+          "message": "Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)",
+          "object_id": null,
+          "object_type": null,
+          "page_num": 1,
+          "severity": "warning",
+          "source": "engine"
+        }
+      },
+      {
+        "rule_id": "LPDF_BOX_004",
+        "severity": "error",
+        "message": "Page 1 has no content stream (empty page)",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "",
+          "details": {
+            "page_num": 1
+          },
+          "inspection_id": "LPDF_BOX_004",
+          "iso_clause": "",
+          "message": "Page 1 has no content stream (empty page)",
+          "object_id": null,
+          "object_type": null,
+          "page_num": 1,
+          "severity": "advisory",
+          "source": "engine"
+        }
+      },
+      {
+        "rule_id": "LPDF_BOX_TRIMBOX_DEFAULTED",
+        "severity": "error",
+        "message": "Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "page",
+          "details": {
+            "page_size_inches": [
+              8.27,
+              11.69
+            ],
+            "trim_equals_media": true
+          },
+          "inspection_id": "LPDF_BOX_TRIMBOX_DEFAULTED",
+          "iso_clause": "ISO 15930-7:2010 6.2.1",
+          "message": "Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.",
+          "object_id": null,
+          "object_type": "page",
+          "page_num": 1,
+          "severity": "advisory",
+          "source": "engine"
+        }
+      }
+    ],
+    "runtime_ms": 1436,
+    "raw_output": "{\n  \"adapter_path\": \"codex\",\n  \"cluster\": \"page-geometry\",\n  \"codex_schema_version\": \"1.0.0\",\n  \"finding_count\": 3,\n  \"findings\": [\n    {\n      \"bbox\": null,\n      \"category\": \"\",\n      \"details\": {\n        \"bleeds\": {\n          \"bottom\": 0.0,\n          \"left\": 0.0,\n          \"right\": 0.0,\n          \"top\": 0.0\n        },\n        \"inadequate_sides\": {\n          \"bottom\": 0.0,\n          \"left\": 0.0,\n          \"right\": 0.0,\n          \"top\": 0.0\n        },\n        \"min_bleed_pts\": 8.5\n      },\n      \"inspection_id\": \"LPDF_BOX_003\",\n      \"iso_clause\": \"GWG 2022 6.1\",\n      \"message\": \"Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)\",\n      \"object_id\": null,\n      \"object_type\": null,\n      \"page_num\": 1,\n      \"severity\": \"warning\",\n      \"source\": \"engine\"\n    },\n    {\n      \"bbox\": null,\n      \"category\": \"\",\n      \"details\": {\n        \"page_num\": 1\n      },\n      \"inspection_id\": \"LPDF_BOX_004\",\n      \"iso_clause\": \"\",\n      \"message\": \"Page 1 has no content stream (empty page)\",\n      \"object_id\": null,\n      \"object_type\": null,\n      \"page_num\": 1,\n      \"severity\": \"advisory\",\n      \"source\": \"engine\"\n    },\n    {\n      \"bbox\": null,\n      \"category\": \"page\",\n      \"details\": {\n        \"page_size_inches\": [\n          8.27,\n          11.69\n        ],\n        \"trim_equals_media\": true\n      },\n      \"inspection_id\": \"LPDF_BOX_TRIMBOX_DEFAULTED\",\n      \"iso_clause\": \"ISO 15930-7:2010 6.2.1\",\n      \"message\": \"Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.\",\n      \"object_id\": null,\n      \"object_type\": \"page\",\n      \"page_num\": 1,\n      \"severity\": \"advisory\",\n      \"source\": \"engine\"\n    }\n  ],\n  \"page_count\": 1,\n  \"pdf_path\": \"/Users/macadmin/Code/printwithsynergy/assay-pdf/corpus/negative/r0031/r0031-sheetcmyk-cmyk.pdf\"\n}\n"
+  },
+  {
+    "engine": "lintpdf",
+    "engine_version": "lintpdf-codex-cluster-v1",
+    "profile": "page-geometry",
+    "file": "/Users/macadmin/Code/printwithsynergy/assay-pdf/corpus/negative/r0032/r0032-sheetcmyk-cmyk.pdf",
+    "hits": [
+      {
+        "rule_id": "LPDF_BOX_003",
+        "severity": "warning",
+        "message": "Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "",
+          "details": {
+            "bleeds": {
+              "bottom": 0.0,
+              "left": 0.0,
+              "right": 0.0,
+              "top": 0.0
+            },
+            "inadequate_sides": {
+              "bottom": 0.0,
+              "left": 0.0,
+              "right": 0.0,
+              "top": 0.0
+            },
+            "min_bleed_pts": 8.5
+          },
+          "inspection_id": "LPDF_BOX_003",
+          "iso_clause": "GWG 2022 6.1",
+          "message": "Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)",
+          "object_id": null,
+          "object_type": null,
+          "page_num": 1,
+          "severity": "warning",
+          "source": "engine"
+        }
+      },
+      {
+        "rule_id": "LPDF_BOX_004",
+        "severity": "error",
+        "message": "Page 1 has no content stream (empty page)",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "",
+          "details": {
+            "page_num": 1
+          },
+          "inspection_id": "LPDF_BOX_004",
+          "iso_clause": "",
+          "message": "Page 1 has no content stream (empty page)",
+          "object_id": null,
+          "object_type": null,
+          "page_num": 1,
+          "severity": "advisory",
+          "source": "engine"
+        }
+      },
+      {
+        "rule_id": "LPDF_BOX_TRIMBOX_DEFAULTED",
+        "severity": "error",
+        "message": "Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "page",
+          "details": {
+            "page_size_inches": [
+              8.27,
+              11.69
+            ],
+            "trim_equals_media": true
+          },
+          "inspection_id": "LPDF_BOX_TRIMBOX_DEFAULTED",
+          "iso_clause": "ISO 15930-7:2010 6.2.1",
+          "message": "Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.",
+          "object_id": null,
+          "object_type": "page",
+          "page_num": 1,
+          "severity": "advisory",
+          "source": "engine"
+        }
+      }
+    ],
+    "runtime_ms": 1473,
+    "raw_output": "{\n  \"adapter_path\": \"codex\",\n  \"cluster\": \"page-geometry\",\n  \"codex_schema_version\": \"1.0.0\",\n  \"finding_count\": 3,\n  \"findings\": [\n    {\n      \"bbox\": null,\n      \"category\": \"\",\n      \"details\": {\n        \"bleeds\": {\n          \"bottom\": 0.0,\n          \"left\": 0.0,\n          \"right\": 0.0,\n          \"top\": 0.0\n        },\n        \"inadequate_sides\": {\n          \"bottom\": 0.0,\n          \"left\": 0.0,\n          \"right\": 0.0,\n          \"top\": 0.0\n        },\n        \"min_bleed_pts\": 8.5\n      },\n      \"inspection_id\": \"LPDF_BOX_003\",\n      \"iso_clause\": \"GWG 2022 6.1\",\n      \"message\": \"Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)\",\n      \"object_id\": null,\n      \"object_type\": null,\n      \"page_num\": 1,\n      \"severity\": \"warning\",\n      \"source\": \"engine\"\n    },\n    {\n      \"bbox\": null,\n      \"category\": \"\",\n      \"details\": {\n        \"page_num\": 1\n      },\n      \"inspection_id\": \"LPDF_BOX_004\",\n      \"iso_clause\": \"\",\n      \"message\": \"Page 1 has no content stream (empty page)\",\n      \"object_id\": null,\n      \"object_type\": null,\n      \"page_num\": 1,\n      \"severity\": \"advisory\",\n      \"source\": \"engine\"\n    },\n    {\n      \"bbox\": null,\n      \"category\": \"page\",\n      \"details\": {\n        \"page_size_inches\": [\n          8.27,\n          11.69\n        ],\n        \"trim_equals_media\": true\n      },\n      \"inspection_id\": \"LPDF_BOX_TRIMBOX_DEFAULTED\",\n      \"iso_clause\": \"ISO 15930-7:2010 6.2.1\",\n      \"message\": \"Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.\",\n      \"object_id\": null,\n      \"object_type\": \"page\",\n      \"page_num\": 1,\n      \"severity\": \"advisory\",\n      \"source\": \"engine\"\n    }\n  ],\n  \"page_count\": 1,\n  \"pdf_path\": \"/Users/macadmin/Code/printwithsynergy/assay-pdf/corpus/negative/r0032/r0032-sheetcmyk-cmyk.pdf\"\n}\n"
+  },
+  {
+    "engine": "lintpdf",
+    "engine_version": "lintpdf-codex-cluster-v1",
+    "profile": "page-geometry",
+    "file": "/Users/macadmin/Code/printwithsynergy/assay-pdf/corpus/positive/sheetcmyk-cmyk/sheetcmyk-cmyk.pdf",
+    "hits": [
+      {
+        "rule_id": "LPDF_BOX_003",
+        "severity": "warning",
+        "message": "Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "",
+          "details": {
+            "bleeds": {
+              "bottom": 0.0,
+              "left": 0.0,
+              "right": 0.0,
+              "top": 0.0
+            },
+            "inadequate_sides": {
+              "bottom": 0.0,
+              "left": 0.0,
+              "right": 0.0,
+              "top": 0.0
+            },
+            "min_bleed_pts": 8.5
+          },
+          "inspection_id": "LPDF_BOX_003",
+          "iso_clause": "GWG 2022 6.1",
+          "message": "Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)",
+          "object_id": null,
+          "object_type": null,
+          "page_num": 1,
+          "severity": "warning",
+          "source": "engine"
+        }
+      },
+      {
+        "rule_id": "LPDF_BOX_004",
+        "severity": "error",
+        "message": "Page 1 has no content stream (empty page)",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "",
+          "details": {
+            "page_num": 1
+          },
+          "inspection_id": "LPDF_BOX_004",
+          "iso_clause": "",
+          "message": "Page 1 has no content stream (empty page)",
+          "object_id": null,
+          "object_type": null,
+          "page_num": 1,
+          "severity": "advisory",
+          "source": "engine"
+        }
+      },
+      {
+        "rule_id": "LPDF_BOX_TRIMBOX_DEFAULTED",
+        "severity": "error",
+        "message": "Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.",
+        "location": "page:1",
+        "raw": {
+          "bbox": null,
+          "category": "page",
+          "details": {
+            "page_size_inches": [
+              8.27,
+              11.69
+            ],
+            "trim_equals_media": true
+          },
+          "inspection_id": "LPDF_BOX_TRIMBOX_DEFAULTED",
+          "iso_clause": "ISO 15930-7:2010 6.2.1",
+          "message": "Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.",
+          "object_id": null,
+          "object_type": "page",
+          "page_num": 1,
+          "severity": "advisory",
+          "source": "engine"
+        }
+      }
+    ],
+    "runtime_ms": 1498,
+    "raw_output": "{\n  \"adapter_path\": \"codex\",\n  \"cluster\": \"page-geometry\",\n  \"codex_schema_version\": \"1.0.0\",\n  \"finding_count\": 3,\n  \"findings\": [\n    {\n      \"bbox\": null,\n      \"category\": \"\",\n      \"details\": {\n        \"bleeds\": {\n          \"bottom\": 0.0,\n          \"left\": 0.0,\n          \"right\": 0.0,\n          \"top\": 0.0\n        },\n        \"inadequate_sides\": {\n          \"bottom\": 0.0,\n          \"left\": 0.0,\n          \"right\": 0.0,\n          \"top\": 0.0\n        },\n        \"min_bleed_pts\": 8.5\n      },\n      \"inspection_id\": \"LPDF_BOX_003\",\n      \"iso_clause\": \"GWG 2022 6.1\",\n      \"message\": \"Inadequate bleed on page 1: left 0.0pt, right 0.0pt, bottom 0.0pt, top 0.0pt (minimum 8.5pt / 3.0mm)\",\n      \"object_id\": null,\n      \"object_type\": null,\n      \"page_num\": 1,\n      \"severity\": \"warning\",\n      \"source\": \"engine\"\n    },\n    {\n      \"bbox\": null,\n      \"category\": \"\",\n      \"details\": {\n        \"page_num\": 1\n      },\n      \"inspection_id\": \"LPDF_BOX_004\",\n      \"iso_clause\": \"\",\n      \"message\": \"Page 1 has no content stream (empty page)\",\n      \"object_id\": null,\n      \"object_type\": null,\n      \"page_num\": 1,\n      \"severity\": \"advisory\",\n      \"source\": \"engine\"\n    },\n    {\n      \"bbox\": null,\n      \"category\": \"page\",\n      \"details\": {\n        \"page_size_inches\": [\n          8.27,\n          11.69\n        ],\n        \"trim_equals_media\": true\n      },\n      \"inspection_id\": \"LPDF_BOX_TRIMBOX_DEFAULTED\",\n      \"iso_clause\": \"ISO 15930-7:2010 6.2.1\",\n      \"message\": \"Page 1 has no explicit TrimBox; the engine defaulted it to the MediaBox. Production workflows expect an explicit TrimBox so the press knows the final cut size, distinct from any bleed area.\",\n      \"object_id\": null,\n      \"object_type\": \"page\",\n      \"page_num\": 1,\n      \"severity\": \"advisory\",\n      \"source\": \"engine\"\n    }\n  ],\n  \"page_count\": 1,\n  \"pdf_path\": \"/Users/macadmin/Code/printwithsynergy/assay-pdf/corpus/positive/sheetcmyk-cmyk/sheetcmyk-cmyk.pdf\"\n}\n"
+  }
+]

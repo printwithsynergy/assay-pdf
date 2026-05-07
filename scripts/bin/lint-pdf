@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# PATH shim for assay-pdf benchmark harness.
+# Resolves ``lint-pdf`` to the workspace-checkout via ``uv run --project ...``.
+set -euo pipefail
+
+LINT_PDF_PROJECT="${LINTPDF_PROJECT:-/Users/macadmin/Code/printwithsynergy/lint-pdf}"
+
+exec uv run --project "$LINT_PDF_PROJECT" lint-pdf "$@"

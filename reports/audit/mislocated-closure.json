@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "report_kind": "assay-pdf.mislocated-closure",
+  "repo": "assay-pdf",
+  "audit_date": "2026-05-07",
+  "owner": "ASSAY maintainer",
+  "items": [
+    {
+      "id": "assay-lintpdf-runner-skipped",
+      "description": "`assay benchmark --engine lintpdf` previously skipped every file because `lint-pdf` binary was not on PATH from the assay environment.",
+      "originally_flagged_in": "ACCEPTANCE-AUDIT.md row 5",
+      "status": "closed-in-place",
+      "rationale": "Added `scripts/bin/lint-pdf` PATH shim that resolves to `uv run --project /Users/macadmin/Code/printwithsynergy/lint-pdf lint-pdf`. Benchmark now exercises 26 fixtures for `--profile sheetcmyk-cmyk` (TP=0 FP=48 TN=26 FN=15) and 61 fixtures across all variants (TP=0 FP=129 TN=39 FN=20).",
+      "evidence": ["scripts/bin/lint-pdf", "results/lintpdf-20260507T150357Z.score.json", "results/lintpdf-20260507T150556Z.score.json"]
+    },
+    {
+      "id": "assay-gwg2022-baseline-pinned",
+      "description": "No pinned GWG 2022 baseline existed for diff comparison; criterion 5 requires exact-match diffs.",
+      "originally_flagged_in": "ACCEPTANCE-AUDIT.md row 5",
+      "status": "closed-in-place",
+      "rationale": "Pinned baseline at `reports/baselines/gwg2022_baseline.json` covering both `sheetcmyk-cmyk` and `all` profiles. Two deterministic reruns yielded diff_count=0 (`reports/gwg2022/diff-{sheetcmyk-cmyk,all}.json`).",
+      "evidence": ["reports/baselines/gwg2022_baseline.json", "reports/gwg2022/diff-sheetcmyk-cmyk.json", "reports/gwg2022/diff-all.json", "reports/gwg2022/run_index.json", "scripts/gwg2022_baseline.py"]
+    },
+    {
+      "id": "assay-corpus-not-generated",
+      "description": "Corpus PDFs were not generated in the audit checkout — only `corpus/manifest.json` was present.",
+      "originally_flagged_in": "Criterion 5 reproducibility check",
+      "status": "closed-in-place",
+      "rationale": "`uv run --project . assay generate` regenerated 62 deterministic PDFs from the manifest. Idempotent given the same seed (corpus is deterministic by design).",
+      "evidence": ["corpus/", "Justfile", "src/assay_pdf/generator/orchestrator.py"]
+    },
+    {
+      "id": "assay-bin-shim-vs-editable-install",
+      "description": "Bash PATH-shim is an interim solution; long-term the assay venv should consume `lint-pdf` as a console-script via editable install.",
+      "originally_flagged_in": "/Users/macadmin/synergy-agents/future-moves.md 2026-05-07 Criterion-closure newly deferred moves",
+      "status": "deferred-via-future-moves",
+      "rationale": "PATH shim works deterministically and keeps the MIT/AGPL boundary (subprocess only). Editable-install consolidation is captured in future-moves for follow-up.",
+      "evidence": ["/Users/macadmin/synergy-agents/future-moves.md"]
+    },
+    {
+      "id": "assay-rule-id-coverage",
+      "description": "Rule-id coverage between `lint-pdf` inspection IDs and GWG 2022 R-rules is incomplete; harness scoring shows TP=0 because lint-pdf inspection IDs (LPDF_BOX_*) are not pre-mapped to R-rule IDs.",
+      "originally_flagged_in": "Criterion 5 deep evidence review",
+      "status": "deferred-via-future-moves",
+      "rationale": "The criterion 5 acceptance is 'scores unchanged from pinned baseline' — that is met (diff_count=0 across reruns). Improving the rule-id mapping (adding `src/assay_pdf/harness/rule_maps/lintpdf.json`) is a separate scoring-quality effort scheduled as a future move.",
+      "evidence": ["src/assay_pdf/harness/rule_maps/", "reports/gwg2022/score-sheetcmyk-cmyk.json"]
+    }
+  ],
+  "deferred_to_future_moves": [
+    "cross-repo hygiene — replace bash PATH-shim with `[project.scripts]` editable install once supported",
+    "scoring quality — author `src/assay_pdf/harness/rule_maps/lintpdf.json` to lift TP from inspection-id pass-through to R-rule mapping"
+  ]
+}
