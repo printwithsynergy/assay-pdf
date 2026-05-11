@@ -141,14 +141,12 @@ def cmd_pin(args: argparse.Namespace) -> int:
             file=sys.stderr,
         )
         return 2
-    pairs = list(zip(args.label, [Path(p) for p in args.score]))
+    pairs = list(zip(args.label, [Path(p) for p in args.score], strict=True))
     payload = _build_baseline(args.engine, pairs)
 
     output = Path(args.output).resolve()
     output.parent.mkdir(parents=True, exist_ok=True)
-    output.write_text(
-        json.dumps(payload, indent=2, sort_keys=True) + "\n", encoding="utf-8"
-    )
+    output.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     summary = {
         "status": "baseline-pinned",
         "engine": args.engine,
@@ -189,12 +187,10 @@ def cmd_diff(args: argparse.Namespace) -> int:
         "profiles": [],
     }
     overall_status = 0
-    for label, score_path_str in zip(args.label, args.score):
+    for label, score_path_str in zip(args.label, args.score, strict=True):
         score_path = Path(score_path_str).resolve()
         if label not in base_by_label:
-            summary["profiles"].append(
-                {"label": label, "status": "missing-from-baseline"}
-            )
+            summary["profiles"].append({"label": label, "status": "missing-from-baseline"})
             overall_status = 1 if args.fail_on_diff else overall_status
             continue
         current_profile = _profile_payload(score_path, label)
@@ -240,7 +236,9 @@ def main() -> int:
     pin = sub.add_parser("pin", help="Pin a baseline JSON from one or more score reports.")
     pin.add_argument("--engine", default="lintpdf")
     pin.add_argument("--score", action="append", required=True, help="Path to a *.score.json file.")
-    pin.add_argument("--label", action="append", required=True, help="Profile label aligned with --score.")
+    pin.add_argument(
+        "--label", action="append", required=True, help="Profile label aligned with --score."
+    )
     pin.add_argument("--output", required=True, help="Destination baseline JSON path.")
     pin.set_defaults(func=cmd_pin)
 

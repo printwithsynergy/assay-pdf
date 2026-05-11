@@ -104,6 +104,13 @@ See [docs/legal-positioning.md](docs/legal-positioning.md) for the comparative-a
 
 See [CONTRIBUTING.md](CONTRIBUTING.md). New rule generators, new engine runners, and new boundary-case test files are all welcome.
 
+By participating in this project you agree to abide by the [Code of Conduct](CODE_OF_CONDUCT.md).
+
+## Support and security
+
+- Usage questions or bug reports: see [SUPPORT.md](SUPPORT.md).
+- Security vulnerabilities: see [SECURITY.md](SECURITY.md) — please do **not** open a public issue.
+
 ## License
 
 MIT — see [LICENSE](LICENSE).

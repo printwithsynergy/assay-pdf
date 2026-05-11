@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - Initial scaffold (Commit 1): pyproject.toml (uv-managed, Python 3.12+), LICENSE (MIT), README, CHANGELOG, CONTRIBUTING, tooling configs, CI workflows, issue/PR templates.
+- Project governance docs: `SECURITY.md` (vulnerability reporting policy), `CODE_OF_CONDUCT.md` (Contributor Covenant 2.1), `SUPPORT.md` (where to ask for help), a feature-request issue template, and `ISSUE_TEMPLATE/config.yml` routing security and questions to the right channels.
 
 ## [0.1.0] — TBD
 
