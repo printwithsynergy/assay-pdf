@@ -19,7 +19,9 @@ class CodexPDFRunner(Runner):
     binary_name = "codex-pdf"
 
     def engine_version(self) -> str:
-        code, stdout, stderr = self._run_subprocess([self.binary_path(), "schema", "--version", "1"])
+        code, _stdout, stderr = self._run_subprocess(
+            [self.binary_path(), "schema", "--version", "1"]
+        )
         if code != 0:
             raise RunnerError(f"codex-pdf schema failed: {stderr.strip()}")
         # v0 contract runner: version inference is static for now.
