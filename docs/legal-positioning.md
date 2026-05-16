@@ -1,6 +1,6 @@
 ---
 title: "Legal positioning"
-description: "AssayPDF's legal posture: comparative-quality benchmarking under nominative fair use, no vendor redistribution, MIT licensing, and trial-license benchmarking guidance."
+description: "AssayPDF's legal posture: comparative-quality benchmarking under nominative fair use, no vendor redistribution, AGPL-3.0-or-later licensing, and trial-license benchmarking guidance."
 group: "Project"
 order: 10
 ---
@@ -43,7 +43,7 @@ When publishing AssayPDF-derived comparisons, include:
 
 ## License posture
 
-- **AssayPDF source code**: MIT — see `LICENSE`.
+- **AssayPDF source code**: AGPL-3.0-or-later — see `LICENSE`.
 - **ICC profiles in `src/assay_pdf/generator/icc/`**: redistributed under each profile's upstream terms (sRGB IEC61966-2.1 = public domain; AdobeRGB1998 = Adobe ICC EULA, freely distributable).
 - **GWG 2022 spec materials in `spec/`**: copyright Ghent Workgroup. Treated as reference material under fair use for a derivative tool that implements the spec — same way an OS implementer treats ISO 32000.
 - **Vendor presets in `spec/presets/`** (Adobe, Enfocus, callas): each vendor's GWG presets are distributed publicly by the vendor for use in their products. Redistributed here as reference material; if a vendor's terms change, we move that file to the `assay fetch` flow.

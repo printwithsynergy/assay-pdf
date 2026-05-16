@@ -53,4 +53,4 @@ Each negative test PDF targets exactly one GWG 2022 rule ID. To add one:
 
 ## License
 
-By contributing, you agree your contribution is licensed under the MIT license.
+By contributing, you agree your contribution is licensed under the GNU Affero General Public License v3 or later (AGPL-3.0-or-later).

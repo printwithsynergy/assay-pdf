@@ -4,7 +4,7 @@
 
 [![CI](https://github.com/thinkneverland/assay-pdf/actions/workflows/ci.yml/badge.svg)](https://github.com/thinkneverland/assay-pdf/actions/workflows/ci.yml)
 [![Python 3.12+](https://img.shields.io/badge/python-3.12+-blue.svg)](https://www.python.org/downloads/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](LICENSE)
 [![Spec: GWG 2022](https://img.shields.io/badge/spec-GWG%202022-orange.svg)](https://gwg.org/technical-specifications/gwg-2022-specifications/)
 
 ## What this is
@@ -113,7 +113,7 @@ By participating in this project you agree to abide by the [Code of Conduct](COD
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+AGPL-3.0-or-later — see [LICENSE](LICENSE).
 
 ICC profiles bundled under `src/assay_pdf/generator/icc/` are redistributed under their respective upstream terms; see [src/assay_pdf/generator/icc/README.md](src/assay_pdf/generator/icc/README.md).
 
